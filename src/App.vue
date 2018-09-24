@@ -1,7 +1,12 @@
 <template>
   <div class="container">
-    <img src="./assets/images/beach-ball.png" class="image">
-    <h1>Coming soon to a browser near you...</h1>
+    <img class="martin" src="./assets/images/martin.jpg">
+    <img class="beach-ball" src="./assets/images/beach-ball.png">
+    <span class="description">
+      <b>Hi, my name is Martin.</b>
+      I'm an experienced Full Stack Web Developer by day and a passionate Liquid Drum & Bass DJ by night.
+      I'm currently based in Linz, Austria.
+    </span>
   </div>
 </template>
 

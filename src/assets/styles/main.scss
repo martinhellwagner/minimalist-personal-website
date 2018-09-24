@@ -6,17 +6,27 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 50vw;
-  text-align: center;
+  height: 50vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
 
-  .image {
+  .martin {
+    width: 200px;
+  }
+
+  .beach-ball {
+    display: none;
+    position: absolute;
     width: 40px;
 
     animation-name: rotation;
@@ -38,5 +48,12 @@ body {
     &:hover {
       animation-play-state: running;
     }
+  }
+
+  .description {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
