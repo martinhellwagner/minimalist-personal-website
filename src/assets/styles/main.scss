@@ -1,11 +1,28 @@
+// Variables
+$breakpoint-min: 320;
+$breakpoint-small: 576;
+$breakpoint-medium: 768; 
+$breakpoint-large: 992;
+$breakpoint-max: 1200;
+
+// Mixins
+@mixin fluidSizes($property, $min, $max) {
+  #{$property}: #{$min + "px"};
+
+  @media screen and (min-width: #{$breakpoint-min + "px"}) {
+    #{$property}: calc(#{$min + "px"} + (#{$max} - #{$min}) * (100vw - #{$breakpoint-min + "px"}) / (#{$breakpoint-max} - #{$breakpoint-min}));
+  }
+
+  @media screen and (min-width: #{$breakpoint-max + "px"}) {
+    #{$property}: #{$max + "px"};
+  }
+}
+
+// Stylings
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
 
@@ -14,20 +31,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50vw;
-  height: 50vh;
-  margin: 0;
-  overflow: hidden;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
 
   .martin {
-    width: 200px;
+    @include fluidSizes(width, 100, 200);
   }
 
   .beach-ball {
-    display: none;
     position: absolute;
-    width: 40px;
+    @include fluidSizes(width, 20, 40);
 
     animation-name: rotation;
     animation-duration: 2s;
@@ -51,9 +64,63 @@ body {
   }
 
   .description {
+    width: 80vw;
+    max-width: 666px;
+    @include fluidSizes(font-size, 12, 24);
     text-align: center;
-    font-size: 25px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+  }
+
+  .icons {
+    display: flex;
+    margin-bottom: 60px;
+
+    .icon {
+      margin-right: 25px;
+      @include fluidSizes(height, 20, 40);
+      @include fluidSizes(width, 20, 40);
+      transition: transform 0.2s ease-in-out;
+
+      &--first {
+        margin-left: 25px;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+
+    span {
+      @include fluidSizes(font-size, 8, 16);
+      @include fluidSizes(line-height, 8, 16);
+    }
+
+    .heart,
+    .vue {
+      height: 16px;
+      margin-left: 5px;
+      margin-right: 5px;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .vue {
+      padding-top: 1px;
+    }
   }
 }
