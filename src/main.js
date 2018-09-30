@@ -5,6 +5,7 @@ Vue.config.productionTip = false;
 
 const app = new Vue({
   render: h => h(App),
+
   mounted() {
     this.calculateHeight();
     this.placeBeachBall();
@@ -27,6 +28,7 @@ const app = new Vue({
       this.placeBeachBall();
     });
   },
+
   methods: {
     // Workaround for inconsistent height of mobile browsers
     calculateHeight: () => {
