@@ -39,10 +39,10 @@ const app = new Vue({
     placeBeachBall: () => {
       const beachBall = document.querySelector('.beach-ball');
 
-      const x = window.innerHeight - (beachBall.height * 2);
-      const y = window.innerWidth - (beachBall.width * 2);
-      const randomX = Math.floor(Math.random() * x);
-      const randomY = Math.floor(Math.random() * y);
+      const x = window.innerHeight - beachBall.height;
+      const y = window.innerWidth - beachBall.width;
+      const randomX = Math.random() * x;
+      const randomY = Math.random() * y;
 
       beachBall.style.top = `${randomX}px`;
       beachBall.style.left = `${randomY}px`;
