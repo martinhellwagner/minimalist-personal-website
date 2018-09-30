@@ -39,8 +39,8 @@ const app = new Vue({
     placeBeachBall: () => {
       const beachBall = document.querySelector('.beach-ball');
 
-      const x = window.innerHeight - beachBall.height;
-      const y = window.innerWidth - beachBall.width;
+      const x = window.innerHeight - (beachBall.height * 2);
+      const y = window.innerWidth - (beachBall.width * 2);
       const randomX = Math.floor(Math.random() * x);
       const randomY = Math.floor(Math.random() * y);
 
