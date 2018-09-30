@@ -6,22 +6,31 @@ Vue.config.productionTip = false;
 var app = new Vue({
   render: h => h(App),
   mounted() {
+    this.handleOrientation();
     this.placeBeachBall();
+
+    window.addEventListener('orientationchange', function() {
+      window.location.reload();
+    });
     document.addEventListener('click', this.placeBeachBall);
   },
   methods: {
-    placeBeachBall: () => {
-      const beachBalls = document.querySelectorAll('.beach-ball');
+    // Workaround for inconsistent height of mobile browsers
+    handleOrientation: () => {
+      let windowHeight = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--windowHeight', `${windowHeight}px`);
+    },
 
-      beachBalls.forEach(beachBall => {
-        const x = document.body.scrollHeight - beachBall.height;
-        const y = document.body.scrollWidth  - beachBall.width;
-        const randomX = Math.floor(Math.random() * x);
-        const randomY = Math.floor(Math.random() * y);
-      
-        beachBall.style.top  = randomX + 'px';
-        beachBall.style.left = randomY + 'px';
-      })
+    placeBeachBall: () => {
+      const beachBall = document.querySelector('.beach-ball');
+
+      const x = window.innerHeight - (beachBall.height * 2);
+      const y = window.innerWidth  - (beachBall.width * 2);
+      const randomX = Math.floor(Math.random() * x);
+      const randomY = Math.floor(Math.random() * y);
+    
+      beachBall.style.top  = randomX + 'px';
+      beachBall.style.left = randomY + 'px';
     }
   },
 });

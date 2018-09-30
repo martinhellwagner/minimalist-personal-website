@@ -1,1 +1,17 @@
-<svg height="80" viewBox="0 0 80 80" width="80" xmlns="http://www.w3.org/2000/svg"><g fill="none"><circle cx="40" cy="40" fill="#25b7d3" r="40"/><g transform="translate(16.727273 19.636364)"><path d="m19.3963636 35.8763636-4.8509091 4.8509091v-7.2727272z" fill="#cfd3d4"/><path d="m46.5454545 0-16 41.4545455-16-8v7.2727272l-5.81818177-11.6363636-8.72727273-5.8181818z" fill="#fff"/><path d="m8.72727273 29.0909091 5.81818177 11.6363636v-7.2727272l32-33.4545455z" fill="#e2e4e5"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>if_Paper-Plane_379428</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="if_Paper-Plane_379428" fill-rule="nonzero">
+            <circle id="Oval" fill="#25B7D3" cx="40" cy="40" r="40"></circle>
+            <g id="Group" transform="translate(16.727273, 19.636364)">
+                <polygon id="Shape" fill="#CFD3D4" points="19.3963636 35.8763636 14.5454545 40.7272727 14.5454545 33.4545455"></polygon>
+                <polygon id="Shape" fill="#FFFFFF" points="46.5454545 0 30.5454545 41.4545455 14.5454545 33.4545455 14.5454545 40.7272727 8.72727273 29.0909091 0 23.2727273"></polygon>
+                <polygon id="Shape" fill="#E2E4E5" points="8.72727273 29.0909091 14.5454545 40.7272727 14.5454545 33.4545455 46.5454545 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
