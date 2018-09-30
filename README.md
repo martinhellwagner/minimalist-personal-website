@@ -18,7 +18,7 @@ If you want to get the project ready for production (i.e. compile and minify it)
 
     yarn run build
 
-Last but not least, make sure the Linter is happy with you by calling the following command from the root directory (if applicable, fixing is included for free):
+Last but not least, make sure the [Linter](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint) is happy with you by calling the following command from the root directory (if applicable, fixing is included for free):
 
     yarn run lint
 
