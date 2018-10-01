@@ -6,15 +6,13 @@ Vue.config.productionTip = false;
 const app = new Vue({
   render: h => h(App),
 
-  beforeMount() {
-    // Smoothly fade in content
-    setTimeout(() => {
-      const container = document.querySelector('.container');
+  mounted() {
+    // Smoothly fade in content after all images are loaded
+    const container = document.querySelector('.container');
+    this.onImagesLoaded(container, () => {
       container.classList.add('container--ready');
     });
-  },
 
-  mounted() {
     this.calculateHeight();
     this.placeBeachBall();
 
@@ -54,6 +52,29 @@ const app = new Vue({
 
       beachBall.style.top = `${randomX}px`;
       beachBall.style.left = `${randomY}px`;
+    },
+
+    // Check if images are loaded
+    onImagesLoaded: (container, event) => {
+      const images = container.getElementsByTagName('img');
+      let loaded = images.length;
+
+      for (let i = 0; i < images.length; i += 1) {
+        if (images[i].complete) {
+          loaded -= 1;
+        } else {
+          // eslint-disable-next-line
+          images[i].addEventListener('load', () => {
+            loaded -= 1;
+            if (loaded === 0) {
+              event();
+            }
+          });
+        }
+        if (loaded === 0) {
+          event();
+        }
+      }
     },
   },
 });
