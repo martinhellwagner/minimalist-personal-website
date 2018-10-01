@@ -6,6 +6,14 @@ Vue.config.productionTip = false;
 const app = new Vue({
   render: h => h(App),
 
+  beforeMount() {
+    // Smoothly fade in content
+    setTimeout(() => {
+      const container = document.querySelector('.container');
+      container.classList.add('container--ready');
+    });
+  },
+
   mounted() {
     this.calculateHeight();
     this.placeBeachBall();
