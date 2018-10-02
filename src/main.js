@@ -16,18 +16,13 @@ const app = new Vue({
     this.calculateHeight();
     this.placeBeachBall();
 
-    // Events for desktop browsers
-    window.addEventListener('resize', () => {
+    // Event listeners
+    window.addEventListener('orientationchange', () => {
       window.location.reload();
     });
 
     window.addEventListener('click', () => {
       this.placeBeachBall();
-    });
-
-    // Events for mobile browsers
-    window.addEventListener('orientationchange', () => {
-      window.location.reload();
     });
 
     window.addEventListener('touchstart', () => {
@@ -38,17 +33,17 @@ const app = new Vue({
   methods: {
     // Workaround for inconsistent height of mobile browsers
     calculateHeight: () => {
-      const windowHeight = window.innerHeight * 0.01;
+      const windowHeight = document.documentElement.clientHeight * 0.01;
       document.documentElement.style.setProperty('--windowHeight', `${windowHeight}px`);
     },
 
     placeBeachBall: () => {
       const beachBall = document.querySelector('.beach-ball');
 
-      const x = window.innerHeight - beachBall.height;
-      const y = window.innerWidth - beachBall.width;
-      const randomX = Math.random() * x;
-      const randomY = Math.random() * y;
+      const x = document.documentElement.clientHeight - beachBall.height;
+      const y = document.documentElement.clientWidth - beachBall.width;
+      const randomX = Math.floor(Math.random() * x);
+      const randomY = Math.floor(Math.random() * y);
 
       beachBall.style.top = `${randomX}px`;
       beachBall.style.left = `${randomY}px`;
