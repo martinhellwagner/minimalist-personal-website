@@ -21,13 +21,16 @@ $breakpoint-max: 1200;
 // Stylings
 body {
   width: 100vw;
-  height: 100vh; // Fallback for browsers that don't support Custom Properties
   height: calc(var(--windowHeight, 1vh) * 100);
   margin: 0;
   overflow: hidden;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media screen and (min-width: #{$breakpoint-medium + "px"}) {
+    height: 100vh;
+  }
 }
 
 .container {

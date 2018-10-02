@@ -16,18 +16,13 @@ const app = new Vue({
     this.calculateHeight();
     this.placeBeachBall();
 
-    // Events for desktop browsers
-    window.addEventListener('resize', () => {
+    // Event listeners
+    window.addEventListener('orientationchange', () => {
       window.location.reload();
     });
 
     window.addEventListener('click', () => {
       this.placeBeachBall();
-    });
-
-    // Events for mobile browsers
-    window.addEventListener('orientationchange', () => {
-      window.location.reload();
     });
 
     window.addEventListener('touchstart', () => {
