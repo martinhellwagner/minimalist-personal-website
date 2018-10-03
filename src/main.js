@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import bowser from 'bowser';
 import App from './App.vue';
 
 Vue.config.productionTip = false;
@@ -7,8 +8,14 @@ const app = new Vue({
   render: h => h(App),
 
   mounted() {
-    // Smoothly fade in content after all images are loaded
     const container = document.querySelector('.container');
+
+    // Categorically exclude IE and Edge
+    if (bowser.name === 'Internet Explorer' || bowser.name === 'Microsoft Edge') {
+      container.classList.add('container--poor-browser');
+    }
+
+    // Smoothly fade in content after all images are loaded
     this.onImagesLoaded(container, () => {
       container.classList.add('container--ready');
     });
