@@ -77,9 +77,11 @@ body {
 
     // Fixes for landscape mode
     @include fluidSizes(width, 28, 40);
+    @include fluidSizes(height, 28, 40);
 
     @media screen and (max-width: #{$breakpoint-min + "px"}), screen and (max-height: #{$breakpoint-min + "px"}) {
       width: 26px;
+      height: 26px;
     }
 
     animation-name: rotation;
