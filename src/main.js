@@ -12,7 +12,7 @@ const app = new Vue({
 
     // Categorically exclude IE and Edge
     if (bowser.name === 'Internet Explorer' || bowser.name === 'Microsoft Edge') {
-      container.classList.add('container--poor-browser');
+      container.classList.add('container--ie-edge');
     }
 
     // Smoothly fade in content after all images are loaded
