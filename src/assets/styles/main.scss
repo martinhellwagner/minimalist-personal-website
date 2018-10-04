@@ -107,6 +107,7 @@ body {
     width: 80vw;
     max-width: 630px;
     text-align: center;
+    line-height: 1.5;
 
     // Fixes for landscape mode
     @include fluidSizes(font-size, 16, 20);
