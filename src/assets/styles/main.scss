@@ -44,6 +44,15 @@ body {
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
 
+  // Hide content based on browser
+  &:not(.container--ie-edge) .description--browser {
+    display: none !important;
+  }
+
+  &--ie-edge *:not(.description--browser):not(a):not(b) {
+    display: none !important;
+  }
+
   &--ready {
     opacity: 1;
   }
@@ -98,6 +107,7 @@ body {
     width: 80vw;
     max-width: 630px;
     text-align: center;
+    line-height: 1.5;
 
     // Fixes for landscape mode
     @include fluidSizes(font-size, 16, 20);
@@ -127,6 +137,14 @@ body {
     a:visited {
       color: inherit;
       text-decoration: none;
+    }
+
+    &--browser {
+      a,
+      a:hover,
+      a:visited {
+        text-decoration: underline;
+      }
     }
   }
 

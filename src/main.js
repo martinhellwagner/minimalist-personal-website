@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import bowser from 'bowser';
 import App from './App.vue';
 
 Vue.config.productionTip = false;
@@ -7,8 +8,14 @@ const app = new Vue({
   render: h => h(App),
 
   mounted() {
-    // Smoothly fade in content after all images are loaded
     const container = document.querySelector('.container');
+
+    // Categorically exclude IE and Edge
+    if (bowser.name === 'Internet Explorer' || bowser.name === 'Microsoft Edge') {
+      container.classList.add('container--ie-edge');
+    }
+
+    // Smoothly fade in content after all images are loaded
     this.onImagesLoaded(container, () => {
       container.classList.add('container--ready');
     });
@@ -40,8 +47,8 @@ const app = new Vue({
     placeBeachBall: () => {
       const beachBall = document.querySelector('.beach-ball');
 
-      const x = document.documentElement.clientHeight - beachBall.height;
-      const y = document.documentElement.clientWidth - beachBall.width;
+      const x = document.documentElement.clientHeight - (beachBall.height * 2);
+      const y = document.documentElement.clientWidth - (beachBall.width * 2);
       const randomX = Math.floor(Math.random() * x);
       const randomY = Math.floor(Math.random() * y);
 

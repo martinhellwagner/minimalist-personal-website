@@ -4,11 +4,18 @@
 
     <img class="beach-ball" src="./assets/images/beach-ball.png">
 
-    <span class="description">
+    <span class="description description--martin">
       <b>Hi, my name is <a href="https://en.wikipedia.org/wiki/Martin_of_Tours" target="_blank">Martin</a>.</b>
       I'm an experienced <a href="https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c" target="_blank">Full Stack Web</a> Developer by day
       and a passionate <a href="https://liquicity.com" target="_blank">Liquid Drum & Bass</a> DJ by night.
       I'm currently based in <a href="https://www.google.com/maps/place/Linz" target="_blank">Linz, Austria</a>.
+    </span>
+
+    <span class="description description--browser">
+      <b>Hi there.</b>
+      It seems like you're using an old or poorly performing browser.
+      Why not treat yourself to the newest <a href="https://www.google.com/chrome/" target="_blank">Chrome</a>
+      or <a href="https://www.mozilla.org/en-US/" target="_blank">Firefox</a> and step into the future?
     </span>
 
     <div class="icons">
