@@ -223,3 +223,13 @@ body {
     }
   }
 }
+
+.snowflake {
+  position: absolute;
+  font-family: inherit;
+  z-index: 2412;
+  cursor: default;
+  color: #87CEFA;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
