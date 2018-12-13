@@ -160,7 +160,7 @@ body {
     }
 
     @media screen and (min-height: #{$breakpoint-small + "px"}) {
-      margin-bottom: 80px;
+      @include fluidSizes(margin-bottom, 20, 40);
     }
 
     .icon {
