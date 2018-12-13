@@ -1,3 +1,4 @@
+<!-- Template -->
 <template>
   <div class="container">
     <img class="martin" src="./assets/images/martin.jpg">
@@ -58,6 +59,10 @@
   </div>
 </template>
 
+<!-- Script -->
+<script src="./assets/script.js" />
+
+<!-- Style -->
 <style lang="scss">
-@import "./assets/styles/main.scss";
+  @import "./assets/style.scss";
 </style>
