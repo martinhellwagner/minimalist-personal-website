@@ -1,7 +1,7 @@
 // Variables
 $breakpoint-min: 320;
 $breakpoint-small: 568;
-$breakpoint-medium: 768; 
+$breakpoint-medium: 768;
 $breakpoint-large: 992;
 $breakpoint-max: 1200;
 
@@ -30,6 +30,12 @@ body {
 
   @media screen and (min-width: #{$breakpoint-medium + "px"}) {
     height: 100vh;
+  }
+
+  ::selection {
+    background: #345bfb;
+    color: white;
+    text-shadow: none;
   }
 }
 
