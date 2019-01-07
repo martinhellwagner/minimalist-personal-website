@@ -21,16 +21,12 @@ $breakpoint-max: 1200;
 // Stylings
 body {
   width: 100vw;
-  height: calc(var(--windowHeight, 1vh) * 100);
+  height: var(--windowHeight);
   margin: 0;
   overflow: hidden;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media screen and (min-width: #{$breakpoint-medium + "px"}) {
-    height: 100vh;
-  }
 
   ::selection {
     background: #345bfb;

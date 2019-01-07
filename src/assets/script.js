@@ -1,7 +1,7 @@
 import bowser from 'bowser';
 
 // Breakpoint variables
-const breakpointMedium = 768; 
+const breakpointMedium = 768;
 const breakpointMax = 1200;
 
 // Snow variables
@@ -50,8 +50,7 @@ export default {
   methods: {
     // Workaround for inconsistent height of mobile browsers
     calculateHeight() {
-      const windowHeight = document.body.clientHeight * 0.01;
-      document.body.style.setProperty('--windowHeight', `${windowHeight}px`);
+      document.body.style.setProperty('--windowHeight', `${window.innerHeight}px`);
     },
 
     // Randomise numbers in range
