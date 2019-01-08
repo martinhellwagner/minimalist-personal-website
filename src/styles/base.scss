@@ -1,0 +1,50 @@
+// Variables
+$breakpoint-min: 320;
+$breakpoint-small: 568;
+$breakpoint-medium: 768;
+$breakpoint-large: 992;
+$breakpoint-max: 1200;
+
+// Mixins
+@mixin fluidSizes($property, $min, $max) {
+  #{$property}: #{$min + "px"};
+
+  @media screen and (min-width: #{$breakpoint-min + "px"}) {
+    #{$property}: calc(#{$min + "px"} + (#{$max} - #{$min}) * (100vw - #{$breakpoint-min + "px"}) / (#{$breakpoint-max} - #{$breakpoint-min}));
+  }
+
+  @media screen and (min-width: #{$breakpoint-max + "px"}) {
+    #{$property}: #{$max + "px"};
+  }
+}
+
+// Stylings
+body {
+  width: 100vw;
+  height: var(--windowHeight);
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  ::selection {
+    background: #345bfb;
+    color: white;
+    text-shadow: none;
+  }
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+
+  // Hide content based on browser
+  &:not(.app--ie-edge) .description--browser {
+    display: none !important;
+  }
+
+  &--ie-edge *:not(.description--browser):not(a):not(b) {
+    display: none !important;
+  }
+}

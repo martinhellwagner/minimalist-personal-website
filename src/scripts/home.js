@@ -1,5 +1,3 @@
-import bowser from 'bowser';
-
 // Breakpoint variables
 const breakpointMedium = 768;
 const breakpointMax = 1200;
@@ -11,18 +9,15 @@ const coordinates = [];
 const movement = [];
 
 export default {
+  name: 'home',
+
   mounted() {
-    const container = document.querySelector('.container');
+    const home = document.querySelector('.home');
     const month = new Date().getMonth() + 1;
 
-    // Categorically exclude IE and Edge
-    if (bowser.name === 'Internet Explorer' || bowser.name === 'Microsoft Edge') {
-      container.classList.add('container--ie-edge');
-    }
-
     // Smoothly fade in content after all images are loaded
-    this.onImagesLoaded(container, () => {
-      container.classList.add('container--ready');
+    this.onImagesLoaded(home, () => {
+      home.classList.add('home--ready');
     });
 
     this.calculateHeight();
@@ -70,8 +65,8 @@ export default {
     },
 
     // Check if images are loaded
-    onImagesLoaded(container, event) {
-      const images = container.getElementsByTagName('img');
+    onImagesLoaded(home, event) {
+      const images = home.getElementsByTagName('img');
       let loaded = images.length;
 
       for (let i = 0; i < images.length; i += 1) {
