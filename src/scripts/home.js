@@ -1,8 +1,10 @@
-// Breakpoint variables
+import bowser from 'bowser';
+
+// BREAKPOINT VARIABLES
 const breakpointMedium = 768;
 const breakpointMax = 1200;
 
-// Snow variables
+// SNOW VARIABLES
 const snowflakes = [];
 const position = [];
 const coordinates = [];
@@ -12,18 +14,19 @@ export default {
   name: 'home',
 
   mounted() {
-    const home = document.querySelector('.home');
-    const month = new Date().getMonth() + 1;
+    const container = document.querySelector('.container');
 
-    // Smoothly fade in content after all images are loaded
-    this.onImagesLoaded(home, () => {
-      home.classList.add('home--ready');
-    });
+    // Categorically exclude IE and Edge
+    if (bowser.name === 'Internet Explorer' || bowser.name === 'Microsoft Edge') {
+      container.classList.add('container--ie-edge');
+      container.classList.remove('container--scrollable');
+    }
 
     this.calculateHeight();
     this.placeBeachBall();
 
     // Only show snow in December
+    const month = new Date().getMonth() + 1;
     if (month === 12) {
       this.initSnow();
     }
@@ -33,12 +36,16 @@ export default {
       window.location.reload();
     });
 
-    window.addEventListener('click', () => {
-      this.placeBeachBall();
+    window.addEventListener('click', (event) => {
+      if (event.target.tagName.toLowerCase() !== 'a') {
+        this.placeBeachBall();
+      }
     });
 
-    window.addEventListener('touchstart', () => {
-      this.placeBeachBall();
+    window.addEventListener('touchstart', (event) => {
+      if (event.target.tagName.toLowerCase() !== 'a') {
+        this.placeBeachBall();
+      }
     });
   },
 
@@ -62,29 +69,6 @@ export default {
 
       beachBall.style.left = `${randomX}px`;
       beachBall.style.top = `${randomY}px`;
-    },
-
-    // Check if images are loaded
-    onImagesLoaded(home, event) {
-      const images = home.getElementsByTagName('img');
-      let loaded = images.length;
-
-      for (let i = 0; i < images.length; i += 1) {
-        if (images[i].complete) {
-          loaded -= 1;
-        } else {
-          // eslint-disable-next-line
-          images[i].addEventListener('load', () => {
-            loaded -= 1;
-            if (loaded === 0) {
-              event();
-            }
-          });
-        }
-        if (loaded === 0) {
-          event();
-        }
-      }
     },
 
     // Initialize snowflakes

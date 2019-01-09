@@ -1,24 +1,63 @@
-<!-- Template -->
+<!-- TEMPLATE -->
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div id="app" class="app">
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
-<!-- Script -->
+<!-- SCRIPT -->
 <script>
-import bowser from 'bowser';
-
 export default {
   name: 'app',
 
   mounted() {
-    const app = document.querySelector('#app');
+    const app = document.querySelector('.app');
+    const container = document.querySelector('.container');
 
-    // Categorically exclude IE and Edge
-    if (bowser.name === 'Internet Explorer' || bowser.name === 'Microsoft Edge') {
-      app.classList.add('app--ie-edge');
-    }
+    // Smoothly fade in content after all images are loaded
+    this.onImagesLoaded(container, () => {
+      app.classList.add('app--ready');
+    });
+  },
+
+  methods: {
+    // Check if images are loaded
+    onImagesLoaded(container, event) {
+      const images = container.getElementsByTagName('img');
+      let loaded = images.length;
+
+      for (let i = 0; i < images.length; i += 1) {
+        if (images[i].complete) {
+          loaded -= 1;
+        } else {
+          // eslint-disable-next-line
+          images[i].addEventListener('load', () => {
+            loaded -= 1;
+            if (loaded === 0) {
+              event();
+            }
+          });
+        }
+        if (loaded === 0) {
+          event();
+        }
+      }
+    },
   },
 };
 </script>
+
+<!-- STYLE-->
+<style lang="scss">
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.4s linear;
+  }
+
+  .fade-enter,
+  .fade-leave-active {
+    opacity: 0
+  }
+</style>

@@ -1,22 +1,22 @@
-<!-- Template -->
+<!-- TEMPLATE -->
 <template>
-  <div class="home">
-    <img class="martin" src="../images/home/martin.jpg">
-
+  <div class="container">
     <img class="beach-ball" src="../images/home/beach-ball.png">
 
-    <span class="description description--martin">
+    <img class="martin" src="../images/home/martin.jpg">
+
+    <span class="description">
       <b>Hi, my name is Martin.</b>
       I'm an experienced Full Stack Web Developer by day and a passionate Liquid Drum & Bass DJ by night.
       I'm currently based in <a href="https://www.google.com/maps/place/Linz" target="_blank">Linz, Austria</a>.<br><br>
-      If you're interested in my work, have a look at some of the <a href="/projects">projects</a> I'm involved with.
+      If you're interested in my work, have a look at some of the <router-link :to="{ name: 'projects' }">projects</router-link> I'm involved with.
     </span>
 
     <span class="description description--browser">
       <b>Hi there.</b>
       It seems like you're using an old or poorly performing browser.
-      Why not treat yourself to the latest <a href="https://www.google.com/chrome/" target="_blank">Chrome</a>
-      or <a href="https://www.mozilla.org/en-US/" target="_blank">Firefox</a> and step into the future?
+      Why not treat yourself to the newest <a href="https://www.google.com/chrome" target="_blank">Chrome</a>
+      or <a href="https://www.mozilla.org/en-US" target="_blank">Firefox</a> and step into the future?
     </span>
 
     <div class="icons">
@@ -59,10 +59,10 @@
   </div>
 </template>
 
-<!-- Script -->
+<!-- SCRIPT -->
 <script src="../scripts/home.js" />
 
-<!-- Style -->
+<!-- STYLE-->
 <style lang="scss">
-  @import "../styles/home.scss";
+  @import "../main.scss";
 </style>

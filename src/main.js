@@ -1,9 +1,38 @@
 import Vue from 'vue';
-import router from './router';
+import VueRouter from 'vue-router';
 
 import App from './App.vue';
+import Home from './views/Home.vue';
+import Projects from './views/Projects.vue';
+import FourOhFour from './views/FourOhFour.vue';
 
 Vue.config.productionTip = false;
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+  mode: 'history',
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: Home,
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: Projects,
+    },
+    {
+      path: '/404',
+      name: 'four-oh-four',
+      component: FourOhFour,
+    },
+    {
+      path: '*',
+      redirect: '/404',
+    },
+  ],
+});
 
 // eslint-disable-next-line no-new
 new Vue({

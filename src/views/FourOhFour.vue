@@ -1,16 +1,26 @@
-<!-- Template -->
+<!-- TEMPLATE -->
 <template>
-  <div class="fourohfour">
+  <div class="container">
+    <img class="beach-ball" src="../images/home/beach-ball.png">
+
     <span class="description">
-      <b>404</b>
+      <b>Four-Oh-Four!</b>
+      Unfortunately, this seems to be a dead end. Why not go back to the <router-link :to="{ name: 'home' }">start</router-link>?
+    </span>
+
+    <span class="description description--browser">
+      <b>Hi there.</b>
+      It seems like you're using an old or poorly performing browser.
+      Why not treat yourself to the newest <a href="https://www.google.com/chrome" target="_blank">Chrome</a>
+      or <a href="https://www.mozilla.org/en-US" target="_blank">Firefox</a> and step into the future?
     </span>
   </div>
 </template>
 
-<!-- Script -->
+<!-- SCRIPT -->
 <script src="../scripts/fourohfour.js" />
 
-<!-- Style -->
+<!-- STYLE-->
 <style lang="scss">
-  @import "../styles/fourohfour.scss";
+  @import "../main.scss";
 </style>
