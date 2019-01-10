@@ -1,9 +1,11 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container">
-    <img class="beach-ball" src="../images/home/beach-ball.png">
+    <img class="beach-ball" src="../assets/images/home/beach-ball.png">
 
-    <img class="martin" src="../images/home/martin.jpg">
+    <img class="martin" src="../assets/images/home/martin.jpg">
+
+    <!-- eslint-disable max-len -->
 
     <span class="description">
       <b>Hi, my name is Martin.</b>
@@ -19,50 +21,60 @@
       or <a href="https://www.mozilla.org/en-US" target="_blank">Firefox</a> and step into the future?
     </span>
 
+    <!-- eslint-enable max-len -->
+
     <div class="icons">
       <a href="/documents/Martin_Hellwagner_CV.pdf" target="_blank" class="icon icon--first">
-        <img src="../images/home/icon-cv.svg" title="Curriculum Vitae">
+        <img src="../assets/images/home/icon-cv.svg" title="Curriculum Vitae">
       </a>
       <a href="mailto:martin.hellwagner@gmail.com?subject=Hi%20there" target="_blank" class="icon">
-        <img src="../images/home/icon-mail.png" title="Mail">
+        <img src="../assets/images/home/icon-mail.png" title="Mail">
       </a>
       <a href="https://www.linkedin.com/in/martinhellwagner" target="_blank" class="icon">
-        <img src="../images/home/icon-linkedin.svg" title="LinkedIn">
+        <img src="../assets/images/home/icon-linkedin.svg" title="LinkedIn">
       </a>
       <a href="https://github.com/martinhellwagner" target="_blank" class="icon" width="80px" height="80px">
-        <img src="../images/home/icon-github.svg" title="Github">
+        <img src="../assets/images/home/icon-github.svg" title="Github">
       </a>
       <a href="https://www.facebook.com/martin.hellwagner" target="_blank" class="icon">
-        <img src="../images/home/icon-facebook.svg" title="Facebook (Martin Hellwagner)">
+        <img src="../assets/images/home/icon-facebook.svg" title="Facebook (Martin Hellwagner)">
       </a>
       <a href="https://www.facebook.com/heyinfrasonic" target="_blank" class="icon">
-        <img src="../images/home/icon-facebook.svg" title="Facebook (Infrasonic)">
+        <img src="../assets/images/home/icon-facebook.svg" title="Facebook (Infrasonic)">
       </a>
       <a href="https://soundcloud.com/heyinfrasonic" target="_blank" class="icon">
-        <img src="../images/home/icon-soundcloud.svg" title="SoundCloud">
+        <img src="../assets/images/home/icon-soundcloud.svg" title="SoundCloud">
       </a>
       <a href="https://myconversationstation.tumblr.com" target="_blank" class="icon">
-        <img src="../images/home/icon-tumblr.svg" title="Tumblr">
+        <img src="../assets/images/home/icon-tumblr.svg" title="Tumblr">
       </a>
     </div>
 
     <div class="footer">
       <span>Made with</span>
       <a href="https://www.jasonmraz.com/store/15712/know-lp?category=music/vinyl" target="_blank" class="heart">
-        <img src="../images/home/footer-heart.svg">
+        <img src="../assets/images/home/footer-heart.svg">
       </a>
       <span>and</span>
       <a href="https://vuejs.org" target="_blank" class="vue">
-        <img src="../images/home/footer-vue.svg">
+        <img src="../assets/images/home/footer-vue.svg">
       </a>
     </div>
   </div>
 </template>
 
 <!-- SCRIPT -->
-<script src="../scripts/home.js" />
+<script>
+export default {
+  name: 'home',
+
+  mounted() {
+    this.init();
+  },
+};
+</script>
 
 <!-- STYLE-->
 <style lang="scss">
-  @import "../main.scss";
+  @import "../assets/style.scss";
 </style>

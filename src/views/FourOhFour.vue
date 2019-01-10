@@ -1,7 +1,7 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container">
-    <img class="beach-ball" src="../images/home/beach-ball.png">
+    <img class="beach-ball" src="../assets/images/home/beach-ball.png">
 
     <span class="description">
       <b>Four-Oh-Four!</b>
@@ -18,9 +18,17 @@
 </template>
 
 <!-- SCRIPT -->
-<script src="../scripts/fourohfour.js" />
+<script>
+export default {
+  name: 'four-oh-four',
+
+  mounted() {
+    this.init();
+  },
+};
+</script>
 
 <!-- STYLE-->
 <style lang="scss">
-  @import "../main.scss";
+  @import "../assets/style.scss";
 </style>

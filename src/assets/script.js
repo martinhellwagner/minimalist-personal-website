@@ -11,45 +11,47 @@ const coordinates = [];
 const movement = [];
 
 export default {
-  name: 'fourohfour',
-
-  mounted() {
-    const container = document.querySelector('.container');
-
-    // Categorically exclude IE and Edge
-    if (bowser.name === 'Internet Explorer' || bowser.name === 'Microsoft Edge') {
-      container.classList.add('container--ie-edge');
-      container.classList.remove('container--scrollable');
-    }
-
-    this.calculateHeight();
-    this.placeBeachBall();
-
-    // Only show snow in December
-    const month = new Date().getMonth() + 1;
-    if (month === 12) {
-      this.initSnow();
-    }
-
-    // Event listeners
-    window.addEventListener('orientationchange', () => {
-      window.location.reload();
-    });
-
-    window.addEventListener('click', (event) => {
-      if (event.target.tagName.toLowerCase() !== 'a') {
-        this.placeBeachBall();
-      }
-    });
-
-    window.addEventListener('touchstart', (event) => {
-      if (event.target.tagName.toLowerCase() !== 'a') {
-        this.placeBeachBall();
-      }
-    });
-  },
-
   methods: {
+    init() {
+      const container = document.querySelector('.container');
+  
+      // Categorically exclude IE and Edge
+      if (bowser.name === 'Internet Explorer' || bowser.name === 'Microsoft Edge') {
+        container.classList.add('container--ie-edge');
+        container.classList.remove('container--scrollable');
+      }
+
+      // Only do certain things when container is not scrollable
+      if (!container.classList.contains('container--scrollable')) {
+        this.calculateHeight();
+        this.placeBeachBall();
+    
+        // Only show snow in December
+        const month = new Date().getMonth() + 1;
+        if (month === 1) {
+            this.initSnow();
+        }
+    
+        // Event listeners
+        window.addEventListener('click', (event) => {
+            if (event.target.tagName.toLowerCase() !== 'a') {
+            this.placeBeachBall();
+            }
+        });
+    
+        window.addEventListener('touchstart', (event) => {
+            if (event.target.tagName.toLowerCase() !== 'a') {
+            this.placeBeachBall();
+            }
+        });
+      }
+
+      // Event listener
+      window.addEventListener('orientationchange', () => {
+          window.location.reload();
+      });
+    },
+    
     // Workaround for inconsistent height of mobile browsers
     calculateHeight() {
       document.body.style.setProperty('--windowHeight', `${window.innerHeight}px`);
