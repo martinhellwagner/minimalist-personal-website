@@ -11,24 +11,25 @@ export default {
         container.classList.remove('container--scrollable');
       }
 
-      // Only do certain things when container is not scrollable
-      if (!container.classList.contains('container--scrollable')) {
-        this.calculateHeight();
-        this.placeBeachBall();
-
-        // Event listeners
-        window.addEventListener('click', () => {
-          this.placeBeachBall();
-        });
-
-        window.addEventListener('touchstart', () => {
-          this.placeBeachBall();
-        });
-      }
+      this.calculateHeight();
+      this.placeBeachBall();
 
       // Event listener
       window.addEventListener('orientationchange', () => {
         window.location.reload();
+      });
+
+      // Event listeners
+      window.addEventListener('click', () => {
+        if (event.target.tagName.toLowerCase() !== 'a') {
+          this.placeBeachBall();
+        }
+      });
+
+      window.addEventListener('touchstart', () => {
+        if (event.target.tagName.toLowerCase() !== 'a') {
+          this.placeBeachBall();
+        }
       });
     },
 
