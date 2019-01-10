@@ -90,9 +90,9 @@ export default {
           snowflakes[i].style.opacity = 0.75;
         }
 
-        coordinates[i] += position[i] / 2;
+        coordinates[i] += position[i];
 
-        snowflakes[i].y += snowflakes[i].sink / 4;
+        snowflakes[i].y += snowflakes[i].sink / 2;
         snowflakes[i].style.left = `${snowflakes[i].x + (movement[i] * Math.sin(coordinates[i]))}px`;
         snowflakes[i].style.top = `${snowflakes[i].y}px`;
 
@@ -104,7 +104,7 @@ export default {
 
       setTimeout(() => {
         this.moveSnow(numberSnowflakes);
-      }, 20);
+      }, 50);
     },
   },
 };
