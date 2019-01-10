@@ -12,25 +12,23 @@ export default {
       }
 
       this.calculateHeight();
-      this.placeBeachBall();
 
-      // Event listener
-      window.addEventListener('orientationchange', () => {
-        window.location.reload();
-      });
+      // Only do certain things when container is not scrollable
+      if (!container.classList.contains('container--scrollable')) {
+        this.placeBeachBall();
 
-      // Event listeners
-      window.addEventListener('click', (event) => {
-        if (event.target.tagName.toLowerCase() !== 'a') {
-          this.placeBeachBall();
-        }
-      });
+        window.addEventListener('click', (event) => {
+          if (event.target.tagName.toLowerCase() !== 'a') {
+            this.placeBeachBall();
+          }
+        });
 
-      window.addEventListener('touchstart', (event) => {
-        if (event.target.tagName.toLowerCase() !== 'a') {
-          this.placeBeachBall();
-        }
-      });
+        window.addEventListener('touchstart', (event) => {
+          if (event.target.tagName.toLowerCase() !== 'a') {
+            this.placeBeachBall();
+          }
+        });
+      }
     },
 
     // Workaround for inconsistent height of mobile browsers

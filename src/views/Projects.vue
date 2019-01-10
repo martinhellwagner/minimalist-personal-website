@@ -26,20 +26,6 @@
 <!-- SCRIPT -->
 <script>
 export default {
-  mounted() {
-    const beachBall = document.querySelector('.beach-ball');
-    beachBall.style.opacity = 0;
-  },
-  destroyed() {
-    const beachBall = document.querySelector('.beach-ball');
-    beachBall.style.opacity = 1;
-  },
-};
-</script>
-
-<!-- SCRIPT -->
-<script>
-export default {
   name: 'projects',
 
   mounted() {
