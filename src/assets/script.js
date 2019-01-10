@@ -20,13 +20,13 @@ export default {
       });
 
       // Event listeners
-      window.addEventListener('click', () => {
+      window.addEventListener('click', (event) => {
         if (event.target.tagName.toLowerCase() !== 'a') {
           this.placeBeachBall();
         }
       });
 
-      window.addEventListener('touchstart', () => {
+      window.addEventListener('touchstart', (event) => {
         if (event.target.tagName.toLowerCase() !== 'a') {
           this.placeBeachBall();
         }
