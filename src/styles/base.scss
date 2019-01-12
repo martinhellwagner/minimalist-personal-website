@@ -24,6 +24,7 @@ $breakpoint-max: 1200;
 // STYLES
 body {
   width: 100vw;
+  height: var(--windowHeight);
   margin: 0;
   position: relative;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

@@ -37,6 +37,7 @@ export default {
 
     // Workaround for inconsistent height of mobile browsers
     calculateHeight(container) {
+      document.body.style.setProperty('--windowHeight', `${window.innerHeight}px`);
       container.style.setProperty('--windowHeight', `${window.innerHeight}px`);
     },
 
