@@ -35,6 +35,12 @@ const router = new VueRouter({
       path: '*',
       redirect: '/404',
     },
+    {
+      path: '/jasmin',
+      beforeEnter() {
+        window.location = 'https://www.facebook.com/jasmin.wagner.756'
+      }
+    },
   ],
 });
 
