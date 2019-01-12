@@ -38,8 +38,8 @@ const router = new VueRouter({
     {
       path: '/jasmin',
       beforeEnter() {
-        window.location = 'https://www.facebook.com/jasmin.wagner.756'
-      }
+        window.location = 'https://www.facebook.com/jasmin.wagner.756';
+      },
     },
   ],
 });
