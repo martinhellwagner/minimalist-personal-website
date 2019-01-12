@@ -1,7 +1,8 @@
 <!-- TEMPLATE -->
 <template>
   <div id="app" class="app">
-    <transition name="fade" mode="out-in">
+    <!-- eslint-disable-next-line max-len -->
+    <transition name="transition" mode="out-in" appear v-on:enter="enter" v-on:leave="leave" v-bind:css="false">
       <router-view></router-view>
     </transition>
   </div>
@@ -9,16 +10,3 @@
 
 <!-- SCRIPT -->
 <script src="./scripts/app.js" />
-
-<!-- STYLE-->
-<style lang="scss">
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity 0.5s linear;
-  }
-
-  .fade-enter,
-  .fade-leave-active {
-    opacity: 0
-  }
-</style>

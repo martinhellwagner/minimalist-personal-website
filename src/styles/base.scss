@@ -45,6 +45,12 @@ body {
   position: relative;
   min-height: var(--windowHeight);
   width: 100%;
+  opacity: 0;
+  transition: opacity 300ms linear; // Note that the same value needs to be set in Javascript
+
+  &--ready {
+    opacity: 1;
+  }
 
   // Hide content based on browser
   &:not(.container--ie-edge) .description--browser {
@@ -57,7 +63,7 @@ body {
 }
 
 .beach-ball {
-  position: absolute;
+  position: fixed;
   z-index: 21;
 
   @include fluidSizes(width, 28, 40);
@@ -87,6 +93,10 @@ body {
 
   &:hover {
     animation-play-state: running;
+  }
+
+  &--hidden {
+    display: none;
   }
 }
 
