@@ -56,6 +56,10 @@
     @include fluidSizes(margin-top, 20, 40);
     @include fluidSizes(font-size, 16, 24);
 
+    .description--project {
+      margin: 0;
+    }
+
     img {
       width: 100%;
     }

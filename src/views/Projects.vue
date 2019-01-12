@@ -8,56 +8,56 @@
     <div class="projects">
       <div class="project">
         <a href="https://fredmansky.at" target="_blank">
-          <span class="description">fredmansky.at</span>
+          <span class="description description--project">fredmansky.at</span>
           <img src="../images/projects/fredmansky.png">
         </a>
       </div>
 
       <div class="project">
         <a href="https://www.dynatrace.com" target="_blank">
-          <span class="description">dynatrace.com</span>
+          <span class="description description--project">dynatrace.com</span>
           <img src="../images/projects/dynatrace.png">
         </a>
       </div>
 
       <div class="project">
         <a href="https://neubau-eyewear.com" target="_blank">
-          <span class="description">neubau-eyewear.com</span>
+          <span class="description description--project">neubau-eyewear.com</span>
           <img src="../images/projects/neubau-eyewear.png">
         </a>
       </div>
 
       <div class="project">
         <a href="https://www.karriere.at/blog" target="_blank">
-          <span class="description">karriere.at/blog</span>
+          <span class="description description--project">karriere.at/blog</span>
           <img src="../images/projects/karriere-blog.png">
         </a>
       </div>
 
       <div class="project">
         <a href="https://www.karriere.at/hr" target="_blank">
-          <span class="description">karriere.at/hr</span>
+          <span class="description description--project">karriere.at/hr</span>
           <img src="../images/projects/karriere-hr.png">
         </a>
       </div>
 
       <div class="project">
         <a href="https://listentoleena.com" target="_blank">
-          <span class="description">listentoleena.com</span>
+          <span class="description description--project">listentoleena.com</span>
           <img src="../images/projects/listentoleena.png">
         </a>
       </div>
 
       <div class="project">
         <a href="https://kusser.com" target="_blank">
-          <span class="description">kusser.com</span>
+          <span class="description description--project">kusser.com</span>
           <img src="../images/projects/kusser.png">
         </a>
       </div>
 
       <div class="project">
         <a href="https://talentor.com" target="_blank">
-          <span class="description">talentor.com</span>
+          <span class="description description--project">talentor.com</span>
           <img src="../images/projects/talentor.png">
         </a>
       </div>

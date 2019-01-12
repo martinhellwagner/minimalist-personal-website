@@ -14,7 +14,7 @@
         I'm currently based in <a href="https://www.google.com/maps/place/Linz" target="_blank">Linz, Austria</a>.
       </span>
       <span class="optional">
-        <br>If you're interested in my work, have a look at some of the <router-link :to="{ name: 'projects' }">projects</router-link> I'm involved with.
+        <br>If you're interested in my work, have a look at some of the <router-link :to="{ name: 'projects' }">projects</router-link> I'm involved in.
       </span>
     </div>
 

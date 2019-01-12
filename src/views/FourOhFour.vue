@@ -7,7 +7,7 @@
 
     <div class="description">
       <b>Four-Oh-Four!</b>
-      Unfortunately, this seems to be a dead end. Why not go back to the <router-link :to="{ name: 'home' }">start</router-link>?
+      Unfortunately, this seems to be a dead end. Why not go <router-link :to="{ name: 'home' }">back to the start</router-link>?
     </div>
 
     <div class="description description--browser">
