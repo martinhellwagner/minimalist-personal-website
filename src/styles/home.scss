@@ -1,0 +1,100 @@
+@import "./base.scss";
+
+.martin {
+  // Fixes for landscape mode
+  @include fluidSizes(width, 120, 160);
+
+  @media screen and (max-height: #{$breakpoint-min + "px"}) {
+    width: 120px;
+  }
+
+  // Actual size
+  @media screen and (min-height: #{$breakpoint-small + "px"}) {
+    @include fluidSizes(width, 120, 200);
+  }
+}
+
+.icons {
+  display: flex;
+
+  // Fixes for landscape mode
+  @include fluidSizes(height, 28, 40);
+
+  @media screen and (max-width: #{$breakpoint-min + "px"}), screen and (max-height: #{$breakpoint-min + "px"}) {
+    height: 26px;
+  }
+
+  // Actual size
+  @media screen and (min-height: #{$breakpoint-small + "px"}) {
+    @include fluidSizes(margin-bottom, 40, 80);
+  }
+
+  .icon {
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+
+    @include fluidSizes(margin-right, 12, 25);
+
+    // Fixes for landscape mode
+    @include fluidSizes(width, 28, 40);
+
+    @media screen and (max-width: #{$breakpoint-min + "px"}), screen and (max-height: #{$breakpoint-min + "px"}) {
+      width: 26px;
+    }
+
+    &--first {
+      @include fluidSizes(margin-left, 12, 25);
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.description .optional {
+  display: block;
+
+  // Fix for landscape mode
+  @media screen and (orientation: landscape) and (max-height: #{$breakpoint-small + "px"}) {
+    display: none;
+  }
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+
+  // Fixs for landscape mode
+  @media screen and (max-height: 600px) {
+    display: none;
+  }
+
+  span {
+    @include fluidSizes(font-size, 12, 16);
+    @include fluidSizes(line-height, 12, 16);
+    @include fluidSizes(height, 12, 16);
+  }
+
+  .heart,
+  .vue {
+    display: inherit;
+    @include fluidSizes(height, 12, 16);
+    margin-left: 5px;
+    margin-right: 5px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .vue {
+    padding-top: 1px;
+  }
+}

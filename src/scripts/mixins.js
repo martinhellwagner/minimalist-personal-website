@@ -11,7 +11,7 @@ export default {
         container.classList.remove('container--scrollable');
       }
 
-      this.calculateHeight();
+      this.calculateHeight(container);
 
       // Only do certain things when container is not scrollable
       if (!container.classList.contains('container--scrollable')) {
@@ -29,11 +29,15 @@ export default {
           }
         });
       }
+
+      window.addEventListener('orientationchange', () => {
+        window.location.reload();
+      });
     },
 
     // Workaround for inconsistent height of mobile browsers
-    calculateHeight() {
-      document.body.style.setProperty('--windowHeight', `${window.innerHeight}px`);
+    calculateHeight(container) {
+      container.style.setProperty('--windowHeight', `${window.innerHeight}px`);
     },
 
     // Randomise numbers in range

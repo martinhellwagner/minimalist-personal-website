@@ -8,13 +8,13 @@
 </template>
 
 <!-- SCRIPT -->
-<script src="./assets/app.js" />
+<script src="./scripts/app.js" />
 
 <!-- STYLE-->
 <style lang="scss">
   .fade-enter-active,
   .fade-leave-active {
-    transition: opacity 0.4s linear;
+    transition: opacity 0.5s linear;
   }
 
   .fade-enter,

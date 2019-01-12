@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Mixin from './assets/script';
+import Mixins from './scripts/mixins';
 
 import App from './App.vue';
 import Home from './views/Home.vue';
@@ -11,7 +11,7 @@ import FourOhFour from './views/FourOhFour.vue';
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter);
-Vue.mixin(Mixin);
+Vue.mixin(Mixins);
 
 const router = new VueRouter({
   mode: 'history',

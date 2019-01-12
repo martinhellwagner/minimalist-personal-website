@@ -1,25 +1,74 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container container--scrollable">
-    <span class="description">
-      <router-link :to="{ name: 'home' }">Home</router-link>
+    <router-link :to="{ name: 'home' }" class="closing-wrapper">
+      <div class="closing-icon"></div>
+    </router-link>
 
-      <img src="../assets/images/projects/dynatrace.png" style="width: 100%">
-      <img src="../assets/images/projects/fredmansky.png" style="width: 100%">
-      <img src="../assets/images/projects/karriere-blog.png" style="width: 100%">
-      <img src="../assets/images/projects/karriere-hr.png" style="width: 100%">
-      <img src="../assets/images/projects/kusser.png" style="width: 100%">
-      <img src="../assets/images/projects/listentoleena.png" style="width: 100%">
-      <img src="../assets/images/projects/neubau-eyewear.png" style="width: 100%">
-      <img src="../assets/images/projects/talentor.png" style="width: 100%">
-    </span>
+    <div class="projects">
+      <div class="project">
+        <a href="https://fredmansky.at" target="_blank">
+          <span class="name">fredmansky.at</span>
+          <img src="../images/projects/fredmansky.png">
+        </a>
+      </div>
 
-    <span class="description description--browser">
+      <div class="project">
+        <a href="https://www.dynatrace.com" target="_blank">
+          <span class="name">dynatrace.com</span>
+          <img src="../images/projects/dynatrace.png">
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="https://neubau-eyewear.com" target="_blank">
+          <span class="name">neubau-eyewear.com</span>
+          <img src="../images/projects/neubau-eyewear.png">
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="https://www.karriere.at/blog" target="_blank">
+          <span class="name">karriere.at/blog</span>
+          <img src="../images/projects/karriere-blog.png">
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="https://www.karriere.at/hr" target="_blank">
+          <span class="name">karriere.at/hr</span>
+          <img src="../images/projects/karriere-hr.png">
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="https://listentoleena.com" target="_blank">
+          <span class="name">listentoleena.com</span>
+          <img src="../images/projects/listentoleena.png">
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="https://kusser.com" target="_blank">
+          <span class="name">kusser.com</span>
+          <img src="../images/projects/kusser.png">
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="https://talentor.com" target="_blank">
+          <span class="name">talentor.com</span>
+          <img src="../images/projects/talentor.png">
+        </a>
+      </div>
+    </div>
+
+    <div class="description description--browser">
       <b>Hi there.</b>
       It seems like you're using an old or poorly performing browser.
       Why not treat yourself to the newest <a href="https://www.google.com/chrome" target="_blank">Chrome</a>
       or <a href="https://www.mozilla.org/en-US" target="_blank">Firefox</a> and step into the future?
-    </span>
+    </div>
   </div>
 </template>
 
@@ -36,5 +85,5 @@ export default {
 
 <!-- STYLE -->
 <style lang="scss">
-  @import "../assets/style.scss";
+  @import "../styles/projects.scss";
 </style>

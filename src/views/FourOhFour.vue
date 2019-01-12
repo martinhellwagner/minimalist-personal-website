@@ -5,17 +5,17 @@
 
     <!-- eslint-disable max-len -->
 
-    <span class="description">
+    <div class="description">
       <b>Four-Oh-Four!</b>
       Unfortunately, this seems to be a dead end. Why not go back to the <router-link :to="{ name: 'home' }">start</router-link>?
-    </span>
+    </div>
 
-    <span class="description description--browser">
+    <div class="description description--browser">
       <b>Hi there.</b>
       It seems like you're using an old or poorly performing browser.
       Why not treat yourself to the newest <a href="https://www.google.com/chrome" target="_blank">Chrome</a>
       or <a href="https://www.mozilla.org/en-US" target="_blank">Firefox</a> and step into the future?
-    </span>
+    </div>
 
     <!-- eslint-enable max-len -->
   </div>
@@ -34,5 +34,5 @@ export default {
 
 <!-- STYLE-->
 <style lang="scss">
-  @import "../assets/style.scss";
+  @import "../styles/base.scss";
 </style>

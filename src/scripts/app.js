@@ -1,4 +1,5 @@
 const breakpointMedium = 768;
+const breakpointMax = 1200;
 
 const snowflakes = [];
 const position = [];
@@ -9,55 +10,29 @@ export default {
   name: 'app',
 
   mounted() {
-    const app = document.querySelector('.app');
-    const container = document.querySelector('.container');
-
-    // Smoothly fade in content after all images are loaded
-    this.onImagesLoaded(container, () => {
-      app.classList.add('app--ready');
-    });
-
     // Only show snow in December
     const month = new Date().getMonth() + 1;
-    if (month === 1) {
+    if (month === 12) {
       this.initSnow();
     }
   },
 
   methods: {
-    // Check if images are loaded
-    onImagesLoaded(container, event) {
-      const images = container.getElementsByTagName('img');
-      let loaded = images.length;
-
-      for (let i = 0; i < images.length; i += 1) {
-        if (images[i].complete) {
-          loaded -= 1;
-        } else {
-          // eslint-disable-next-line
-          images[i].addEventListener('load', () => {
-            loaded -= 1;
-            if (loaded === 0) {
-              event();
-            }
-          });
-        }
-        if (loaded === 0) {
-          event();
-        }
-      }
-    },
-
     // Initialize snowflakes
     initSnow() {
       let minSize = 12;
       let maxSize = 24;
-      const numberSnowflakes = 50;
+      let numberSnowflakes = 20;
 
       // Responsive settings
       if (document.body.clientWidth >= breakpointMedium) {
         minSize = 16;
         maxSize = 32;
+        numberSnowflakes = 40;
+      }
+
+      if (document.body.clientWidth >= breakpointMax) {
+        numberSnowflakes = 60;
       }
 
       const size = maxSize - minSize;
@@ -96,7 +71,7 @@ export default {
         snowflakes[i].style.left = `${snowflakes[i].x + (movement[i] * Math.sin(coordinates[i]))}px`;
         snowflakes[i].style.top = `${snowflakes[i].y}px`;
 
-        if (snowflakes[i].y >= document.body.clientHeight) {
+        if (snowflakes[i].y >= window.innerHeight) {
           snowflakes[i].x = this.randomise(document.body.clientWidth - snowflakes[i].size);
           snowflakes[i].y = snowflakes[i].size * -1;
         }
