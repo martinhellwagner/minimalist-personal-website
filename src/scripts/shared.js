@@ -15,6 +15,9 @@ export default {
 
       // Only do certain things when container is not scrollable
       if (!container.classList.contains('container--scrollable')) {
+        document.body.style.setProperty('position', 'fixed');
+        document.body.style.setProperty('overflow', 'hidden');
+
         this.placeBeachBall();
 
         window.addEventListener('click', (event) => {
@@ -28,6 +31,9 @@ export default {
             this.placeBeachBall();
           }
         });
+      } else {
+        document.body.style.setProperty('position', 'relative');
+        document.body.style.setProperty('overflow', 'auto');
       }
 
       window.addEventListener('orientationchange', () => {

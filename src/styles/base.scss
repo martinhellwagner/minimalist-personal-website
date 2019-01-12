@@ -26,7 +26,6 @@ body {
   width: 100vw;
   height: var(--windowHeight);
   margin: 0;
-  position: relative;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -92,7 +91,7 @@ body {
 }
 
 .description {
-  width: 80vw;
+  width: 83vw;
   max-width: 650px;
   text-align: center;
   line-height: 1.5;

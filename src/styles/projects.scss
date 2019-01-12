@@ -6,11 +6,11 @@
   top: 0;
   right: 0;
 
-  @include fluidSizes(margin-top, 15, 30);
-  @include fluidSizes(margin-right, 15, 30);
+  @include fluidSizes(margin-top, 10, 20);
+  @include fluidSizes(margin-right, 10, 20);
 
-  @include fluidSizes(height, 15, 30);
-  @include fluidSizes(width, 15, 30);
+  @include fluidSizes(height, 20, 30);
+  @include fluidSizes(width, 20, 30);
 
   .closing-icon {
     position: relative;
@@ -43,7 +43,7 @@
 }
 
 .projects {
-  width: 80vw;
+  width: 77vw;
   max-width: 650px;
 
   @include fluidSizes(margin-top, 20, 40);
