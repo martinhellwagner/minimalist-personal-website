@@ -6,8 +6,8 @@
   top: 0;
   right: 0;
 
-  @include fluidSizes(margin-top, 10, 20);
-  @include fluidSizes(margin-right, 10, 20);
+  @include fluidSizes(margin-top, 5, 30);
+  @include fluidSizes(margin-right, 5, 30);
 
   @include fluidSizes(height, 20, 30);
   @include fluidSizes(width, 20, 30);
@@ -44,7 +44,7 @@
 
 .projects {
   width: 77vw;
-  max-width: 650px;
+  max-width: 656px;
 
   @include fluidSizes(margin-top, 20, 40);
   @include fluidSizes(margin-bottom, 20, 40);
@@ -57,6 +57,8 @@
     @include fluidSizes(font-size, 16, 24);
 
     .description--project {
+      width: 100%;
+      max-width: 100%;
       margin: 0;
     }
 

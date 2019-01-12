@@ -9,6 +9,9 @@
     <div class="description">
       <span class="mandatory">
         <b>Hi, my name is Martin.</b>
+      </span>
+      <span class="optional"><br></span>
+      <span class="mandatory">
         I'm an experienced Full Stack Web Developer by day and a passionate Liquid Drum & Bass DJ by night.
         I'm currently based in <a href="https://www.google.com/maps/place/Linz" target="_blank">Linz, Austria</a>.
       </span>
