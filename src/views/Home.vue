@@ -6,7 +6,6 @@
     <img class="martin" src="../images/home/martin.jpg">
 
     <!-- eslint-disable max-len -->
-
     <div class="description">
       <span class="mandatory">
         <b>Hi, my name is Martin.</b>
@@ -17,6 +16,7 @@
         <br>If you're interested in my work, have a look at some of the <router-link :to="{ name: 'projects' }">projects</router-link> I'm involved in.
       </span>
     </div>
+    <!-- eslint-enable max-len -->
 
     <div class="description description--browser">
       <b>Hi there.</b>
@@ -24,8 +24,6 @@
       Why not treat yourself to the newest <a href="https://www.google.com/chrome" target="_blank">Chrome</a>
       or <a href="https://www.mozilla.org/en-US" target="_blank">Firefox</a> and step into the future?
     </div>
-
-    <!-- eslint-enable max-len -->
 
     <div class="icons">
       <a href="/documents/Martin_Hellwagner_CV.pdf" target="_blank" class="icon icon--first">
