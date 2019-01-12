@@ -1,7 +1,7 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container">
-    <img class="beach-ball" src="../assets/images/home/beach-ball.png">
+    <img class="beach-ball" src="../images/home/beach-ball.png">
 
     <!-- eslint-disable max-len -->
 

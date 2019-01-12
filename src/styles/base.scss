@@ -60,10 +60,10 @@ body {
   position: absolute;
   z-index: 21;
 
-  // Fixes for landscape mode
   @include fluidSizes(width, 28, 40);
   @include fluidSizes(height, 28, 40);
 
+  // Exception for small breakpoints and landscape mode
   @media screen and (max-width: #{$breakpoint-min + "px"}), screen and (max-height: #{$breakpoint-min + "px"}) {
     width: 26px;
     height: 26px;
@@ -96,18 +96,21 @@ body {
   text-align: center;
   line-height: 1.5;
 
-  // Fixes for landscape mode
+  // Exception for small breakpoints and landscape mode
   @include fluidSizes(font-size, 16, 20);
   @include fluidSizes(margin-top, 20, 30);
   @include fluidSizes(margin-bottom, 20, 30);
 
+  // Exception for small breakpoints and landscape mode
   @media screen and (max-height: #{$breakpoint-min + "px"}) {
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
+  // Exception for small breakpoints and landscape mode
   @media screen and (min-height: 400px) {
+    font-size: 16px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
