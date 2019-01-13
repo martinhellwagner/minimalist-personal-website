@@ -12,14 +12,14 @@ To get started, you first need to make sure that you have the [Vue CLI](https://
 
 After all the packages are installed, you are ready to start the application. Simply call this command from the root directory in order to compile your code for development (why yes, hot reload is included):
 
-    yarn run serve
+    yarn serve
 
 If you want to get the project ready for production (i.e. compile and minify it), call this command from the root directory:
 
-    yarn run build
+    yarn build
 
 Last but not least, make sure the [Linter](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint) is happy with you by calling the following command from the root directory (if applicable, fixing is included for free):
 
-    yarn run lint
+    yarn lint
 
 That's about it. Happy hacking!
