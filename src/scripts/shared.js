@@ -52,7 +52,7 @@ export default {
         container.classList.add('container--ready');
         setTimeout(() => {
           done();
-        }, 400);
+        }, 300);
       });
     },
 
@@ -61,7 +61,7 @@ export default {
       container.classList.remove('container--ready');
       setTimeout(() => {
         done();
-      }, 400);
+      }, 300);
     },
 
     // Check if images are loaded
