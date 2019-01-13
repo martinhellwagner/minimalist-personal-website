@@ -54,6 +54,10 @@ body {
 
   &--ie-edge {
     height: 100vh;
+
+    .beach-ball {
+      display: none;
+    }
   }
 
   // Hide content based on browser
