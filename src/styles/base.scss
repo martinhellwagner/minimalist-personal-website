@@ -52,6 +52,10 @@ body {
     opacity: 1;
   }
 
+  &--ie-edge {
+    height: 100vh;
+  }
+
   // Hide content based on browser
   &:not(.container--ie-edge) .description--browser {
     display: none !important;
