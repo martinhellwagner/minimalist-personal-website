@@ -1,0 +1,158 @@
+// VARIABLES
+$blue: #345bfb;
+$lightBlue: #87cefa;
+
+$breakpoint-min: 320;
+$breakpoint-small: 568;
+$breakpoint-medium: 768;
+$breakpoint-large: 992;
+$breakpoint-max: 1200;
+
+// MIXINS
+@mixin fluidSizes($property, $min, $max) {
+  #{$property}: #{$min + "px"};
+
+  @media screen and (min-width: #{$breakpoint-min + "px"}) {
+    #{$property}: calc(#{$min + "px"} + (#{$max} - #{$min}) * (100vw - #{$breakpoint-min + "px"}) / (#{$breakpoint-max} - #{$breakpoint-min}));
+  }
+
+  @media screen and (min-width: #{$breakpoint-max + "px"}) {
+    #{$property}: #{$max + "px"};
+  }
+}
+
+// STYLES
+body {
+  width: 100vw;
+  height: var(--windowHeight);
+  margin: 0;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  ::selection {
+    background-color: $blue;
+    color: white;
+    text-shadow: none;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: var(--windowHeight);
+  width: 100%;
+  opacity: 0;
+  transition: opacity 400ms linear; // Note that the same value needs to be set in Javascript
+
+  &--ready {
+    opacity: 1;
+  }
+
+  // Hide content based on browser
+  &:not(.container--ie-edge) .description--browser {
+    display: none !important;
+  }
+
+  &--ie-edge *:not(.beach-ball):not(.description--browser):not(a):not(b) {
+    display: none !important;
+  }
+}
+
+.beach-ball {
+  position: fixed;
+  z-index: 21;
+  width: 26px;
+  height: 26px;
+
+  // Mobile first
+  @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
+    @include fluidSizes(width, 28, 40);
+    @include fluidSizes(height, 28, 40);
+  }
+
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+
+  @keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+  }
+
+  &:hover {
+    animation-play-state: running;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.description {
+  display: block;
+  width: 83vw;
+  max-width: 630px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  // Mobile first
+  @media screen and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
+    @include fluidSizes(font-size, 16, 20);
+    @include fluidSizes(margin-top, 20, 30);
+    @include fluidSizes(margin-bottom, 20, 30);
+  }
+
+  // Mobile first
+  @media screen and (min-height: 400px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  // Mobile first
+  @media screen and (min-height: #{$breakpoint-small + "px"}) {
+    @include fluidSizes(font-size, 16, 24);
+  }
+
+  // Mobile first
+  @media screen and (min-height: #{$breakpoint-medium + "px"}) {
+    @include fluidSizes(margin-top, 40, 60);
+    @include fluidSizes(margin-bottom, 40, 60);
+  }
+
+  .mandatory,
+  .optional {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.snowflake {
+  position: fixed;
+  font-family: inherit;
+  z-index: 2412;
+  cursor: default;
+  color: $lightBlue;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+a,
+a:hover,
+a:visited {
+  color: black;
+  text-decoration: underline;
+}

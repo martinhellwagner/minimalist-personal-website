@@ -1,0 +1,69 @@
+@import "./base.scss";
+
+.closing-icon-wrapper {
+  display: inherit;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  @include fluidSizes(margin-top, 5, 30);
+  @include fluidSizes(margin-right, 5, 30);
+
+  @include fluidSizes(height, 20, 30);
+  @include fluidSizes(width, 20, 30);
+
+  .closing-icon {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    margin: auto;
+    visibility: hidden;
+    background-color: black;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      visibility: visible;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: inherit;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.projects {
+  width: 77vw;
+  max-width: 656px;
+
+  @include fluidSizes(margin-top, 20, 40);
+  @include fluidSizes(margin-bottom, 20, 40);
+
+  .project {
+    text-align: center;
+    line-height: 1.5;
+
+    @include fluidSizes(margin-top, 20, 40);
+    @include fluidSizes(font-size, 16, 24);
+
+    .description--project {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
