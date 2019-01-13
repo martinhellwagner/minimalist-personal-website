@@ -47,7 +47,7 @@
   max-width: 656px;
 
   @include fluidSizes(margin-top, 30, 40);
-  @include fluidSizes(margin-bottom, 20, 50);
+  @include fluidSizes(margin-bottom, 35, 50);
 
   .project {
     text-align: center;
