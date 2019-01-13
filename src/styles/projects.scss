@@ -5,6 +5,11 @@
   position: fixed;
   top: 0;
   right: 0;
+  transition: transform 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 
   @include fluidSizes(margin-top, 5, 30);
   @include fluidSizes(margin-right, 5, 30);
