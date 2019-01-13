@@ -52,7 +52,7 @@ export default {
         container.classList.add('container--ready');
         setTimeout(() => {
           done();
-        }, 300);
+        }, 400);
       });
     },
 
@@ -61,7 +61,7 @@ export default {
       container.classList.remove('container--ready');
       setTimeout(() => {
         done();
-      }, 300);
+      }, 400);
     },
 
     // Check if images are loaded
@@ -103,10 +103,10 @@ export default {
       const randomX = this.randomise(document.body.clientWidth - beachBall.clientWidth);
       const randomY = this.randomise(document.body.clientHeight - beachBall.clientHeight);
 
-      // eslint-disable no-param-reassign
+      // eslint-disable-next-line no-param-reassign
       beachBall.style.left = `${randomX}px`;
+      // eslint-disable-next-line no-param-reassign
       beachBall.style.top = `${randomY}px`;
-      // eslint-enable no-param-reassign
     },
   },
 };

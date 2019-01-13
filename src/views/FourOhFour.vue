@@ -23,7 +23,7 @@
 <!-- SCRIPT -->
 <script>
 export default {
-  name: 'four-oh-four',
+  name: 'FourOhFour',
 
   mounted() {
     this.init();

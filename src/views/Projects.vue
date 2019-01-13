@@ -1,7 +1,9 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container container--scrollable">
-    <router-link :to="{ name: 'home' }" class="closing-wrapper">
+    <img class="beach-ball" src="../images/home/beach-ball.png" style="display: none">
+
+    <router-link :to="{ name: 'home' }" class="closing-icon-wrapper">
       <div class="closing-icon"></div>
     </router-link>
 
@@ -75,7 +77,7 @@
 <!-- SCRIPT -->
 <script>
 export default {
-  name: 'projects',
+  name: 'Projects',
 
   mounted() {
     this.init();

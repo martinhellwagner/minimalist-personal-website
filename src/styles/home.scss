@@ -1,15 +1,14 @@
 @import "./base.scss";
 
 .martin {
-  // Exception for small breakpoints and landscape mode
-  @include fluidSizes(width, 120, 160);
+  width: 120px;
 
-  // Exception for small breakpoints and landscape mode
-  @media screen and (max-height: #{$breakpoint-min + "px"}) {
-    width: 120px;
+  // Mobile first
+  @media screen and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
+    @include fluidSizes(width, 120, 160);
   }
 
-  // Actual size
+  // Mobile first
   @media screen and (min-height: #{$breakpoint-small + "px"}) {
     @include fluidSizes(width, 120, 200);
   }
@@ -17,30 +16,29 @@
 
 .icons {
   display: flex;
+  height: 26px;
+  margin-bottom: 0;
 
-  @include fluidSizes(height, 28, 40);
-  @include fluidSizes(margin-bottom, 40, 80);
-
-  // Exception for small breakpoints and landscape mode
-  @media screen and (max-width: #{$breakpoint-min + "px"}), screen and (max-height: #{$breakpoint-min + "px"}) {
-    height: 26px;
+  // Mobile first
+  @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
+    @include fluidSizes(height, 28, 40);
   }
 
-  // Exception for small breakpoints and landscape mode
-  @media screen and (max-height: #{$breakpoint-small + "px"}) {
-    margin-bottom: 0;
+  // Mobile first
+  @media screen and (min-height: #{$breakpoint-medium + "px"}) {
+    @include fluidSizes(margin-bottom, 40, 70);
   }
 
   .icon {
+    width: 26px;
     height: 100%;
     transition: transform 200ms ease-in-out;
 
-    @include fluidSizes(width, 28, 40);
     @include fluidSizes(margin-right, 12, 25);
-  
-    // Exception for small breakpoints and landscape mode
-    @media screen and (max-width: #{$breakpoint-min + "px"}), screen and (max-height: #{$breakpoint-min + "px"}) {
-      width: 26px;
+
+    // Mobile first
+    @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
+      @include fluidSizes(width, 28, 40);
     }
 
     &--first {
@@ -59,22 +57,22 @@
 }
 
 .description .optional {
-  display: block;
+  display: none;
 
-  // Fix for landscape mode
-  @media screen and (orientation: landscape) and (max-height: #{$breakpoint-small + "px"}) {
-    display: none;
+  // Mobile first
+  @media screen and (min-height: 500px) {
+    display: block;
   }
 }
 
 .footer {
-  display: flex;
+  display: none;
   position: absolute;
   bottom: 40px;
 
-  // Fix for landscape mode
-  @media screen and (max-height: #{$breakpoint-small + "px"}) {
-    display: none;
+  // Mobile first
+  @media screen and (min-height: #{$breakpoint-medium + "px"}) {
+    display: flex;
   }
 
   span {
