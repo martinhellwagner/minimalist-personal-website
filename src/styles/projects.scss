@@ -45,8 +45,8 @@
 .projects {
   width: 75vw;
   max-width: 656px;
-  margin-top: 30px;
 
+  @include fluidSizes(margin-top, 30, 40);
   @include fluidSizes(margin-bottom, 20, 50);
 
   .project {
