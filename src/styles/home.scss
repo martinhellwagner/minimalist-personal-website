@@ -3,6 +3,8 @@
 .martin {
   width: 120px;
 
+  @include fluidSizes(border-radius, 5.5, 6);
+
   // Mobile first
   @media screen and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
     @include fluidSizes(width, 120, 160);
