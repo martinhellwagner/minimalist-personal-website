@@ -26,28 +26,28 @@
 
     <div class="icons">
       <a href="/documents/Martin_Hellwagner_CV.pdf" target="_blank" class="icon icon--first">
-        <img src="../images/home/icon-cv.svg" title="Curriculum Vitae">
+        <img src="../images/home/icon-1.svg" title="Curriculum Vitae">
       </a>
       <a href="mailto:martin.hellwagner@gmail.com?subject=Hi%20there" target="_blank" class="icon">
-        <img src="../images/home/icon-mail.png" title="Mail">
+        <img src="../images/home/icon-2.png" title="Mail">
       </a>
       <a href="https://www.linkedin.com/in/martinhellwagner" target="_blank" class="icon">
-        <img src="../images/home/icon-linkedin.svg" title="LinkedIn">
+        <img src="../images/home/icon-3.svg" title="Linkedin">
       </a>
       <a href="https://github.com/martinhellwagner" target="_blank" class="icon" width="80px" height="80px">
-        <img src="../images/home/icon-github.svg" title="Github">
+        <img src="../images/home/icon-4.svg" title="Github">
       </a>
       <a href="https://www.facebook.com/martin.hellwagner" target="_blank" class="icon">
-        <img src="../images/home/icon-facebook.svg" title="Facebook (Martin Hellwagner)">
+        <img src="../images/home/icon-5.svg" title="Facebook (Martin Hellwagner)">
       </a>
       <a href="https://www.facebook.com/heyinfrasonic" target="_blank" class="icon">
-        <img src="../images/home/icon-facebook.svg" title="Facebook (Infrasonic)">
+        <img src="../images/home/icon-5.svg" title="Facebook (Infrasonic)">
       </a>
       <a href="https://soundcloud.com/heyinfrasonic" target="_blank" class="icon">
-        <img src="../images/home/icon-soundcloud.svg" title="SoundCloud">
+        <img src="../images/home/icon-6.svg" title="SoundCloud">
       </a>
       <a href="https://myconversationstation.tumblr.com" target="_blank" class="icon">
-        <img src="../images/home/icon-tumblr.svg" title="Tumblr">
+        <img src="../images/home/icon-7.svg" title="Tumblr">
       </a>
     </div>
 
