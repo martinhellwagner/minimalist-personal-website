@@ -13,7 +13,9 @@
       </span>
       <span class="optional">
         <br>If you're interested in what I do, have a look at some of the <router-link :to="{ name: 'projects' }">projects</router-link>
-        that I'm involved in while working at <a href="https://fredmansky.at" target="_blank">Fredmansky</a>.
+        that I'm involved in while working at
+        <a href="https://fredmansky.at" target="_blank">Fredmansk</a>
+        <a href="https://fredmansky.at" target="_blank" class="no-underline">y</a>.
       </span>
     </div>
     <!-- eslint-enable max-len -->

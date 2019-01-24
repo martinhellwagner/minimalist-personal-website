@@ -164,4 +164,8 @@ a:hover,
 a:visited {
   color: black;
   text-decoration: underline;
+
+  &.no-underline {
+    text-decoration: none;
+  }
 }
