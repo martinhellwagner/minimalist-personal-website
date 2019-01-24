@@ -12,7 +12,8 @@
         I'm currently based in <a href="https://www.google.com/maps/place/Linz,+Austria/@48.2950437,14.2573657,12z" target="_blank">Linz, Austria</a>.
       </span>
       <span class="optional">
-        <br>If you're interested in my work, have a look at some of the <router-link :to="{ name: 'projects' }">projects</router-link> that I'm involved in.
+        <br>If you're interested in my work, have a look at some of the <router-link :to="{ name: 'projects' }">projects</router-link>
+        that I'm involved in as part of <a href="https://fredmansky.at" target="_blank">Fredmansky</a>.
       </span>
     </div>
     <!-- eslint-enable max-len -->
