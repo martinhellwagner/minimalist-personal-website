@@ -138,18 +138,14 @@ body {
 
   // Mobile first
   @media screen and (min-height: #{$breakpoint-medium + "px"}) {
-    @include fluidSizes(margin-top, 40, 60);
-    @include fluidSizes(margin-bottom, 40, 60);
+    @include fluidSizes(margin-top, 40, 80);
+    @include fluidSizes(margin-bottom, 40, 80);
   }
 
   .mandatory,
   .optional {
     width: 100%;
     max-width: 100%;
-  }
-
-  .optional {
-    display: none;
   }
 }
 

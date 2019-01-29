@@ -5,7 +5,7 @@ import Mixins from './scripts/shared';
 
 import App from './App.vue';
 import Home from './views/Home.vue';
-import Projects from './views/Projects.vue';
+// import Projects from './views/Projects.vue';
 import FourOhFour from './views/FourOhFour.vue';
 
 Vue.config.productionTip = false;
@@ -21,11 +21,13 @@ const router = new VueRouter({
       name: 'home',
       component: Home,
     },
+    /*
     {
       path: '/projects',
       name: 'projects',
       component: Projects,
     },
+    */
     {
       path: '/404',
       name: 'four-oh-four',

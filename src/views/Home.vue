@@ -11,12 +11,14 @@
         <b>Hi, my name is Martin.</b> I'm an experienced Full Stack Web Developer by day and a passionate Liquid Drum & Bass DJ by night.
         I'm currently based in <a href="https://www.google.com/maps/place/Linz,+Austria/@48.2950437,14.2573657,12z" target="_blank">Linz, Austria</a>.
       </span>
+      <!--
       <span class="optional">
         <br>If you're interested in what I do, have a look at some of the <router-link :to="{ name: 'projects' }">projects</router-link>
         that I'm involved in while working at
         <a href="https://fredmansky.at" target="_blank">Fredmansk</a>
         <a href="https://fredmansky.at" target="_blank" class="no-underline">y</a>.
       </span>
+      -->
     </div>
     <!-- eslint-enable max-len -->
 
