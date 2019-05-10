@@ -45,10 +45,10 @@
       <a href="https://www.facebook.com/martin.hellwagner" target="_blank" class="icon">
         <img src="../images/home/icon-5.svg" title="Facebook (Martin Hellwagner)">
       </a>
-      <a href="https://www.facebook.com/heyinfrasonic" target="_blank" class="icon">
+      <a href="https://www.facebook.com/infrasonicsound" target="_blank" class="icon">
         <img src="../images/home/icon-5.svg" title="Facebook (Infrasonic)">
       </a>
-      <a href="https://soundcloud.com/heyinfrasonic" target="_blank" class="icon">
+      <a href="https://soundcloud.com/infrasonicsound" target="_blank" class="icon">
         <img src="../images/home/icon-6.svg" title="SoundCloud">
       </a>
       <a href="https://myconversationstation.tumblr.com" target="_blank" class="icon">
