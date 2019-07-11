@@ -18,17 +18,25 @@ export default {
         this.placeBeachBall(beachBall);
       }
 
-      window.addEventListener('click', (event) => {
-        // Don't place beach ball randomly when clicking on link
-        if (beachBall && event.target.tagName.toLowerCase() !== 'a') {
-          this.placeBeachBall(beachBall);
+      container.addEventListener('click', (event) => {
+        if (event.target.className !== 'clickable') {
+          event.preventDefault();
+
+          // Don't place beach ball randomly when clicking on link
+          if (beachBall) {
+            this.placeBeachBall(beachBall);
+          }
         }
       });
 
-      window.addEventListener('touchstart', (event) => {
-        // Don't place beach ball randomly when clicking on link
-        if (beachBall && event.target.tagName.toLowerCase() !== 'a') {
-          this.placeBeachBall(beachBall);
+      container.addEventListener('touchstart', (event) => {
+        if (event.target.className !== 'clickable') {
+          event.preventDefault();
+
+          // Don't place beach ball randomly when clicking on link
+          if (beachBall) {
+            this.placeBeachBall(beachBall);
+          }
         }
       });
 
