@@ -1,4 +1,5 @@
 import bowser from 'bowser';
+import lozad from 'lozad';
 
 export default {
   methods: {
@@ -12,6 +13,7 @@ export default {
         container.classList.remove('container--scrollable');
       }
 
+      this.lazyLoadImages(container);
       this.calculateHeight(container);
 
       if (beachBall) {
@@ -56,12 +58,10 @@ export default {
 
     // Enter page through transition
     enter(container, done) {
-      this.checkImagesLoaded(container, () => {
-        container.classList.add('container--ready');
-        setTimeout(() => {
-          done();
-        }, 300);
-      });
+      container.classList.add('container--ready');
+      setTimeout(() => {
+        done();
+      }, 300);
     },
 
     // Leave page through transition
@@ -72,27 +72,22 @@ export default {
       }, 300);
     },
 
-    // Check if images are loaded
-    checkImagesLoaded(container, loaded) {
-      const images = container.getElementsByTagName('img');
-      let imagesToLoad = images.length;
+    // Lazy-load images
+    lazyLoadImages(container) {
+      const lazyLoadWrappers = container.querySelectorAll('[data-lazy-loaded]');
 
-      for (let i = 0; i < images.length; i += 1) {
-        if (images[i].complete) {
-          imagesToLoad -= 1;
-        } else {
-          // eslint-disable-next-line
-          images[i].addEventListener('load', () => {
-            imagesToLoad -= 1;
-            if (imagesToLoad === 0) {
-              loaded();
-            }
-          });
-        }
-        if (imagesToLoad === 0) {
-          loaded();
-        }
-      }
+      lazyLoadWrappers.forEach((wrapper) => {
+        const image = wrapper.querySelector('.image');
+        const placeholder = wrapper.querySelector('.placeholder');
+        const lazyLoadObserver = lozad(image);
+
+        lazyLoadObserver.observe();
+
+        image.addEventListener('load', () => {
+          image.classList.add('image--ready');
+          placeholder.classList.remove('placeholder--ready');
+        });
+      });
     },
 
     // Workaround for inconsistent height of mobile browsers
@@ -111,10 +106,8 @@ export default {
       const randomX = this.randomise(document.body.clientWidth - beachBall.clientWidth);
       const randomY = this.randomise(document.body.clientHeight - beachBall.clientHeight);
 
-      // eslint-disable-next-line no-param-reassign
-      beachBall.style.left = `${randomX}px`;
-      // eslint-disable-next-line no-param-reassign
-      beachBall.style.top = `${randomY}px`;
+      beachBall.style.left = `${randomX}px`; // eslint-disable-line no-param-reassign
+      beachBall.style.top = `${randomY}px`; // eslint-disable-line no-param-reassign
     },
   },
 };

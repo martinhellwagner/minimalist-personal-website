@@ -3,7 +3,10 @@
   <div class="container">
     <img class="beach-ball" src="../images/home/beach-ball.png">
 
-    <img class="martin" src="../images/home/martin.jpg">
+    <div class="martin" data-lazy-loaded="true">
+      <img class="image" src="../images/home/martin.jpg">
+      <div class="placeholder placeholder--ready" style="background-color: #f0f0f0" />
+    </div>
 
     <!-- eslint-disable max-len -->
     <div class="description">
