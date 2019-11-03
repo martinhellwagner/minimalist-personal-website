@@ -10,9 +10,9 @@ export default {
   name: 'App',
 
   mounted() {
-    // Only show snow in December
+    // Only show snow in December and January
     const month = new Date().getMonth() + 1;
-    if (month === 12) {
+    if (month === 12 || month === 1) {
       this.initSnow();
     }
   },
