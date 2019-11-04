@@ -4,7 +4,6 @@
   width: 120px;
   height: 120px;
   max-height: 200px;
-  position: relative;
 
   // Mobile first
   @media screen and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
@@ -16,22 +15,6 @@
   @media screen and (min-height: #{$breakpoint-small + "px"}) {
     @include fluidSizes(width, 120, 200);
     @include fluidSizes(height, 120, 200);
-  }
-
-  .image,
-  .placeholder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 300ms linear;
-
-    &--ready {
-      opacity: 1;
-    }
   }
 }
 

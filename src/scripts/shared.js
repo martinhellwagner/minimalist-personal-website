@@ -74,7 +74,7 @@ export default {
 
     // Lazy-load images
     lazyLoadImages(container) {
-      const lazyLoadWrappers = container.querySelectorAll('[data-lazy-loaded]');
+      const lazyLoadWrappers = container.querySelectorAll('.lazy-loaded');
 
       lazyLoadWrappers.forEach((wrapper) => {
         const image = wrapper.querySelector('.image');
