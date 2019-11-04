@@ -60,7 +60,7 @@
         -->
       </a>
       <a href="https://www.facebook.com/martin.hellwagner" target="_blank" class="icon">
-        <img class="image clickable" src="../images/home/icon-5.svg" title="Facebook (Martin Hellwagner)">
+        <img class="image clickable" src="../images/home/icon-5.svg" title="Facebook (Martin Hellwagner)"><!-- eslint-disable-line max-len -->
         <!--
         <div class="placeholder placeholder--ready" style="background-color: #3a589b" />
         -->
