@@ -5,6 +5,11 @@
   height: 120px;
   max-height: 200px;
 
+  &.lazy-loaded .image,
+  &.lazy-loaded .placeholder {
+    border-radius: 50%;
+  }
+
   // Mobile first
   @media screen and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
     @include fluidSizes(width, 120, 160);
@@ -53,9 +58,14 @@
       transform: scale(1.2);
     }
 
-    img {
+    .image {
       height: 100%;
       width: 100%;
+    }
+
+    &.lazy-loaded .image,
+    &.lazy-loaded .placeholder {
+      border-radius: 50%;
     }
   }
 }
@@ -88,16 +98,17 @@
   .heart,
   .vue {
     display: inherit;
+    @include fluidSizes(width, 12 / 28 * 32, 16 / 28 * 32);
     @include fluidSizes(height, 12, 16);
     margin-left: 5px;
     margin-right: 5px;
 
-    img {
+    .image {
       height: 100%;
     }
   }
 
   .vue {
-    padding-top: 1px;
+    margin-top: 1px;
   }
 }

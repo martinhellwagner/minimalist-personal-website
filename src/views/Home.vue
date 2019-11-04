@@ -69,12 +69,14 @@
 
     <div class="footer">
       <span>Made with</span>
-      <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart">
-        <img class="clickable" src="../images/home/footer-heart.svg">
+      <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart lazy-loaded">
+        <img class="image clickable" src="../images/home/footer-heart.svg">
+        <div class="placeholder placeholder--ready" style="background-color: #db4437" />
       </a>
       <span>and</span>
-      <a href="https://vuejs.org" target="_blank" class="vue">
-        <img class="clickable" src="../images/home/footer-vue.svg">
+      <a href="https://vuejs.org" target="_blank" class="vue lazy-loaded">
+        <img class="image clickable" src="../images/home/footer-vue.svg">
+        <div class="placeholder placeholder--ready" style="background-color: #41b883" />
       </a>
     </div>
   </div>
