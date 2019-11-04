@@ -18,7 +18,7 @@
       </span>
       <!--
       <span class="optional">
-        <br>If you're interested in what I do, have a look at some of the <router-link :to="{ name: 'projects' }">projects</router-link>
+        <br>If you're interested in what I do, have a look at some of the <router-link :to="{ name: 'projects' }" class="clickable">projects</router-link>
         that I'm involved in while working at
         <a class="clickable href="https://fredmansky.at" target="_blank">Fredmansk</a>
         <a class="clickable href="https://fredmansky.at" target="_blank" class="no-underline">y</a>.

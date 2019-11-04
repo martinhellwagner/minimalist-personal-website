@@ -21,7 +21,7 @@ export default {
       }
 
       container.addEventListener('click', (event) => {
-        if (event.target.className !== 'clickable') {
+        if (!event.target.classList.contains('clickable')) {
           event.preventDefault();
 
           // Don't place beach ball randomly when clicking on link
@@ -32,7 +32,7 @@ export default {
       });
 
       container.addEventListener('touchstart', (event) => {
-        if (event.target.className !== 'clickable') {
+        if (!event.target.classList.contains('clickable')) {
           event.preventDefault();
 
           // Don't place beach ball randomly when clicking on link

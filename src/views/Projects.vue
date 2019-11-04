@@ -3,7 +3,7 @@
   <div class="container container--scrollable">
     <img class="beach-ball" src="../images/home/beach-ball.png" style="display: none">
 
-    <router-link :to="{ name: 'home' }" class="closing-icon-wrapper">
+    <router-link :to="{ name: 'home' }" class="closing-icon-wrapper clickable">
       <div class="closing-icon"></div>
     </router-link>
 
