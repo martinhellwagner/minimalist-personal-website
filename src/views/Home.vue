@@ -61,7 +61,7 @@
 
     <div class="footer">
       <span>Made with</span>
-      <a href="https://www.jasonmraz.com/store/15712/know-lp?category=music/vinyl" target="_blank" class="heart">
+      <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart">
         <img class="clickable" src="../images/home/footer-heart.svg">
       </a>
       <span>and</span>
