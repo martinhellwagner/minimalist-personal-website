@@ -3,9 +3,11 @@
   <div class="container">
     <img class="beach-ball" src="../images/home/beach-ball.png">
 
-    <div class="martin lazy-loaded">
+    <div class="martin">
       <img class="image" src="../images/home/martin.jpg">
+      <!--
       <div class="placeholder placeholder--ready" style="background-color: #f0f0f0" />
+      -->
     </div>
 
     <!-- eslint-disable max-len -->
@@ -33,50 +35,70 @@
     </div>
 
     <div class="icons">
-      <a href="/documents/Martin_Hellwagner_CV.pdf" target="_blank" class="icon icon--first lazy-loaded">
+      <a href="/documents/Martin_Hellwagner_CV.pdf" target="_blank" class="icon icon--first">
         <img class="image clickable" src="../images/home/icon-1.svg" title="Curriculum Vitae">
+        <!--
         <div class="placeholder placeholder--ready" style="background-color: #25b7d3" />
+        -->
       </a>
-      <a href="mailto:martin.hellwagner@gmail.com?subject=Hi%20there" target="_blank" class="icon lazy-loaded">
+      <a href="mailto:martin.hellwagner@gmail.com?subject=Hi%20there" target="_blank" class="icon">
         <img class="image clickable" src="../images/home/icon-2.png" title="Mail">
+        <!--
         <div class="placeholder placeholder--ready" style="background-color: #de000f" />
+        -->
       </a>
-      <a href="https://www.linkedin.com/in/martinhellwagner" target="_blank" class="icon lazy-loaded">
+      <a href="https://www.linkedin.com/in/martinhellwagner" target="_blank" class="icon">
         <img class="image clickable" src="../images/home/icon-3.svg" title="Linkedin">
+        <!--
         <div class="placeholder placeholder--ready" style="background-color: #007ab9" />
+        -->
       </a>
-      <a href="https://github.com/martinhellwagner" target="_blank" class="icon lazy-loaded">
+      <a href="https://github.com/martinhellwagner" target="_blank" class="icon">
         <img class="image clickable" src="../images/home/icon-4.svg" title="Github">
+        <!--
         <div class="placeholder placeholder--ready" style="background-color: #181616" />
+        -->
       </a>
-      <a href="https://www.facebook.com/martin.hellwagner" target="_blank" class="icon lazy-loaded">
+      <a href="https://www.facebook.com/martin.hellwagner" target="_blank" class="icon">
         <img class="image clickable" src="../images/home/icon-5.svg" title="Facebook (Martin Hellwagner)">
+        <!--
         <div class="placeholder placeholder--ready" style="background-color: #3a589b" />
+        -->
       </a>
-      <a href="https://www.facebook.com/infrasonicsound" target="_blank" class="icon lazy-loaded">
+      <a href="https://www.facebook.com/infrasonicsound" target="_blank" class="icon">
         <img class="image clickable" src="../images/home/icon-5.svg" title="Facebook (Infrasonic)">
+        <!--
         <div class="placeholder placeholder--ready" style="background-color: #3a589b" />
+        -->
       </a>
-      <a href="https://soundcloud.com/infrasonicsound" target="_blank" class="icon lazy-loaded">
+      <a href="https://soundcloud.com/infrasonicsound" target="_blank" class="icon">
         <img class="image clickable" src="../images/home/icon-6.svg" title="SoundCloud">
+        <!--
         <div class="placeholder placeholder--ready" style="background-color: #ff3a00" />
+        -->
       </a>
-      <a href="https://myconversationstation.tumblr.com" target="_blank" class="icon lazy-loaded">
+      <a href="https://myconversationstation.tumblr.com" target="_blank" class="icon">
         <img class="image clickable" src="../images/home/icon-7.svg" title="Tumblr">
+        <!--
         <div class="placeholder placeholder--ready" style="background-color: #2a384a" />
+        -->
       </a>
     </div>
 
     <div class="footer">
       <span>Made with</span>
-      <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart lazy-loaded">
+      <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart">
         <img class="image clickable" src="../images/home/footer-heart.svg">
+        <!--
         <div class="placeholder placeholder--ready" style="background-color: #db4437" />
+        -->
       </a>
       <span>and</span>
-      <a href="https://vuejs.org" target="_blank" class="vue lazy-loaded">
+      <a href="https://vuejs.org" target="_blank" class="vue">
         <img class="image clickable" src="../images/home/footer-vue.svg">
+        <!--
         <div class="placeholder placeholder--ready" style="background-color: #41b883" />
+        -->
       </a>
     </div>
   </div>

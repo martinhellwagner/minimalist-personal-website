@@ -4,11 +4,19 @@
   width: 120px;
   height: 120px;
   max-height: 200px;
+  
+  .image {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
 
+  /*
   &.lazy-loaded .image,
   &.lazy-loaded .placeholder {
     border-radius: 50%;
   }
+  */
 
   // Mobile first
   @media screen and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
@@ -63,10 +71,12 @@
       width: 100%;
     }
 
+    /*
     &.lazy-loaded .image,
     &.lazy-loaded .placeholder {
       border-radius: 50%;
     }
+    */
   }
 }
 
