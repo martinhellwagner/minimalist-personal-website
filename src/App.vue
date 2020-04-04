@@ -10,8 +10,3 @@
 
 <!-- SCRIPT -->
 <script src="./scripts/app.js" />
-
-<!-- STYLE-->
-<style lang="scss">
-  @import "./styles/index.scss";
-</style>
