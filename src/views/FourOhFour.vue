@@ -6,7 +6,8 @@
     <!-- eslint-disable max-len -->
     <div class="description">
       <b>Four-Oh-Four!</b>
-      Unfortunately, this seems to be a dead end. Why not go <router-link :to="{ name: 'home' }" class="clickable">back to the start</router-link>?
+      Unfortunately, this seems to be a dead end.
+      Why not go <router-link :to="{ name: 'home' }" class="clickable">back to the start</router-link>?
     </div>
     <!-- eslint-enable max-len -->
 
@@ -32,5 +33,5 @@ export default {
 
 <!-- STYLE-->
 <style lang="scss">
-  @import "../styles/base.scss";
+  @import "../styles/index.scss";
 </style>

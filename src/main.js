@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Mixins from './scripts/shared';
+import Mixins from './scripts/index';
 
 import App from './App.vue';
 import Home from './views/Home.vue';
