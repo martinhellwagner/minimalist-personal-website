@@ -79,6 +79,12 @@ export default {
       const images = container.getElementsByTagName('img');
       let imagesToLoad = images.length;
 
+      if (images.length === 0) {
+        setTimeout(() => {
+          loaded();
+        }, 100);
+      }
+
       for (let i = 0; i < images.length; i += 1) {
         if (images[i].complete) {
           imagesToLoad -= 1;
