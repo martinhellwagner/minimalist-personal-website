@@ -13,7 +13,7 @@
     <!-- eslint-disable max-len -->
     <div class="description">
       <span class="mandatory">
-        <b>Hi, my name is Martin.</b> I'm an experienced Full Stack Web Developer by day and a passionate Liquid Drum & Bass DJ by night.
+        <b>Hi, my name is Martin.</b> I'm an experienced Full Stack Web Developer as well as DevOps Engineer by day and a passionate Liquid Drum & Bass DJ by night.
         I'm currently based in <a class="clickable" href="https://www.google.com/maps/place/Linz,+Austria/@48.2950437,14.2573657,12z" target="_blank">Linz, Austria</a>.
       </span>
       <!--
