@@ -67,6 +67,14 @@ p {
     margin-bottom: 0;
   }
 
+  &.margin-top-small {
+    margin-top: 0.5em;
+  }
+
+  &.margin-bottom-small {
+    margin-bottom: 0.5em;
+  }
+
   &.margin-top-medium {
     margin-top: 1.5em;
   }
@@ -81,6 +89,14 @@ p {
 
   &.margin-bottom-large {
     margin-bottom: 2em;
+  }
+
+  &.margin-top-xlarge {
+    margin-top: 2.5em;
+  }
+
+  &.margin-bottom-xlarge {
+    margin-bottom: 2.5em;
   }
 }
 
@@ -157,19 +173,12 @@ p {
 .description {
   display: block;
   width: 80vw;
+  max-width: 480px;
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
   margin-top: 20px;
   margin-bottom: 20px;
-
-  &--large {
-    max-width: 600px;
-  }
-
-  &--small {
-    max-width: 490px;
-  }
 
   &.margin-bottom-none {
     margin-bottom: 0 !important;

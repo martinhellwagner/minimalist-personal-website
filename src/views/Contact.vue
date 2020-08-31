@@ -3,14 +3,14 @@
   <div class="container">
     <img class="beach-ball" src="../images/home/beach-ball.png">
 
-    <div class="description description--large margin-bottom-none">
+    <div class="description margin-bottom-none">
       <p class="margin-top-none margin-bottom-none">
         <b>Let's get in touch!</b>
       </p>
-      <p class="margin-top-medium margin-bottom-large">
+      <p class="margin-top-large margin-bottom-xlarge">
         <!-- eslint-disable-next-line max-len -->
         <a href="mailto:martin.hellwagner@gmail.com?subject=Hi%20there" class="clickable" target="_blank">Drop me a line</a>
-        or reach out to me on my socials:
+        or reach out on my socials:
       </p>
     </div>
 

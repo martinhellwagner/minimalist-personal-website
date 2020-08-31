@@ -8,7 +8,7 @@
       <div class="placeholder placeholder--ready" style="background-color: #f0f0f0" />
     </div>
 
-    <div class="description description--small">
+    <div class="description">
       <p>
         <b>Hi, my name is Martin.</b>
       </p>
@@ -24,7 +24,7 @@
       <p>
         <b>Hi there.</b>
       </p>
-      <p class="margin-top-medium">
+      <p class="margin-top-large">
         It seems like you're using an old or poorly performing browser.
         Why not treat yourself to the newest <a href="https://www.google.com/chrome" class="clickable" target="_blank">Chrome</a>
         or <a href="https://www.mozilla.org/en-US" class="clickable" target="_blank">Firefox</a> and step into the future?

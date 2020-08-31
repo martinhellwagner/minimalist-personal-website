@@ -3,24 +3,29 @@
   <div class="container container--scrollable">
     <img class="beach-ball" src="../images/home/beach-ball.png">
 
-    <div class="description description--small">
+    <div class="description">
       <p><b>Interested in learning more about me?</b></p>
       <p class="margin-top-large">
         <!-- eslint-disable-next-line max-len -->
         You're welcome to check out <a href="/documents/Martin_Hellwagner_CV.pdf" class="clickable" target="_blank">my CV</a>
         and explore my skillset below.
       </p>
+
       <p class="margin-top-large">
-        <!-- eslint-disable-next-line max-len -->
-        <b>Frontend:</b> HTML, CSS (LESS, SASS), JavaScript (ES6, Vue.js, React)
+        <i>Frontend</i><br>
+        HTML, CSS (LESS, SASS), JavaScript (ES6, Vue.js, React, React Native)
       </p>
+
       <p class="margin-top-large">
+        <i>Backend</i><br>
         <!-- eslint-disable-next-line max-len -->
-        <b>Backend:</b> PHP (Laravel, Zend), CMS (Craft, Wordpress), Node.js, Databases (MySQL, MongoDB)
+        PHP (Laravel, Zend), CMS (Craft, Wordpress), Node.js, Databases (MySQL, MongoDB)
       </p>
+
       <p class="margin-top-large">
+        <i>DevOps</i><br>
         <!-- eslint-disable-next-line max-len -->
-        <b>DevOps:</b> Hosting (Hetzner, Google Cloud, AWS), Domains (AutoDNS, Variomedia), Deployment (Buddy, Jenkins)
+        Hosting (Hetzner, Google Cloud, AWS), Domains (AutoDNS, Variomedia), Deployment (Buddy, Jenkins)
       </p>
     </div>
   </div>
