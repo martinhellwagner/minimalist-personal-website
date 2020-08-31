@@ -12,11 +12,11 @@
       </p>
       <p class="margin-top-large">
         <!-- eslint-disable-next-line max-len -->
-        <b>Frontend:</b> HTML, CSS (LESS, SASS), JavaScript (ES6, Vue.js), React, React Native
+        <b>Frontend:</b> HTML, CSS (LESS, SASS), JavaScript (ES6, Vue.js, React)
       </p>
       <p class="margin-top-large">
         <!-- eslint-disable-next-line max-len -->
-        <b>Backend:</b> PHP (Laravel, Zend), CMS (Craft CMS, Wordpress), Node.js, Databases (MySQL, MongoDB)
+        <b>Backend:</b> PHP (Laravel, Zend), CMS (Craft, Wordpress), Node.js, Databases (MySQL, MongoDB)
       </p>
       <p class="margin-top-large">
         <!-- eslint-disable-next-line max-len -->
