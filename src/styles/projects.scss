@@ -51,17 +51,16 @@
   width: 75vw;
   max-width: 656px;
 
-  @include fluidSizes(margin-top, 30, 48);
-  @include fluidSizes(margin-bottom, 35, 60);
+  @include fluidSizes(margin-bottom, 40, 80);
 
   .project {
     text-align: center;
     line-height: 1.5;
 
-    @include fluidSizes(margin-top, 20, 50);
+    @include fluidSizes(margin-top, 40, 80);
     @include fluidSizes(font-size, 16, 24);
 
-    .description--project {
+    .description {
       width: 100%;
       max-width: 100%;
       margin: 0;

@@ -1,67 +1,79 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container container--scrollable">
-    <img class="beach-ball" src="../images/home/beach-ball.png" style="display: none">
-
-    <router-link :to="{ name: 'home' }" class="closing-icon-wrapper clickable">
-      <div class="closing-icon"></div>
-    </router-link>
+    <img class="beach-ball" src="../images/home/beach-ball.png">
 
     <div class="projects">
       <div class="project">
-        <a href="https://fredmansky.at" target="_blank">
-          <span class="description description--project">fredmansky.at</span>
-          <img src="../images/projects/fredmansky.png">
-        </a>
+        <div class="description">
+          <p class="margin-top-none margin-bottom-none">
+            <b><a href="https://www.bistum-passau.de" class="clickable colored" target="_blank">Bistum Passau</a></b>
+          </p>
+          <p>
+            <i>Frontend, DevOps</i>
+          </p>
+        </div>
+        <img src="../images/projects/listentoleena.png">
       </div>
 
       <div class="project">
-        <a href="https://www.dynatrace.com" target="_blank">
-          <span class="description description--project">dynatrace.com</span>
-          <img src="../images/projects/dynatrace.png">
-        </a>
+        <div class="description">
+          <p class="margin-top-none margin-bottom-none">
+            <b><a href="https://www.dynatrace.com" class="clickable colored" target="_blank">Dynatrace</a></b>
+          </p>
+          <p>
+            <i>Frontend</i>
+          </p>
+        </div>
+        <img src="../images/projects/dynatrace.png">
       </div>
 
       <div class="project">
-        <a href="https://neubau-eyewear.com" target="_blank">
-          <span class="description description--project">neubau-eyewear.com</span>
-          <img src="../images/projects/neubau-eyewear.png">
-        </a>
+        <div class="description">
+          <p class="margin-top-none margin-bottom-none">
+            <b><a href="https://www.fredmansky.at" class="clickable colored" target="_blank">Fredmansky</a></b>
+          </p>
+          <p>
+            <i>Frontend, DevOps</i>
+          </p>
+        </div>
+        <img src="../images/projects/fredmansky.png">
       </div>
 
       <div class="project">
-        <a href="https://www.karriere.at/blog" target="_blank">
-          <span class="description description--project">karriere.at/blog</span>
-          <img src="../images/projects/karriere-blog.png">
-        </a>
+        <div class="description">
+          <p class="margin-top-none margin-bottom-none">
+            <b><a href="https://www.karriere.at/blog" class="clickable colored" target="_blank">karriere.at Blog</a></b>
+          </p>
+          <p>
+            <i>Frontend, Backend</i>
+          </p>
+        </div>
+        <img src="../images/projects/karriere-blog.png">
       </div>
 
       <div class="project">
-        <a href="https://www.karriere.at/hr" target="_blank">
-          <span class="description description--project">karriere.at/hr</span>
-          <img src="../images/projects/karriere-hr.png">
-        </a>
+        <div class="description">
+          <p class="margin-top-none margin-bottom-none">
+            <b><a href="https://www.karriere.at/hr" class="clickable colored" target="_blank">karriere.at HR</a></b>
+          </p>
+          <p>
+            <i>Frontend, Backend</i>
+          </p>
+        </div>
+        <img src="../images/projects/karriere-hr.png">
       </div>
 
       <div class="project">
-        <a href="https://listentoleena.com" target="_blank">
-          <span class="description description--project">listentoleena.com</span>
-          <img src="../images/projects/listentoleena.png">
-        </a>
-      </div>
-
-      <div class="project">
-        <a href="https://kusser.com" target="_blank">
-          <span class="description description--project">kusser.com</span>
-          <img src="../images/projects/kusser.png">
-        </a>
-      </div>
-
-      <div class="project">
-        <a href="https://talentor.com" target="_blank">
-          <span class="description description--project">talentor.com</span>
-          <img src="../images/projects/talentor.png">
-        </a>
+        <div class="description">
+          <p class="margin-top-none margin-bottom-none">
+            <b><a href="https://talentor.com" class="clickable colored" target="_blank">Talentor</a></b>
+          </p>
+          <p>
+            <i>Frontend, DevOps</i>
+          </p>
+        </div>
+        <img src="../images/projects/talentor.png">
       </div>
     </div>
 

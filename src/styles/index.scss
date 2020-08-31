@@ -37,6 +37,53 @@ body {
   }
 }
 
+a,
+a:hover,
+a:visited {
+  color: black;
+}
+
+a.colored,
+a.colored:hover,
+a.colored:visited {
+  text-decoration: none;
+}
+
+a.colored,
+a.colored:visited {
+  transition: color 300ms ease-in-out;
+}
+
+a.colored:hover {
+  color: $blue;
+}
+
+p {
+  &.margin-top-none {
+  margin-top: 0;
+  }
+
+  &.margin-bottom-none {
+    margin-bottom: 0;
+  }
+
+  &.margin-top-medium {
+    margin-top: 1.5em;
+  }
+
+  &.margin-bottom-medium {
+    margin-bottom: 1.5em;
+  }
+
+  &.margin-top-large {
+    margin-top: 2em;
+  }
+
+  &.margin-bottom-large {
+    margin-bottom: 2em;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -77,7 +124,6 @@ body {
   width: 26px;
   height: 26px;
 
-  // Mobile first
   @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
     @include fluidSizes(width, 28, 40);
     @include fluidSizes(height, 28, 40);
@@ -92,10 +138,10 @@ body {
 
   @keyframes rotation {
     from {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     to {
-        transform: rotate(359deg);
+      transform: rotate(359deg);
     }
   }
 
@@ -110,63 +156,38 @@ body {
 
 .description {
   display: block;
-  width: 83vw;
-  max-width: 575px;
+  width: 80vw;
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
   margin-top: 20px;
   margin-bottom: 20px;
 
-  // Mobile first
+  &--large {
+    max-width: 600px;
+  }
+
+  &--small {
+    max-width: 490px;
+  }
+
+  &.margin-bottom-none {
+    margin-bottom: 0 !important;
+  }
+
   @media screen and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
     @include fluidSizes(font-size, 16, 20);
     @include fluidSizes(margin-top, 20, 30);
     @include fluidSizes(margin-bottom, 20, 30);
   }
 
-  // Mobile first
-  @media screen and (min-height: 400px) {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  // Mobile first
   @media screen and (min-height: #{$breakpoint-small + "px"}) {
     @include fluidSizes(font-size, 16, 24);
   }
 
-  // Mobile first
   @media screen and (min-height: #{$breakpoint-medium + "px"}) {
     @include fluidSizes(margin-top, 40, 80);
     @include fluidSizes(margin-bottom, 40, 80);
-  }
-
-  .mandatory,
-  .optional {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-.snowflake {
-  position: fixed;
-  font-family: inherit;
-  z-index: 2412;
-  cursor: default;
-  color: $lightBlue;
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-}
-
-a,
-a:hover,
-a:visited {
-  color: black;
-  text-decoration: underline;
-
-  &.no-underline {
-    text-decoration: none;
   }
 }
 
@@ -187,4 +208,44 @@ a:visited {
       opacity: 1;
     }
   }
+}
+
+.navigation {
+  position: fixed;
+  @include fluidSizes(font-size, 24, 32);
+  line-height: 1;
+
+  &--top-left {
+    top: 32px;
+    left: 40px;
+  }
+
+  &--top-right {
+    top: 32px;
+    right: 40px;
+  }
+
+  &--bottom-left {
+    bottom: 32px;
+    left: 40px;
+  }
+
+  &--bottom-right {
+    bottom: 32px;
+    right: 40px;
+  }
+
+  &:not(.navigation--first).router-link-exact-active {
+    color: $blue;
+  }
+}
+
+.snowflake {
+  position: fixed;
+  font-family: inherit;
+  z-index: 2412;
+  cursor: default;
+  color: $lightBlue;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
 }

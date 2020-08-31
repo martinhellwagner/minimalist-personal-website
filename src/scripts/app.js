@@ -24,14 +24,12 @@ export default {
       let maxSize = 24;
       let numberSnowflakes = 20;
 
-      // Mobile first
       if (document.body.clientWidth >= breakpointMedium) {
         minSize = 16;
         maxSize = 32;
         numberSnowflakes = 40;
       }
 
-      // Mobile first
       if (document.body.clientWidth >= breakpointMax) {
         numberSnowflakes = 60;
       }
