@@ -177,26 +177,13 @@ p {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-  &.margin-bottom-none {
-    margin-bottom: 0 !important;
-  }
 
   @media screen and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
     @include fluidSizes(font-size, 16, 20);
-    @include fluidSizes(margin-top, 20, 30);
-    @include fluidSizes(margin-bottom, 20, 30);
   }
 
   @media screen and (min-height: #{$breakpoint-small + "px"}) {
     @include fluidSizes(font-size, 16, 24);
-  }
-
-  @media screen and (min-height: #{$breakpoint-medium + "px"}) {
-    @include fluidSizes(margin-top, 40, 80);
-    @include fluidSizes(margin-bottom, 40, 80);
   }
 }
 

@@ -4,11 +4,13 @@ import VueRouter from 'vue-router';
 import Mixins from './scripts/index';
 
 import App from './App.vue';
-import Home from './views/Home.vue';
-import Projects from './views/Projects.vue';
 import Contact from './views/Contact.vue';
-import Info from './views/Info.vue';
 import FourOhFour from './views/FourOhFour.vue';
+import Home from './views/Home.vue';
+import Info from './views/Info.vue';
+import Imprint from './views/Imprint.vue';
+import Privacy from './views/Privacy.vue';
+import Projects from './views/Projects.vue';
 
 Vue.config.productionTip = false;
 
@@ -19,19 +21,24 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     {
+      path: '/contact',
+      name: 'contact',
+      component: Contact,
+    },
+    {
+      path: '/404',
+      name: 'four-oh-four',
+      component: FourOhFour,
+    },
+    {
       path: '/',
       name: 'home',
       component: Home,
     },
     {
-      path: '/projects',
-      name: 'projects',
-      component: Projects,
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: Contact,
+      path: '/imprint',
+      name: 'imprint',
+      component: Imprint,
     },
     {
       path: '/info',
@@ -39,9 +46,14 @@ const router = new VueRouter({
       component: Info,
     },
     {
-      path: '/404',
-      name: 'four-oh-four',
-      component: FourOhFour,
+      path: '/privacy',
+      name: 'privacy',
+      component: Privacy,
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: Projects,
     },
     {
       path: '*',

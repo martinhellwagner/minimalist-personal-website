@@ -27,16 +27,22 @@
   }
 }
 
+.header,
 .footer {
   display: none;
   position: absolute;
-  bottom: 32px;
+  left: 50%;
   @include fluidSizes(height, 24, 32);
 
   @media screen and (min-height: #{$breakpoint-medium + "px"}) {
     display: flex;
     align-items: center;
   }
+}
+
+.header {
+  top: 32px;
+  transform: translateX(calc(-50% + 4px));
 
   span {
     @include fluidSizes(font-size, 12, 16);
@@ -59,5 +65,23 @@
 
   .vue {
     margin-top: 1px;
+  }
+}
+
+.footer {
+  bottom: 32px;
+  transform: translateX(-50%);
+
+  a {
+    @include fluidSizes(font-size, 12, 16);
+    text-decoration: none;
+  }
+
+  .imprint {
+    margin-right: 12px;
+  }
+
+  .privacy {
+    margin-left: 12px;
   }
 }

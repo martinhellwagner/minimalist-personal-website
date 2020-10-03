@@ -3,16 +3,30 @@
   <div class="container">
     <img class="beach-ball" src="../images/home/beach-ball.png">
 
+    <div class="header">
+      <span>Made with</span>
+      <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart">
+        <img class="image clickable" src="../images/home/footer-heart.svg">
+        <div class="placeholder placeholder--ready" style="background-color: #db4437" />
+      </a>
+
+      <span>and</span>
+      <a href="https://vuejs.org" target="_blank" class="vue">
+        <img class="image clickable" src="../images/home/footer-vue.svg">
+        <div class="placeholder placeholder--ready" style="background-color: #41b883" />
+      </a>
+    </div>
+
     <div class="martin lazy-loaded">
       <img class="image" src="../images/home/martin.jpg">
       <div class="placeholder placeholder--ready" style="background-color: #f0f0f0" />
     </div>
 
     <div class="description">
-      <p>
+      <p class="margin-top-xlarge margin-bottom-none">
         <b>Hi, my name is Martin.</b>
       </p>
-      <p class="margin-top-large">
+      <p class="margin-top-large margin-bottom-small">
         <!-- eslint-disable-next-line max-len -->
         I'm an experienced Full Stack Web Developer as well as DevOps Engineer by day and a passionate Liquid Drum & Bass DJ by night.
         <!-- eslint-disable-next-line max-len -->
@@ -24,7 +38,7 @@
       <p>
         <b>Hi there.</b>
       </p>
-      <p class="margin-top-large">
+      <p class="margin-top-large margin-bottom-none">
         It seems like you're using an old or poorly performing browser.
         Why not treat yourself to the newest <a href="https://www.google.com/chrome" class="clickable" target="_blank">Chrome</a>
         or <a href="https://www.mozilla.org/en-US" class="clickable" target="_blank">Firefox</a> and step into the future?
@@ -32,16 +46,13 @@
     </div>
 
     <div class="footer">
-      <span>Made with</span>
-      <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart">
-        <img class="image clickable" src="../images/home/footer-heart.svg">
-        <div class="placeholder placeholder--ready" style="background-color: #db4437" />
-      </a>
-      <span>and</span>
-      <a href="https://vuejs.org" target="_blank" class="vue">
-        <img class="image clickable" src="../images/home/footer-vue.svg">
-        <div class="placeholder placeholder--ready" style="background-color: #41b883" />
-      </a>
+      <router-link :to="{ name: 'imprint' }" class="imprint clickable colored">
+        Imprint
+      </router-link>
+
+      <router-link :to="{ name: 'privacy' }" class="privacy clickable colored">
+        Privacy
+      </router-link>
     </div>
   </div>
 </template>

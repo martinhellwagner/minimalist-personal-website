@@ -8,17 +8,17 @@
         <p class="margin-top-none margin-bottom-none">
           <b><a href="https://www.bistum-passau.de" class="clickable colored" target="_blank">Bistum Passau</a></b>
         </p>
-        <p>
+        <p class="margin-top-small">
           <i>Frontend, DevOps</i>
         </p>
-        <img src="../images/projects/listentoleena.png">
+        <img src="../images/projects/bistum-passau.png">
       </div>
 
       <div class="project">
         <p class="margin-top-none margin-bottom-none">
           <b><a href="https://www.dynatrace.com" class="clickable colored" target="_blank">Dynatrace</a></b>
         </p>
-        <p>
+        <p class="margin-top-small">
           <i>Frontend</i>
         </p>
         <img src="../images/projects/dynatrace.png">
@@ -28,7 +28,7 @@
         <p class="margin-top-none margin-bottom-none">
           <b><a href="https://www.fredmansky.at" class="clickable colored" target="_blank">Fredmansky</a></b>
         </p>
-        <p>
+        <p class="margin-top-small">
           <i>Frontend, DevOps</i>
         </p>
         <img src="../images/projects/fredmansky.png">
@@ -38,7 +38,7 @@
         <p class="margin-top-none margin-bottom-none">
           <b><a href="https://www.karriere.at/blog" class="clickable colored" target="_blank">karriere.at Blog</a></b>
         </p>
-        <p>
+        <p class="margin-top-small">
           <i>Frontend, Backend</i>
         </p>
         <img src="../images/projects/karriere-blog.png">
@@ -48,7 +48,7 @@
         <p class="margin-top-none margin-bottom-none">
           <b><a href="https://www.karriere.at/hr" class="clickable colored" target="_blank">karriere.at HR</a></b>
         </p>
-        <p>
+        <p class="margin-top-small">
           <i>Frontend, Backend</i>
         </p>
         <img src="../images/projects/karriere-hr.png">
@@ -58,7 +58,7 @@
         <p class="margin-top-none margin-bottom-none">
           <b><a href="https://talentor.com" class="clickable colored" target="_blank">Talentor</a></b>
         </p>
-        <p>
+        <p class="margin-top-small">
           <i>Frontend, DevOps</i>
         </p>
         <img src="../images/projects/talentor.png">

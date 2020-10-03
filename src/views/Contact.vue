@@ -3,14 +3,21 @@
   <div class="container">
     <img class="beach-ball" src="../images/home/beach-ball.png">
 
-    <div class="description margin-bottom-none">
+    <div class="description margin-top-none margin-bottom-none">
       <p class="margin-top-none margin-bottom-none">
         <b>Let's get in touch!</b>
       </p>
-      <p class="margin-top-large margin-bottom-xlarge">
+
+      <p class="margin-top-large margin-bottom-none">
         <!-- eslint-disable-next-line max-len -->
-        <a href="mailto:martin.hellwagner@gmail.com?subject=Hi%20there" class="clickable" target="_blank">Drop me a line</a>
-        or reach out on my socials:
+        Whether it's an idea, an upcoming project or simply a nice chat – I'm always happy to talk! Just
+        <!-- eslint-disable-next-line max-len -->
+        <a href="mailto:martin.hellwagner@gmail.com?subject=Hi%20there" class="clickable" target="_blank">drop me a line</a>
+        and I'll get back to you.
+      </p>
+
+      <p class="margin-bottom-medium">
+        Of course you can also reach out to my on my socials:
       </p>
     </div>
 
