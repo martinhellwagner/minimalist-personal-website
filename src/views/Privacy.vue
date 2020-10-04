@@ -3,6 +3,10 @@
   <div class="container">
     <img class="beach-ball" src="../images/home/beach-ball.png">
 
+    <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable">
+      <div class="navigation-icon navigation-icon--menu clickable"></div>
+    </router-link>
+
     <div class="description">
       <p class="margin-top-none margin-bottom-none">
         <b>It's as simple as that...</b>

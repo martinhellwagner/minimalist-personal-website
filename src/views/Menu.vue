@@ -1,48 +1,47 @@
 <!-- TEMPLATE -->
 <template>
-  <div class="container">
-    <p class="margin-top-none margin-bottom-none">
-      <!-- eslint-disable-next-line max-len -->
-      <transition name="transition" mode="out-in" appear v-on:enter="enter" v-on:leave="leave" v-bind:css="false">
-        <router-view></router-view>
-      </transition>
-    </p>
+  <div class="container container--scrollable">
+    <img class="beach-ball" src="../images/home/beach-ball.png">
 
-    <p class="margin-top-medium margin-bottom-none">
+    <router-link :to="{ name: 'home' }" class="navigation-icon-wrapper clickable">
+      <div class="navigation-icon navigation-icon--closing clickable"></div>
+    </router-link>
+
+    <p class="margin-top-none margin-bottom-none">
       <router-link :to="{ name: 'home' }" class="navigation navigation--mobile clickable">
-        <b>Home</b>
+          Home
       </router-link>
     </p>
 
     <p class="margin-top-medium margin-bottom-none">
       <router-link :to="{ name: 'projects' }" class="navigation navigation--mobile clickable">
-        <b>Projects</b>
+          Projects
       </router-link>
     </p>
 
     <p class="margin-top-medium margin-bottom-none">
       <router-link :to="{ name: 'info' }" class="navigation navigation--mobile clickable">
-        <b>Info</b>
+        Info
       </router-link>
     </p>
 
     <p class="margin-top-medium margin-bottom-medium">
       <router-link :to="{ name: 'contact' }" class="navigation navigation--mobile clickable">
-        <b>Contact</b>
+          Contact
       </router-link>
     </p>
 
     <p class="margin-top-xlarge margin-bottom-none">
       <!-- eslint-disable-next-line max-len -->
       <router-link :to="{ name: 'imprint' }" class="navigation navigation--small navigation--mobile clickable">
-        Imprint
+          Imprint
       </router-link>
     </p>
 
     <p class="margin-top-medium margin-bottom-none">
       <!-- eslint-disable-next-line max-len -->
       <router-link :to="{ name: 'privacy' }" class="navigation navigation--small navigation--mobile clickable">
-        Privacy
+          Privacy
       </router-link>
     </p>
   </div>
@@ -61,5 +60,5 @@ export default {
 
 <!-- STYLE-->
 <style lang="scss">
-  @import "../styles/contact.scss";
+  @import "../styles/index.scss";
 </style>

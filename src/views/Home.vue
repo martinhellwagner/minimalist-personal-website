@@ -3,6 +3,10 @@
   <div class="container">
     <img class="beach-ball" src="../images/home/beach-ball.png">
 
+    <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable">
+      <div class="navigation-icon navigation-icon--menu clickable"></div>
+    </router-link>
+
     <div class="header">
       <span>Made with</span>
       <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart">
