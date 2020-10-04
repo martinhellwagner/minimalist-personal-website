@@ -32,8 +32,6 @@ export default {
       });
 
       container.addEventListener('touchstart', (event) => {
-        console.log(event.target);
-
         if (!event.target.classList.contains('clickable')) {
           event.preventDefault();
 

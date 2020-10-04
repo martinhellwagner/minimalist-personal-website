@@ -3,9 +3,9 @@
   <div class="container container--scrollable">
     <img class="beach-ball" src="../images/home/beach-ball.png">
 
-    <router-link :to="{ name: 'home' }" class="navigation-icon-wrapper clickable">
+    <a @click="$router.go(-1)" class="navigation-icon-wrapper clickable">
       <div class="navigation-icon navigation-icon--closing clickable"></div>
-    </router-link>
+    </a>
 
     <p class="margin-top-none margin-bottom-none">
       <router-link :to="{ name: 'home' }" class="navigation navigation--mobile clickable">

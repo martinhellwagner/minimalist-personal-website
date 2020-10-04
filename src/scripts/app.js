@@ -80,5 +80,10 @@ export default {
         this.moveSnow(numberSnowflakes);
       }, 50);
     },
+
+    // Randomise numbers in range
+    randomise(range) {
+      return Math.floor(range * Math.random());
+    },
   },
 };

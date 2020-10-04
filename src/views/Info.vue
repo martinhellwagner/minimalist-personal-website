@@ -8,7 +8,7 @@
     </router-link>
 
     <div class="description">
-      <p class="margin-top-none margin-bottom-none">
+      <p class="margin-top-xlarge margin-bottom-none">
         <b>Interested in learning more about me?</b>
       </p>
 
@@ -29,7 +29,7 @@
         PHP (Laravel, Zend), CMS (Craft, Wordpress), Node.js, Databases (MySQL, MongoDB)
       </p>
 
-      <p class="margin-top-large margin-bottom-none">
+      <p class="margin-top-large margin-bottom-xlarge">
         <i>DevOps</i><br>
         <!-- eslint-disable-next-line max-len -->
         Hosting (Hetzner, Google Cloud, AWS), Domains (AutoDNS, Variomedia), Deployment (Buddy, Jenkins)

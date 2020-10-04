@@ -1,8 +1,6 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container container--scrollable">
-    <img class="beach-ball" src="../images/home/beach-ball.png">
-
     <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable">
       <div class="navigation-icon navigation-icon--menu clickable"></div>
     </router-link>

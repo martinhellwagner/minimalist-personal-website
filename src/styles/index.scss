@@ -106,7 +106,7 @@ p {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: var(--windowHeight);
+  // min-height: var(--windowHeight);
   width: 100%;
   opacity: 0;
   transition: opacity 300ms linear; // Note that the same value needs to be set in Javascript
@@ -267,6 +267,10 @@ p {
   top: 0;
   right: 0;
   z-index: 2142;
+
+  @media screen and (min-width: #{$breakpoint-medium + "px"}) {
+    display: none;
+  }
 
   @include fluidSizes(margin-top, 8, 24);
   @include fluidSizes(margin-right, 8, 24);

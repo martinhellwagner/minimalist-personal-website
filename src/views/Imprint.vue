@@ -13,7 +13,7 @@
       </p>
 
       <p class="margin-top-large margin-bottom-xlarge">
-        <i>Martin Hellwagner, MSc.</i><br>
+        Martin Hellwagner, MSc.<br>
         Hauptstraße 72<br>
         4040 Linz, Austria<br>
         <!-- eslint-disable-next-line max-len -->
