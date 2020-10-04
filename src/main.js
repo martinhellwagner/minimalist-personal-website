@@ -9,6 +9,7 @@ import FourOhFour from './views/FourOhFour.vue';
 import Home from './views/Home.vue';
 import Info from './views/Info.vue';
 import Imprint from './views/Imprint.vue';
+import Menu from './views/Menu.vue';
 import Privacy from './views/Privacy.vue';
 import Projects from './views/Projects.vue';
 
@@ -44,6 +45,11 @@ const router = new VueRouter({
       path: '/info',
       name: 'info',
       component: Info,
+    },
+    {
+      path: '/menu',
+      name: 'menu',
+      component: Menu,
     },
     {
       path: '/privacy',

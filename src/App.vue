@@ -7,22 +7,22 @@
     </transition>
 
     <!-- eslint-disable-next-line max-len -->
-    <router-link :to="{ name: 'home' }" class="navigation navigation--first navigation--top-left clickable colored">
+    <router-link :to="{ name: 'home' }" class="navigation navigation--desktop navigation--first navigation--top-left clickable colored">
       <b>Home</b>
     </router-link>
 
     <!-- eslint-disable-next-line max-len -->
-    <router-link :to="{ name: 'projects' }" class="navigation navigation--top-right clickable colored">
+    <router-link :to="{ name: 'projects' }" class="navigation navigation--desktop navigation--top-right clickable colored">
       <b>Projects</b>
     </router-link>
 
     <!-- eslint-disable-next-line max-len -->
-    <router-link :to="{ name: 'info' }" class="navigation navigation--bottom-left clickable colored">
+    <router-link :to="{ name: 'info' }" class="navigation navigation--desktop navigation--bottom-left clickable colored">
       <b>Info</b>
     </router-link>
 
     <!-- eslint-disable-next-line max-len -->
-    <router-link :to="{ name: 'contact' }" class="navigation navigation--bottom-right clickable colored">
+    <router-link :to="{ name: 'contact' }" class="navigation navigation--desktop navigation--bottom-right clickable colored">
       <b>Contact</b>
     </router-link>
   </div>

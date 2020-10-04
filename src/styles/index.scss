@@ -207,9 +207,30 @@ p {
 }
 
 .navigation {
-  position: fixed;
   @include fluidSizes(font-size, 24, 32);
   line-height: 1;
+  text-decoration: none;
+
+  &--desktop {
+    display: none;
+    position: fixed;
+
+    @media screen and (min-width: #{$breakpoint-medium + "px"}) {
+      display: flex;
+    }
+  }
+
+  &--mobile {
+    display: flex;
+
+    @media screen and (min-width: #{$breakpoint-medium + "px"}) {
+      display: none;
+    }
+  }
+
+  &--small {
+    @include fluidSizes(font-size, 16, 24);
+  }
 
   &--top-left {
     top: 32px;
