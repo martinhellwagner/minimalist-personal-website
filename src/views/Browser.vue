@@ -5,12 +5,14 @@
 
     <div class="description">
       <p class="margin-top-none margin-bottom-none">
-        <b>Four-Oh-Four!</b>
+        <b>Hi there.</b>
       </p>
       <p class="margin-top-large margin-bottom-none">
-        Unfortunately, this seems to be a dead end.<br>
+        It seems like you're using an old or poorly performing browser.
         <!-- eslint-disable-next-line max-len -->
-        Why not go <router-link :to="{ name: 'home' }" class="clickable">back to the start</router-link>?
+        Why not treat yourself to the newest <a href="https://www.google.com/chrome" class="clickable" target="_blank">Chrome</a>
+        <!-- eslint-disable-next-line max-len -->
+        or <a href="https://www.mozilla.org/en-US" class="clickable" target="_blank">Firefox</a> and step into the future?
       </p>
     </div>
   </div>
@@ -19,7 +21,7 @@
 <!-- SCRIPT -->
 <script>
 export default {
-  name: 'FourOhFour',
+  name: 'Browser',
 
   mounted() {
     this.init();

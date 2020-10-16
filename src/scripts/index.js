@@ -1,58 +1,34 @@
-import bowser from 'bowser';
 import lozad from 'lozad';
 
 export default {
   methods: {
     init() {
-      const container = document.querySelector('.container');
-      const beachBall = document.querySelector('.beach-ball');
-
-      // Categorically exclude IE and Edge
-      if (bowser.name === 'Internet Explorer' || bowser.name === 'Microsoft Edge') {
-        container.classList.add('container--ie-edge');
-        container.classList.remove('container--scrollable');
-      }
-
-      this.lazyLoadImages(container);
-      this.calculateHeight(container);
-
-      if (beachBall) {
-        this.placeBeachBall(beachBall);
-      }
-
-      container.addEventListener('click', (event) => {
-        if (!event.target.classList.contains('clickable')) {
-          event.preventDefault();
-
-          // Don't place beach ball randomly when clicking on link
-          if (beachBall) {
-            this.placeBeachBall(beachBall);
-          }
-        }
-      });
-
-      container.addEventListener('touchstart', (event) => {
-        if (!event.target.classList.contains('clickable')) {
-          event.preventDefault();
-
-          // Don't place beach ball randomly when clicking on link
-          if (beachBall) {
-            this.placeBeachBall(beachBall);
-          }
-        }
-      });
-
       window.addEventListener('orientationchange', () => {
         window.location.reload();
       });
 
-      // Set style on body according to container type
-      if (container.classList.contains('container--scrollable')) {
-        document.body.style.setProperty('position', 'relative');
-        document.body.style.setProperty('overflow', 'auto');
-      } else {
-        document.body.style.setProperty('position', 'fixed');
-        document.body.style.setProperty('overflow', 'hidden');
+      const container = document.querySelector('.container');
+      const beachBall = document.querySelector('.beach-ball');
+
+      this.lazyLoadImages(container);
+      this.setHeightAndScrollBehaviour(container, container.classList.contains('container--scrollable'));
+
+      if (beachBall) {
+        this.placeBeachBall(beachBall);
+
+        container.addEventListener('click', (event) => {
+          if (!event.target.classList.contains('clickable')) {
+            event.preventDefault();
+            this.placeBeachBall(beachBall);
+          }
+        });
+
+        container.addEventListener('touchstart', (event) => {
+          if (!event.target.classList.contains('clickable')) {
+            event.preventDefault();
+            this.placeBeachBall(beachBall);
+          }
+        });
       }
     },
 
@@ -115,16 +91,27 @@ export default {
         lazyLoadObserver.observe();
 
         image.addEventListener('load', () => {
-          image.classList.add('image--ready');
-          placeholder.classList.remove('placeholder--ready');
+          setTimeout(() => {
+            image.classList.add('image--ready');
+            placeholder.classList.remove('placeholder--ready');
+          }, 1000);
         });
       });
     },
 
-    // Workaround for inconsistent height of mobile browsers
-    calculateHeight(container) {
-      document.body.style.setProperty('--windowHeight', `${window.innerHeight}px`);
-      container.style.setProperty('--windowHeight', `${window.innerHeight}px`);
+    // Workaround for inconsistent height of mobile browsers as well as scrollbable containers
+    setHeightAndScrollBehaviour(container, scrollable) {
+      if (scrollable) {
+        container.style.setProperty('--windowHeight', `${window.innerHeight}px`);
+        document.body.style.setProperty('--windowHeight', '100%');
+        document.body.style.setProperty('position', 'relative');
+        document.body.style.setProperty('overflow', 'auto');
+      } else {
+        container.style.setProperty('--windowHeight', `${window.innerHeight}px`);
+        document.body.style.setProperty('--windowHeight', `${window.innerHeight}px`);
+        document.body.style.setProperty('position', 'fixed');
+        document.body.style.setProperty('overflow', 'hidden');
+      }
     },
 
     // Randomise numbers in range

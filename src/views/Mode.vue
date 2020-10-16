@@ -5,12 +5,12 @@
 
     <div class="description">
       <p class="margin-top-none margin-bottom-none">
-        <b>Four-Oh-Four!</b>
+        <b>Hi there.</b>
       </p>
       <p class="margin-top-large margin-bottom-none">
-        Unfortunately, this seems to be a dead end.<br>
         <!-- eslint-disable-next-line max-len -->
-        Why not go <router-link :to="{ name: 'home' }" class="clickable">back to the start</router-link>?
+        Landscape mode isn't really the best way to enjoy content on the Internet, don't you think?<br>
+        Please turn your device into portrait mode to view this website.
       </p>
     </div>
   </div>
@@ -19,7 +19,7 @@
 <!-- SCRIPT -->
 <script>
 export default {
-  name: 'FourOhFour',
+  name: 'Mode',
 
   mounted() {
     this.init();

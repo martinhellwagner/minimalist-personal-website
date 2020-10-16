@@ -9,13 +9,13 @@
 
     <div class="header">
       <span>Made with</span>
-      <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart">
+      <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart lazy-loaded">
         <img class="image clickable" src="../images/home/footer-heart.svg">
         <div class="placeholder placeholder--ready" style="background-color: #db4437" />
       </a>
 
       <span>and</span>
-      <a href="https://vuejs.org" target="_blank" class="vue">
+      <a href="https://vuejs.org" target="_blank" class="vue lazy-loaded">
         <img class="image clickable" src="../images/home/footer-vue.svg">
         <div class="placeholder placeholder--ready" style="background-color: #41b883" />
       </a>
@@ -35,17 +35,6 @@
         I'm an experienced Full Stack Web Developer as well as DevOps Engineer by day and a passionate Liquid Drum & Bass DJ by night.
         <!-- eslint-disable-next-line max-len -->
         I'm currently based in <a class="clickable" href="https://www.google.com/maps/place/Linz,+Austria/@48.2950437,14.2573657,12z" target="_blank">Linz, Austria</a>.
-      </p>
-    </div>
-
-    <div class="description description--browser">
-      <p>
-        <b>Hi there.</b>
-      </p>
-      <p class="margin-top-large margin-bottom-none">
-        It seems like you're using an old or poorly performing browser.
-        Why not treat yourself to the newest <a href="https://www.google.com/chrome" class="clickable" target="_blank">Chrome</a>
-        or <a href="https://www.mozilla.org/en-US" class="clickable" target="_blank">Firefox</a> and step into the future?
       </p>
     </div>
 

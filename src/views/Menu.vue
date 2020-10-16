@@ -1,6 +1,6 @@
 <!-- TEMPLATE -->
 <template>
-  <div class="container container--scrollable">
+  <div class="container">
     <img class="beach-ball" src="../images/home/beach-ball.png">
 
     <a @click="$router.go(-1)" class="navigation-icon-wrapper clickable">

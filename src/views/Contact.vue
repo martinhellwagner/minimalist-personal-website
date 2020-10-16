@@ -26,28 +26,28 @@
     </div>
 
     <div class="icons">
-      <a href="https://www.linkedin.com/in/martinhellwagner" target="_blank" class="icon icon--first">
+      <a href="https://www.linkedin.com/in/martinhellwagner" target="_blank" class="icon icon--first lazy-loaded">
         <img class="image clickable" src="../images/home/icon-1.svg" title="Linkedin">
         <div class="placeholder placeholder--ready" style="background-color: #007ab9" />
       </a>
-      <a href="https://github.com/martinhellwagner" target="_blank" class="icon">
+      <a href="https://github.com/martinhellwagner" target="_blank" class="icon lazy-loaded">
         <img class="image clickable" src="../images/home/icon-2.svg" title="Github">
         <div class="placeholder placeholder--ready" style="background-color: #181616" />
       </a>
-      <a href="https://www.facebook.com/martin.hellwagner" target="_blank" class="icon">
+      <a href="https://www.facebook.com/martin.hellwagner" target="_blank" class="icon lazy-loaded">
         <!-- eslint-disable-next-line max-len -->
         <img class="image clickable" src="../images/home/icon-3.svg" title="Facebook (Martin Hellwagner)">
         <div class="placeholder placeholder--ready" style="background-color: #3a589b" />
       </a>
-      <a href="https://www.facebook.com/infrasonicsound" target="_blank" class="icon">
+      <a href="https://www.facebook.com/infrasonicsound" target="_blank" class="icon lazy-loaded">
         <img class="image clickable" src="../images/home/icon-3.svg" title="Facebook (Infrasonic)">
         <div class="placeholder placeholder--ready" style="background-color: #3a589b" />
       </a>
-      <a href="https://soundcloud.com/infrasonicsound" target="_blank" class="icon">
+      <a href="https://soundcloud.com/infrasonicsound" target="_blank" class="icon lazy-loaded">
         <img class="image clickable" src="../images/home/icon-4.svg" title="SoundCloud">
         <div class="placeholder placeholder--ready" style="background-color: #ff3a00" />
       </a>
-      <a href="https://myconversationstation.tumblr.com" target="_blank" class="icon">
+      <a href="https://myconversationstation.tumblr.com" target="_blank" class="icon lazy-loaded">
         <img class="image clickable" src="../images/home/icon-5.svg" title="Tumblr">
         <div class="placeholder placeholder--ready" style="background-color: #2a384a" />
       </a>

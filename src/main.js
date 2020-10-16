@@ -4,12 +4,15 @@ import VueRouter from 'vue-router';
 import Mixins from './scripts/index';
 
 import App from './App.vue';
+
+import Browser from './views/Browser.vue';
 import Contact from './views/Contact.vue';
 import FourOhFour from './views/FourOhFour.vue';
 import Home from './views/Home.vue';
 import Info from './views/Info.vue';
 import Imprint from './views/Imprint.vue';
 import Menu from './views/Menu.vue';
+import Mode from './views/Mode.vue';
 import Privacy from './views/Privacy.vue';
 import Projects from './views/Projects.vue';
 
@@ -21,6 +24,11 @@ Vue.mixin(Mixins);
 const router = new VueRouter({
   mode: 'history',
   routes: [
+    {
+      path: '/browser',
+      name: 'browser',
+      component: Browser,
+    },
     {
       path: '/contact',
       name: 'contact',
@@ -50,6 +58,11 @@ const router = new VueRouter({
       path: '/menu',
       name: 'menu',
       component: Menu,
+    },
+    {
+      path: '/mode',
+      name: 'mode',
+      component: Mode,
     },
     {
       path: '/privacy',

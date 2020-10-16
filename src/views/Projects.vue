@@ -13,7 +13,11 @@
         <p class="margin-top-small">
           <i>Frontend, DevOps</i>
         </p>
-        <img src="../images/projects/bistum-passau.png">
+        <div class="screenshot lazy-loaded">
+          <!-- eslint-disable-next-line max-len -->
+          <img class="image" height="auto" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%272000%27%20height%3D%271250%27%20style%3D%27background%3A%23d1bcaf%27%2F%3E" srcset="../images/projects/bistum-passau.png">
+          <div class="placeholder placeholder--ready" style="background-color: #000000" />
+        </div>
       </div>
 
       <div class="project">
@@ -23,7 +27,10 @@
         <p class="margin-top-small">
           <i>Frontend</i>
         </p>
-        <img src="../images/projects/dynatrace.png">
+        <div class="screenshot lazy-loaded">
+          <img class="image" src="../images/projects/dynatrace.png">
+          <div class="placeholder placeholder--ready" style="background-color: #000000" />
+        </div>
       </div>
 
       <div class="project">
@@ -33,7 +40,10 @@
         <p class="margin-top-small">
           <i>Frontend, DevOps</i>
         </p>
-        <img src="../images/projects/fredmansky.png">
+        <div class="screenshot lazy-loaded">
+          <img class="image" src="../images/projects/fredmansky.png">
+          <div class="placeholder placeholder--ready" style="background-color: #000000" />
+        </div>
       </div>
 
       <div class="project">
@@ -43,7 +53,10 @@
         <p class="margin-top-small">
           <i>Frontend, Backend</i>
         </p>
-        <img src="../images/projects/karriere-blog.png">
+        <div class="screenshot lazy-loaded">
+          <img class="image" src="../images/projects/karriere-blog.png">
+          <div class="placeholder placeholder--ready" style="background-color: #000000" />
+        </div>
       </div>
 
       <div class="project">
@@ -53,7 +66,10 @@
         <p class="margin-top-small">
           <i>Frontend, Backend</i>
         </p>
-        <img src="../images/projects/karriere-hr.png">
+        <div class="screenshot lazy-loaded">
+          <img class="image" src="../images/projects/karriere-hr.png">
+          <div class="placeholder placeholder--ready" style="background-color: #000000" />
+        </div>
       </div>
 
       <div class="project">
@@ -63,15 +79,11 @@
         <p class="margin-top-small">
           <i>Frontend, DevOps</i>
         </p>
-        <img src="../images/projects/talentor.png">
+        <div class="screenshot lazy-loaded">
+          <img class="image" src="../images/projects/talentor.png">
+          <div class="placeholder placeholder--ready" style="background-color: #000000" />
+        </div>
       </div>
-    </div>
-
-    <div class="description description--browser">
-      <b>Hi there.</b>
-      It seems like you're using an old or poorly performing browser.
-      Why not treat yourself to the newest <a href="https://www.google.com/chrome" target="_blank">Chrome</a>
-      or <a href="https://www.mozilla.org/en-US" target="_blank">Firefox</a> and step into the future?
     </div>
   </div>
 </template>

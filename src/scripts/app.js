@@ -1,3 +1,5 @@
+import Bowser from 'bowser';
+
 const breakpointMedium = 768;
 const breakpointMax = 1200;
 
@@ -10,6 +12,24 @@ export default {
   name: 'App',
 
   mounted() {
+    // Categorically exclude IE and Edge
+    const userAgent = Bowser.parse(window.navigator.userAgent);
+
+    if (userAgent.browser.name === 'Internet Explorer' || userAgent.browser.name === 'Microsoft Edge') {
+      if (window.location.href.indexOf('browser') === -1) {
+        window.location.replace('/browser');
+      }
+    }
+
+    // Categorically exclude landscape mode on mobile devices
+    if (userAgent.platform.type === 'mobile' && window.innerHeight < window.innerWidth) {
+      if (window.location.href.indexOf('mode') === -1) {
+        window.location.replace('/mode');
+      }
+    } else if (window.location.href.indexOf('mode') > -1) {
+      window.location.replace('/');
+    }
+
     // Only show snow in December and January
     const month = new Date().getMonth() + 1;
     if (month === 12 || month === 1) {
