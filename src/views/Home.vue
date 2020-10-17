@@ -1,7 +1,7 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container">
-    <img class="beach-ball" src="../images/home/beach-ball.png">
+    <img class="beach-ball" src="/images/beach-ball.png">
 
     <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable">
       <div class="navigation-icon navigation-icon--menu clickable"></div>
@@ -10,18 +10,18 @@
     <div class="header">
       <span>Made with</span>
       <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart">
-        <img class="image clickable" src="../images/home/footer-heart.svg">
+        <img class="image clickable" src="/images/home/footer-heart.svg">
       </a>
 
       <span>and</span>
       <a href="https://vuejs.org" target="_blank" class="vue">
-        <img class="image clickable" src="../images/home/footer-vue.svg">
+        <img class="image clickable" src="/images/home/footer-vue.svg">
       </a>
     </div>
 
-    <div class="martin lazy-loaded">
-      <img class="image" src="../images/home/martin.jpg">
-      <div class="placeholder placeholder--ready" style="background-color: #f0f0f0" />
+    <div class="martin lazyload-wrapper">
+      <img class="image lazyload" data-src="/images/home/martin.jpg" title="Martin Hellwagner">
+      <div class="placeholder" style="background-color: #f0f0f0" />
     </div>
 
     <div class="description">

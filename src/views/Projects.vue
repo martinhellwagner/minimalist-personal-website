@@ -13,10 +13,14 @@
         <p class="margin-top-small">
           <i>Frontend, DevOps</i>
         </p>
-        <div class="screenshot lazy-loaded">
-          <!-- eslint-disable-next-line max-len -->
-          <img class="image" height="auto" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%272000%27%20height%3D%271250%27%20style%3D%27background%3A%23d1bcaf%27%2F%3E" srcset="../images/projects/bistum-passau.png">
-          <div class="placeholder placeholder--ready" style="background-color: #ffffff" />
+
+        <div class="screenshot lazyload-wrapper">
+          <!-- eslint-disable max-len -->
+          <img class="image lazyload"
+               src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
+               data-sizes="auto"
+               data-srcset="/images/projects/bistum-passau.png 1x, /images/projects/bistum-passau_2x.png 2x">
+          <!-- eslint-enable max-len -->
         </div>
       </div>
 
@@ -27,9 +31,14 @@
         <p class="margin-top-small">
           <i>Frontend</i>
         </p>
-        <div class="screenshot lazy-loaded">
-          <img class="image" src="../images/projects/dynatrace.png">
-          <div class="placeholder placeholder--ready" style="background-color: #ffffff" />
+
+        <div class="screenshot lazyload-wrapper">
+          <!-- eslint-disable max-len -->
+          <img class="image lazyload"
+               src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
+               data-sizes="auto"
+               data-srcset="/images/projects/dynatrace.png 1x, /images/projects/dynatrace.png 2x">
+          <!-- eslint-enable max-len -->
         </div>
       </div>
 
@@ -40,9 +49,14 @@
         <p class="margin-top-small">
           <i>Frontend, DevOps</i>
         </p>
-        <div class="screenshot lazy-loaded">
-          <img class="image" src="../images/projects/fredmansky.png">
-          <div class="placeholder placeholder--ready" style="background-color: #ffffff" />
+
+        <div class="screenshot lazyload-wrapper">
+          <!-- eslint-disable max-len -->
+          <img class="image lazyload"
+               src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
+               data-sizes="auto"
+               data-srcset="/images/projects/fredmansky.png 1x, /images/projects/fredmansky.png 2x">
+          <!-- eslint-enable max-len -->
         </div>
       </div>
 
@@ -53,9 +67,14 @@
         <p class="margin-top-small">
           <i>Frontend, Backend</i>
         </p>
-        <div class="screenshot lazy-loaded">
-          <img class="image" src="../images/projects/karriere-blog.png">
-          <div class="placeholder placeholder--ready" style="background-color: #ffffff" />
+
+        <div class="screenshot lazyload-wrapper">
+          <!-- eslint-disable max-len -->
+          <img class="image lazyload"
+               src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
+               data-sizes="auto"
+               data-srcset="/images/projects/karriere-blog.png 1x, /images/projects/karriere-blog_2x.png 2x">
+          <!-- eslint-enable max-len -->
         </div>
       </div>
 
@@ -66,9 +85,14 @@
         <p class="margin-top-small">
           <i>Frontend, Backend</i>
         </p>
-        <div class="screenshot lazy-loaded">
-          <img class="image" src="../images/projects/karriere-hr.png">
-          <div class="placeholder placeholder--ready" style="background-color: #ffffff" />
+
+        <div class="screenshot lazyload-wrapper">
+          <!-- eslint-disable max-len -->
+          <img class="image lazyload"
+               src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
+               data-sizes="auto"
+               data-srcset="/images/projects/karriere-hr.png 1x, /images/projects/karriere-hr_2x.png 2x">
+          <!-- eslint-enable max-len -->
         </div>
       </div>
 
@@ -79,9 +103,14 @@
         <p class="margin-top-small">
           <i>Frontend, DevOps</i>
         </p>
-        <div class="screenshot lazy-loaded">
-          <img class="image" src="../images/projects/talentor.png">
-          <div class="placeholder placeholder--ready" style="background-color: #ffffff" />
+
+        <div class="screenshot lazyload-wrapper">
+          <!-- eslint-disable max-len -->
+          <img class="image lazyload"
+               src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
+               data-sizes="auto"
+               data-srcset="/images/projects/talentor.png 1x, /images/projects/talentor_2x.png 2x">
+          <!-- eslint-enable max-len -->
         </div>
       </div>
     </div>

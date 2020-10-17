@@ -1,4 +1,4 @@
-import lozad from 'lozad';
+import 'lazysizes';
 
 export default {
   methods: {
@@ -10,7 +10,6 @@ export default {
       const container = document.querySelector('.container');
       const beachBall = document.querySelector('.beach-ball');
 
-      this.lazyLoadImages(container);
       this.setHeightAndScrollBehaviour(container, container.classList.contains('container--scrollable'));
 
       if (beachBall) {
@@ -46,26 +45,6 @@ export default {
       setTimeout(() => {
         done();
       }, 300);
-    },
-
-    // Lazy-load images
-    lazyLoadImages(container) {
-      const lazyLoadWrappers = container.querySelectorAll('.lazy-loaded');
-
-      lazyLoadWrappers.forEach((wrapper) => {
-        const image = wrapper.querySelector('.image');
-        const placeholder = wrapper.querySelector('.placeholder');
-        const lazyLoadObserver = lozad(image);
-
-        lazyLoadObserver.observe();
-
-        image.addEventListener('load', () => {
-          setTimeout(() => {
-            image.classList.add('image--ready');
-            placeholder.classList.remove('placeholder--ready');
-          }, 1000);
-        });
-      });
     },
 
     // Workaround for inconsistent height of mobile browsers as well as scrollbable containers

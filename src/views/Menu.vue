@@ -1,7 +1,7 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container">
-    <img class="beach-ball" src="../images/home/beach-ball.png">
+    <img class="beach-ball" src="/images/beach-ball.png">
 
     <a @click="$router.go(-1)" class="navigation-icon-wrapper clickable">
       <div class="navigation-icon navigation-icon--closing clickable"></div>

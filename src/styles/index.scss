@@ -103,6 +103,10 @@ p {
   }
 }
 
+.app {
+  width: inherit;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -173,33 +177,49 @@ p {
   }
 }
 
-.lazy-loaded {
-  display: flex;
+.lazyload-wrapper {
   position: relative;
-
-  .image,
-  .placeholder {
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 300ms linear;
-
-    &--ready {
-      opacity: 1;
-    }
-  }
 
   .placeholder {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 300ms linear;
   }
+}
+
+.lazyload,
+.lazyloading,
+.lazyloaded {
+  display: block;
+  width: 100%;
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.lazyloaded + .placeholder {
+  opacity: 0;
 }
 
 .navigation {
   @include fluidSizes(font-size, 24, 32);
   line-height: 1;
   text-decoration: none;
+
+  &.hidden {
+    display: none;
+  }
 
   &--desktop {
     display: none;

@@ -1,7 +1,7 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container">
-    <img class="beach-ball" src="../images/home/beach-ball.png">
+    <img class="beach-ball" src="/images/beach-ball.png">
 
     <div class="description">
       <p class="margin-top-none margin-bottom-none">

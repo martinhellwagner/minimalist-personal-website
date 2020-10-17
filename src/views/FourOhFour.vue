@@ -1,7 +1,7 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container">
-    <img class="beach-ball" src="../images/home/beach-ball.png">
+    <img class="beach-ball" src="/images/beach-ball.png">
 
     <div class="description">
       <p class="margin-top-none margin-bottom-none">
@@ -10,7 +10,7 @@
       <p class="margin-top-large margin-bottom-none">
         Unfortunately, this seems to be a dead end.<br>
         <!-- eslint-disable-next-line max-len -->
-        Why not go <router-link :to="{ name: 'home' }" class="clickable">back to the start</router-link>?
+        Why not go choose another site?
       </p>
     </div>
   </div>

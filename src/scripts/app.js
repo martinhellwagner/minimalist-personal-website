@@ -15,7 +15,7 @@ export default {
     // Categorically exclude IE and Edge
     const userAgent = Bowser.parse(window.navigator.userAgent);
 
-    if (userAgent.browser.name === 'Internet Explorer' || userAgent.browser.name === 'Microsoft Edge') {
+    if (userAgent.browser.name === 'Chrome' || userAgent.browser.name === 'Microsoft Edge') {
       if (window.location.href.indexOf('browser') === -1) {
         window.location.replace('/browser');
       }

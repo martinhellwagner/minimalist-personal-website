@@ -11,8 +11,7 @@
     border-radius: 50%;
   }
 
-  &.lazy-loaded .image,
-  &.lazy-loaded .placeholder {
+  &.lazyload-wrapper .placeholder {
     border-radius: 50%;
   }
 
