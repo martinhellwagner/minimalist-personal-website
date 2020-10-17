@@ -10,7 +10,7 @@
       <p class="margin-top-large margin-bottom-none">
         Unfortunately, this seems to be a dead end.<br>
         <!-- eslint-disable-next-line max-len -->
-        Why not go choose another site?
+        Why not choose another site?
       </p>
     </div>
   </div>

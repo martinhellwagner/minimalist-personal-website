@@ -217,8 +217,8 @@ p {
   line-height: 1;
   text-decoration: none;
 
-  &.hidden {
-    display: none;
+  &--hidden {
+    display: none !important;
   }
 
   &--desktop {
