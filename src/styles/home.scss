@@ -40,7 +40,7 @@
 }
 
 .header {
-  top: 32px;
+  @include fluidSizes(top, 30, 32);
   transform: translateX(calc(-50% + 4px));
 
   span {
