@@ -68,7 +68,7 @@
 }
 
 .footer {
-  bottom: 32px;
+  @include fluidSizes(bottom, 30, 32);
   transform: translateX(-50%);
 
   a {

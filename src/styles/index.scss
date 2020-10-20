@@ -218,7 +218,7 @@ p {
 }
 
 .navigation {
-  @include fluidSizes(font-size, 24, 32);
+  @include fluidSizes(font-size, 20, 32);
   line-height: 1;
   text-decoration: none;
 
