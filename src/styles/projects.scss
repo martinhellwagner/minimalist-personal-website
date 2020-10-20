@@ -2,7 +2,15 @@
 
 .projects {
   width: 75vw;
-  max-width: 686px;
+  max-width: 400px;
+
+  @media screen and (min-width: #{$breakpoint-large + "px"}) {
+    max-width: 550px;
+  }
+
+  @media screen and (min-width: #{$breakpoint-max + "px"}) {
+    max-width: 686px;
+  }
 
   @include fluidSizes(margin-bottom, 40, 80);
 

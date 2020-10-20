@@ -1,4 +1,5 @@
 // VARIABLES
+$black: #000000;
 $blue: #345bfb;
 $lightBlue: #87cefa;
 
@@ -100,6 +101,10 @@ p {
 
   &.margin-bottom-xlarge {
     margin-bottom: 2.5em;
+  }
+
+  &.not-colored {
+    color: $black;
   }
 }
 

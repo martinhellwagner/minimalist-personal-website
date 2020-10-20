@@ -32,7 +32,7 @@ if (userAgent.browser.name === 'Internet Explorer' || userAgent.browser.name ===
   isStupidBrowser = true;
 }
 
-// Categorically exclude landscape mode on mobile devices
+// Categorically exclude landscape mode on (small) mobile devices
 if (userAgent.platform.type === 'mobile' && window.innerHeight < window.innerWidth) {
   isStupidMode = true;
 } else if (window.location.href.indexOf('mode') > -1) {
