@@ -44,7 +44,7 @@ body {
 a,
 a:hover,
 a:visited {
-  color: black;
+  color: $black;
 }
 
 a.colored,
@@ -53,13 +53,15 @@ a.colored:visited {
   text-decoration: none;
 }
 
-a.colored,
-a.colored:visited {
-  transition: color 300ms ease-in-out;
-}
+@media screen and (min-width: #{$breakpoint-medium + "px"}) {
+  a.colored,
+  a.colored:visited {
+    transition: color 300ms ease-in-out;
+  }
 
-a.colored:hover {
-  color: $blue;
+  a.colored:hover {
+    color: $blue;
+  }
 }
 
 p {
@@ -299,7 +301,7 @@ p {
     height: 2px;
     margin: auto;
     visibility: hidden;
-    background-color: black;
+    background-color: $black;
 
     &:before,
     &:after {

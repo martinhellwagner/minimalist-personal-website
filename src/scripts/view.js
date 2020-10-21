@@ -7,24 +7,28 @@ export default {
         window.location.reload();
       });
 
-      const container = document.querySelector('.container');
-      const beachBall = document.querySelector('.beach-ball');
+      const clientWidth = document.body.clientWidth; // eslint-disable-line prefer-destructuring
+      const clientHeight = document.body.clientHeight; // eslint-disable-line prefer-destructuring
+
+      const container = document.body.querySelector('.container');
+      const beachBall = container.querySelector('.beach-ball');
 
       this.setHeightAndScrollBehaviour(container, container.classList.contains('container--scrollable'));
-      this.placeBeachBall(beachBall);
 
       if (beachBall) {
+        this.placeBeachBall(beachBall, clientWidth, clientHeight);
+
         container.addEventListener('click', (event) => {
           if (!event.target.classList.contains('clickable')) {
             event.preventDefault();
-            this.placeBeachBall(beachBall);
+            this.placeBeachBall(beachBall, clientWidth, clientHeight);
           }
         });
 
         container.addEventListener('touchstart', (event) => {
           if (!event.target.classList.contains('clickable')) {
             event.preventDefault();
-            this.placeBeachBall(beachBall);
+            this.placeBeachBall(beachBall, clientWidth, clientHeight);
           }
         });
       }
@@ -67,9 +71,9 @@ export default {
     },
 
     // Randomly place beach ball
-    placeBeachBall(beachBall) {
-      const randomX = this.randomise(document.body.clientWidth - beachBall.clientWidth);
-      const randomY = this.randomise(document.body.clientHeight - beachBall.clientHeight);
+    placeBeachBall(beachBall, clientWidth, clientHeight) {
+      const randomX = this.randomise(clientWidth - beachBall.clientWidth);
+      const randomY = this.randomise(clientHeight - beachBall.clientHeight);
 
       beachBall.style.left = `${randomX}px`; // eslint-disable-line no-param-reassign
       beachBall.style.top = `${randomY}px`; // eslint-disable-line no-param-reassign
