@@ -3,7 +3,7 @@ import Bowser from 'bowser';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Mixins from './scripts/index';
+import Mixins from './scripts/view';
 
 import App from './App.vue';
 

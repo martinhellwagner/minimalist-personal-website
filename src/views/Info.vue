@@ -55,5 +55,5 @@ export default {
 
 <!-- STYLE-->
 <style lang="scss">
-  @import "../styles/index.scss";
+  @import "../styles/base.scss";
 </style>
