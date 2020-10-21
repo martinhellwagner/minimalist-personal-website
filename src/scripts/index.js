@@ -11,10 +11,9 @@ export default {
       const beachBall = document.querySelector('.beach-ball');
 
       this.setHeightAndScrollBehaviour(container, container.classList.contains('container--scrollable'));
+      this.placeBeachBall(beachBall);
 
       if (beachBall) {
-        this.placeBeachBall(beachBall);
-
         container.addEventListener('click', (event) => {
           if (!event.target.classList.contains('clickable')) {
             event.preventDefault();

@@ -1,11 +1,11 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container">
-    <img class="beach-ball" src="/images/beach-ball.png">
-
     <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable">
       <div class="navigation-icon navigation-icon--menu clickable"></div>
     </router-link>
+
+    <img class="beach-ball" src="/images/beach-ball.png">
 
     <div class="description">
       <p class="margin-top-none margin-bottom-none">
