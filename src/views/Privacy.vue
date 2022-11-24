@@ -11,6 +11,7 @@
       <p class="margin-top-none margin-bottom-none">
         <b>It's as simple as that...</b>
       </p>
+
       <p class="margin-top-large margin-bottom-none">
         This website doesn't collect, store or process any personal data whatsoever.
         Your data is your data, and will stay that way.

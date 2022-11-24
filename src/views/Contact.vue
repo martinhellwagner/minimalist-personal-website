@@ -21,7 +21,7 @@
       </p>
 
       <p class="margin-bottom-medium">
-        Of course you can also reach out to my on my socials:
+        You can also reach out to me on my socials:
       </p>
     </div>
 

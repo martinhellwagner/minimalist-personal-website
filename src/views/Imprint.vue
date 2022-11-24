@@ -13,15 +13,15 @@
       </p>
 
       <p class="margin-top-large margin-bottom-xlarge">
-        Martin Hellwagner, MSc.<br>
-        Hauptstraße 72<br>
-        4040 Linz, Austria<br>
+        Martin Hellwagner, MSc<br>
+        Landstraße 58<br>
+        4020 Linz, Austria<br>
         <!-- eslint-disable-next-line max-len -->
         <a href="mailto:martin.hellwagner@gmail.com?subject=Imprint" class="clickable" target="_blank">martin.hellwagner@gmail.com</a>
       </p>
     </div>
 
-    <div class="description margin-bottom-none">
+    <div class="description description--hidden margin-bottom-none">
       <p class="margin-top-xlarge margin-bottom-none">
         <b>Provider Information</b>
       </p>

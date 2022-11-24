@@ -20,7 +20,7 @@
         <i>Frontend</i>
       </p>
       <p class="margin-top-none margin-bottom-large">
-        HTML, CSS (LESS, SASS), JavaScript (ES6, Vue.js, React, React Native)
+        HTML, CSS (LESS, SASS, Tailwind), JavaScript (ES6, Vue.js, React, React Native)
       </p>
 
       <p class="margin-top-none margin-bottom-small">

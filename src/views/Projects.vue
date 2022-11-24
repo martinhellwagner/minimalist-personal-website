@@ -5,129 +5,17 @@
       <div class="navigation-icon navigation-icon--menu clickable"></div>
     </router-link>
 
-    <div class="projects">
-      <div class="project">
-        <a href="https://www.bistum-passau.de" class="clickable colored" target="_blank">
-          <p class="margin-top-none margin-bottom-none">
-            <b>Bistum Passau</b>
-          </p>
+    <img class="beach-ball" src="/images/beach-ball.png">
 
-          <p class="margin-top-small not-colored">
-            <i>Frontend, DevOps</i>
-          </p>
+    <div class="description">
+      <p class="margin-top-none margin-bottom-none">
+        <b>Want to check out my work?</b>
+      </p>
 
-          <div class="screenshot lazyload-wrapper">
-            <!-- eslint-disable max-len -->
-            <a href="https://www.bistum-passau.de" class="clickable colored" target="_blank">
-            <img class="image lazyload"
-                src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
-                data-sizes="auto"
-                data-srcset="/images/projects/bistum-passau.png 1x, /images/projects/bistum-passau_2x.png 2x">
-            <!-- eslint-enable max-len -->
-            </a>
-          </div>
-        </a>
-      </div>
-
-      <div class="project">
-        <a href="https://www.dynatrace.com" class="clickable colored" target="_blank">
-          <p class="margin-top-none margin-bottom-none">
-            <b>Dynatrace</b>
-          </p>
-          <p class="margin-top-small not-colored">
-            <i>Frontend</i>
-          </p>
-
-          <div class="screenshot lazyload-wrapper">
-            <!-- eslint-disable max-len -->
-            <img class="image lazyload"
-                src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
-                data-sizes="auto"
-                data-srcset="/images/projects/dynatrace.png 1x, /images/projects/dynatrace.png 2x">
-            <!-- eslint-enable max-len -->
-          </div>
-        </a>
-      </div>
-
-      <div class="project">
-        <a href="https://www.fredmansky.at" class="clickable colored" target="_blank">
-          <p class="margin-top-none margin-bottom-none">
-            <b>Fredmansky</b>
-          </p>
-          <p class="margin-top-small not-colored">
-            <i>Frontend, DevOps</i>
-          </p>
-
-          <div class="screenshot lazyload-wrapper">
-            <!-- eslint-disable max-len -->
-            <img class="image lazyload"
-                src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
-                data-sizes="auto"
-                data-srcset="/images/projects/fredmansky.png 1x, /images/projects/fredmansky.png 2x">
-            <!-- eslint-enable max-len -->
-          </div>
-        </a>
-      </div>
-
-      <div class="project">
-        <a href="https://www.karriere.at/blog" class="clickable colored" target="_blank">
-          <p class="margin-top-none margin-bottom-none">
-            <b>karriere.at Blog</b>
-          </p>
-          <p class="margin-top-small not-colored">
-            <i>Frontend, Backend</i>
-          </p>
-
-          <div class="screenshot lazyload-wrapper">
-            <!-- eslint-disable max-len -->
-            <img class="image lazyload"
-                src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
-                data-sizes="auto"
-                data-srcset="/images/projects/karriere-blog.png 1x, /images/projects/karriere-blog_2x.png 2x">
-            <!-- eslint-enable max-len -->
-          </div>
-        </a>
-      </div>
-
-      <div class="project">
-        <a href="https://www.karriere.at/hr" class="clickable colored" target="_blank">
-          <p class="margin-top-none margin-bottom-none">
-            <b>karriere.at HR</b>
-          </p>
-          <p class="margin-top-small not-colored">
-            <i>Frontend, Backend</i>
-          </p>
-
-          <div class="screenshot lazyload-wrapper">
-            <!-- eslint-disable max-len -->
-            <img class="image lazyload"
-                src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
-                data-sizes="auto"
-                data-srcset="/images/projects/karriere-hr.png 1x, /images/projects/karriere-hr_2x.png 2x">
-            <!-- eslint-enable max-len -->
-          </div>
-        </a>
-      </div>
-
-      <div class="project">
-        <a href="https://talentor.com" class="clickable colored" target="_blank">
-          <p class="margin-top-none margin-bottom-none">
-            <b>Talentor</b>
-          </p>
-          <p class="margin-top-small not-colored">
-            <i>Frontend, DevOps</i>
-          </p>
-
-          <div class="screenshot lazyload-wrapper">
-            <!-- eslint-disable max-len -->
-            <img class="image lazyload"
-                src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27686%27%20height%3D%27506%27%20style%3D%27background%3Atransparent%27%2F%3E"
-                data-sizes="auto"
-                data-srcset="/images/projects/talentor.png 1x, /images/projects/talentor_2x.png 2x">
-            <!-- eslint-enable max-len -->
-          </div>
-        </a>
-      </div>
+      <p class="margin-top-large margin-bottom-large">
+        You'll find a list of all the projects I've recently been working on
+        <a href="https://fredmansky.at/t/martin-hellwagner" class="clickable" target="_blank">right here</a>.
+      </p>
     </div>
   </div>
 </template>
@@ -143,7 +31,7 @@ export default {
 };
 </script>
 
-<!-- STYLE -->
+<!-- STYLE-->
 <style lang="scss">
-  @import "../styles/projects.scss";
+  @import "../styles/base.scss";
 </style>

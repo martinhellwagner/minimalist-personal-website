@@ -170,7 +170,7 @@ p {
 .description {
   display: block;
   width: 80vw;
-  max-width: 480px;
+  max-width: 485px;
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
@@ -181,6 +181,10 @@ p {
 
   @media screen and (min-height: #{$breakpoint-small + "px"}) {
     @include fluidSizes(font-size, 16, 24);
+  }
+
+  &--hidden {
+    display: none;
   }
 }
 
