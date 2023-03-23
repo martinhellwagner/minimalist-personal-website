@@ -1,7 +1,8 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container container--scrollable">
-    <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable">
+    <!-- eslint-disable-next-line max-len -->
+    <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable" aria-label="Go to menu">
       <div class="navigation-icon navigation-icon--menu clickable"></div>
     </router-link>
 

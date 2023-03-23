@@ -306,6 +306,7 @@ p {
     margin: auto;
     visibility: hidden;
     background-color: $black;
+    cursor: pointer;
 
     &:before,
     &:after {

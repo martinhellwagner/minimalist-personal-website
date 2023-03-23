@@ -1,11 +1,12 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container">
-    <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable">
+    <!-- eslint-disable-next-line max-len -->
+    <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable" aria-label="Go to menu">
       <div class="navigation-icon navigation-icon--menu clickable"></div>
     </router-link>
 
-    <img class="beach-ball" src="/images/beach-ball.png">
+    <img class="beach-ball" src="/images/beach-ball.png" alt="Beach Ball">
 
     <div class="description">
       <p class="margin-top-none margin-bottom-none">
