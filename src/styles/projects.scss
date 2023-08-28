@@ -1,0 +1,38 @@
+@import "./base.scss";
+
+.projects {
+  @include fluidSizes(margin-top, 48, 84);
+}
+
+.project {
+  line-height: 1.5;
+  text-align: center;
+
+  @media screen and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
+    @include fluidSizes(font-size, 16, 20);
+  }
+
+  @media screen and (min-height: #{$breakpoint-small + "px"}) {
+    @include fluidSizes(font-size, 16, 24);
+  }
+
+  &:hover .screenshot {
+    transform: scale(1.05);
+  }
+}
+
+.screenshot {
+  width: 300px;
+  height: 194px;
+  transition: transform 300ms ease-in-out;
+
+  @media screen and (min-width: #{$breakpoint-medium + "px"}) {
+    width: 400px;
+    height: 259px;
+  }
+
+  @media screen and (min-width: #{$breakpoint-large + "px"}) {
+    width: 650px;
+    height: 421px;
+  }
+}

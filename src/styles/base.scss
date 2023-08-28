@@ -64,6 +64,7 @@ a.colored:visited {
   }
 }
 
+div,
 p {
   &.margin-top-none {
   margin-top: 0;
@@ -73,12 +74,20 @@ p {
     margin-bottom: 0;
   }
 
-  &.margin-top-small {
+  &.margin-top-xsmall {
     margin-top: 0.5em;
   }
 
-  &.margin-bottom-small {
+  &.margin-bottom-xsmall {
     margin-bottom: 0.5em;
+  }
+
+  &.margin-top-small {
+    margin-top: 1em;
+  }
+
+  &.margin-bottom-small {
+    margin-bottom: 1em;
   }
 
   &.margin-top-medium {
@@ -103,6 +112,14 @@ p {
 
   &.margin-bottom-xlarge {
     margin-bottom: 2.5em;
+  }
+
+  &.margin-top-xxlarge {
+    margin-top: 3em;
+  }
+
+  &.margin-bottom-xxlarge {
+    margin-bottom: 3em;
   }
 
   &.not-colored {
@@ -138,8 +155,8 @@ p {
   z-index: 21;
 
   @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
-    @include fluidSizes(width, 32, 40);
-    @include fluidSizes(height, 32, 40);
+    @include fluidSizes(width, 32, 44);
+    @include fluidSizes(height, 32, 44);
   }
 
   animation-name: rotation;

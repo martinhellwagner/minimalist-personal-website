@@ -18,14 +18,14 @@
           and explore my skillset below.
         </p>
 
-        <p class="margin-top-none margin-bottom-small">
+        <p class="margin-top-none margin-bottom-xsmall">
           <i>Frontend</i>
         </p>
         <p class="margin-top-none margin-bottom-large">
           HTML, CSS (LESS, SASS, Tailwind), JavaScript (ES6, Vue.js, React, React Native)
         </p>
 
-        <p class="margin-top-none margin-bottom-small">
+        <p class="margin-top-none margin-bottom-xsmall">
           <i>Backend</i>
         </p>
         <p class="margin-top-none margin-bottom-large">
@@ -33,7 +33,7 @@
           PHP (Laravel, Zend), CMS (Craft, Wordpress), Node.js, Databases (MySQL, MongoDB)
         </p>
 
-        <p class="margin-top-none margin-bottom-small">
+        <p class="margin-top-none margin-bottom-xsmall">
           <i>DevOps</i>
         </p>
         <p class="margin-top-none margin-bottom-xlarge">

@@ -30,7 +30,7 @@
         <p class="margin-top-xlarge margin-bottom-none">
           <b>Hi, my name is Martin.</b>
         </p>
-        <p class="margin-top-large margin-bottom-small">
+        <p class="margin-top-large margin-bottom-xsmall">
           <!-- eslint-disable-next-line max-len -->
           I'm an experienced Full Stack Web Developer as well as DevOps Engineer by day and a passionate Liquid Drum & Bass DJ by night.
           <!-- eslint-disable-next-line max-len -->

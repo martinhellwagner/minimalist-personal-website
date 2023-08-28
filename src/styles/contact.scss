@@ -5,19 +5,19 @@
   height: 32px;
 
   @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
-    @include fluidSizes(height, 32, 40);
+    @include fluidSizes(height, 32, 44);
   }
 
   .icon {
     width: 32px;
     height: 100%;
     background-color: white;
-    transition: transform 200ms ease-in-out;
+    transition: transform 300ms ease-in-out;
 
     @include fluidSizes(margin-right, 16, 24);
 
     @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
-      @include fluidSizes(width, 32, 40);
+      @include fluidSizes(width, 32, 44);
     }
 
     &--first {

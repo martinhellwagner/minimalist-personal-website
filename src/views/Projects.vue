@@ -7,17 +7,60 @@
     </router-link>
 
     <div class="content">
-      <img class="beach-ball" src="/images/beach-ball.png" alt="Beach Ball">
+      <div class="projects">
+        <div class="project margin-bottom-xxlarge">
+          <a href="https://www.bistum-passau.de" class="clickable colored" target="_blank">
+            <p class="margin-top-none margin-bottom-none">
+              <b>Bistum Passau</b>
+            </p>
+            <p class="margin-top-xsmall margin-bottom-small not-colored">
+              <i>Frontend, Backend, DevOps</i>
+            </p>
 
-      <div class="description">
-        <p class="margin-top-none margin-bottom-none">
-          <b>Want to check out my work?</b>
-        </p>
+            <div class="screenshot lazyload-wrapper">
+              <!-- eslint-disable max-len -->
+              <img class="image lazyload" data-sizes="auto" data-srcset="/images/projects/bistum-passau.png 1x, /images/projects/bistum-passau_2x.png 2x">
+              <div class="placeholder" style="background-color: #ffffff" />
+              <!-- eslint-enable max-len -->
+            </div>
+          </a>
+        </div>
 
-        <p class="margin-top-large margin-bottom-large">
-          You'll find a list of all the projects I've recently been working on
-          <a href="https://fredmansky.at/t/martin-hellwagner" class="clickable" target="_blank">right here</a>.
-        </p>
+        <div class="project margin-bottom-xxlarge">
+          <a href="https://rotax-racing.com" class="clickable colored" target="_blank">
+            <p class="margin-top-none margin-bottom-none">
+              <b>Rotax Racing</b>
+            </p>
+            <p class="margin-top-xsmall margin-bottom-small not-colored">
+              <i>DevOps</i>
+            </p>
+
+            <div class="screenshot lazyload-wrapper">
+              <!-- eslint-disable max-len -->
+              <img class="image lazyload" data-sizes="auto" data-srcset="/images/projects/rotax-racing.png 1x, /images/projects/rotax-racing_2x.png 2x">
+              <div class="placeholder" style="background-color: #ffffff" />
+              <!-- eslint-enable max-len -->
+            </div>
+          </a>
+        </div>
+
+        <div class="project margin-bottom-xxlarge">
+          <a href="https://sksturm.at" class="clickable colored" target="_blank">
+            <p class="margin-top-none margin-bottom-none">
+              <b>SK Sturm Graz</b>
+            </p>
+            <p class="margin-top-xsmall margin-bottom-small not-colored">
+              <i>Backend, DevOps</i>
+            </p>
+
+            <div class="screenshot lazyload-wrapper">
+              <!-- eslint-disable max-len -->
+              <img class="image lazyload" data-sizes="auto" data-srcset="/images/projects/sturm-graz.png 1x, /images/projects/sturm-graz_2x.png 2x">
+              <div class="placeholder" style="background-color: #ffffff" />
+              <!-- eslint-enable max-len -->
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -36,5 +79,5 @@ export default {
 
 <!-- STYLE-->
 <style lang="scss">
-  @import "../styles/base.scss";
+  @import "../styles/projects.scss";
 </style>
