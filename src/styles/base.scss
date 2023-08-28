@@ -114,7 +114,7 @@ p {
   width: inherit;
 }
 
-.container {
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,13 +133,13 @@ p {
 
 .beach-ball {
   position: fixed;
+  width: 32px;
+  height: 32px;
   z-index: 21;
-  width: 26px;
-  height: 26px;
 
   @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
-    @include fluidSizes(width, 28, 40);
-    @include fluidSizes(height, 28, 40);
+    @include fluidSizes(width, 32, 40);
+    @include fluidSizes(height, 32, 40);
   }
 
   animation-name: rotation;
@@ -310,37 +310,43 @@ p {
 
     &:before,
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       visibility: visible;
       right: 0;
       width: 100%;
       height: 100%;
       background-color: inherit;
+      transition: transform 200ms ease-in-out;
     }
 
     &--menu {
       &:before {
-        top: -200%;
-      }
-
-      &:after {
-        bottom: -200%;
-      }
-    }
-
-    &--closing {
-      &:before,
-      &:after {
-        top: 0;
-      }
-
-      &:before {
-        transform: rotate(45deg);
+        transform: translateY(0);
       }
   
       &:after {
-        transform: rotate(-45deg);
+        transform: translateY(0);
+      }
+    }
+
+    &--menuOpen {
+      &:before {
+        transform: translateY(200%);
+      }
+
+      &:after {
+        transform: translateY(-200%);
+      }
+    }
+
+    &--menuOpened {
+      &:before {
+        transform: translateY(0) rotate(45deg);
+      }
+  
+      &:after {
+        transform: translateY(0) rotate(-45deg);
       }
     }
   }

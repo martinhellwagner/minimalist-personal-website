@@ -36,7 +36,19 @@ export default {
 
     // Enter page through transition
     enter(container, done) {
-      container.classList.add('container--ready');
+      container.querySelector('.content').classList.add('content--ready');
+
+      const navigationIconMenu = container.querySelector('.navigation-icon--menu');
+      const navigationIconClosing = container.querySelector('.navigation-icon--closing');
+
+      if (navigationIconMenu) {
+        navigationIconMenu.classList.add('navigation-icon--menuOpen');
+      }
+
+      if (navigationIconClosing) {
+        navigationIconClosing.classList.add('navigation-icon--menuOpened');
+      }
+
       setTimeout(() => {
         done();
       }, 300);
@@ -44,7 +56,19 @@ export default {
 
     // Leave page through transition
     leave(container, done) {
-      container.classList.remove('container--ready');
+      container.querySelector('.content').classList.remove('content--ready');
+
+      const navigationIconMenu = container.querySelector('.navigation-icon--menu');
+      const navigationIconClosing = container.querySelector('.navigation-icon--closing');
+
+      if (navigationIconMenu) {
+        navigationIconMenu.classList.remove('navigation-icon--menuOpen');
+      }
+
+      if (navigationIconClosing) {
+        navigationIconClosing.classList.remove('navigation-icon--menuOpened');
+      }
+
       setTimeout(() => {
         done();
       }, 300);

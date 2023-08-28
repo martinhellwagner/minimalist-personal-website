@@ -2,26 +2,26 @@
 
 .icons {
   display: flex;
-  height: 26px;
+  height: 32px;
 
   @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
-    @include fluidSizes(height, 28, 40);
+    @include fluidSizes(height, 32, 40);
   }
 
   .icon {
-    width: 26px;
+    width: 32px;
     height: 100%;
     background-color: white;
     transition: transform 200ms ease-in-out;
 
-    @include fluidSizes(margin-right, 12, 25);
+    @include fluidSizes(margin-right, 16, 24);
 
     @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
-      @include fluidSizes(width, 28, 40);
+      @include fluidSizes(width, 32, 40);
     }
 
     &--first {
-      @include fluidSizes(margin-left, 12, 25);
+      @include fluidSizes(margin-left, 16, 24);
     }
 
     &:hover {

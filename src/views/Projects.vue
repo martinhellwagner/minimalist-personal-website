@@ -6,17 +6,19 @@
       <div class="navigation-icon navigation-icon--menu clickable"></div>
     </router-link>
 
-    <img class="beach-ball" src="/images/beach-ball.png" alt="Beach Ball">
+    <div class="content">
+      <img class="beach-ball" src="/images/beach-ball.png" alt="Beach Ball">
 
-    <div class="description">
-      <p class="margin-top-none margin-bottom-none">
-        <b>Want to check out my work?</b>
-      </p>
+      <div class="description">
+        <p class="margin-top-none margin-bottom-none">
+          <b>Want to check out my work?</b>
+        </p>
 
-      <p class="margin-top-large margin-bottom-large">
-        You'll find a list of all the projects I've recently been working on
-        <a href="https://fredmansky.at/t/martin-hellwagner" class="clickable" target="_blank">right here</a>.
-      </p>
+        <p class="margin-top-large margin-bottom-large">
+          You'll find a list of all the projects I've recently been working on
+          <a href="https://fredmansky.at/t/martin-hellwagner" class="clickable" target="_blank">right here</a>.
+        </p>
+      </div>
     </div>
   </div>
 </template>
