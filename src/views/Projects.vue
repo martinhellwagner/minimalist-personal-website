@@ -45,6 +45,24 @@
         </div>
 
         <div class="project margin-bottom-xxlarge">
+          <a href="https://www.pohl.co.at" class="clickable colored" target="_blank">
+            <p class="margin-top-none margin-bottom-none">
+              <b>Pohl</b>
+            </p>
+            <p class="margin-top-xsmall margin-bottom-small not-colored">
+              <i>Frontend, Backend, DevOps</i>
+            </p>
+
+            <div class="screenshot lazyload-wrapper">
+              <!-- eslint-disable max-len -->
+              <img class="image lazyload" data-sizes="auto" data-srcset="/images/projects/pohl.png 1x, /images/projects/pohl_2x.png 2x">
+              <div class="placeholder" style="background-color: #ffffff" />
+              <!-- eslint-enable max-len -->
+            </div>
+          </a>
+        </div>
+
+        <div class="project margin-bottom-xxlarge">
           <a href="https://rotax-racing.com" class="clickable colored" target="_blank">
             <p class="margin-top-none margin-bottom-none">
               <b>Rotax Racing</b>
@@ -68,7 +86,7 @@
               <b>Sazun</b>
             </p>
             <p class="margin-top-xsmall margin-bottom-small not-colored">
-              <i>Frontend, Backend, DevOps</i>
+              <i>Backend, DevOps</i>
             </p>
 
             <div class="screenshot lazyload-wrapper">
