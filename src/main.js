@@ -29,7 +29,8 @@ let isStupidMode = false;
 
 // Categorically exclude IE and Edge
 if (userAgent.browser.name === 'Internet Explorer' || userAgent.browser.name === 'Microsoft Edge') {
-  isStupidBrowser = true;
+  // isStupidBrowser = true;
+  isStupidBrowser = false;
 }
 
 // Categorically exclude landscape mode on (small) mobile devices
