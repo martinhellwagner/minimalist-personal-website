@@ -27,10 +27,9 @@ const userAgent = Bowser.parse(window.navigator.userAgent);
 let isStupidBrowser = false;
 let isStupidMode = false;
 
-// Categorically exclude IE and Edge
-if (userAgent.browser.name === 'Internet Explorer' || userAgent.browser.name === 'Microsoft Edge') {
-  // isStupidBrowser = true;
-  isStupidBrowser = false;
+// Categorically exclude Internet Explorer
+if (userAgent.browser.name === 'Internet Explorer') {
+  isStupidBrowser = true;
 }
 
 // Categorically exclude landscape mode on (small) mobile devices
