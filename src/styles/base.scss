@@ -122,6 +122,14 @@ p {
     margin-bottom: 3em;
   }
 
+  &.margin-top-xxxlarge {
+    margin-top: 3.5em;
+  }
+
+  &.margin-bottom-xxxlarge {
+    margin-bottom: 3.5em;
+  }
+
   &.not-colored {
     color: $black;
   }
@@ -187,7 +195,7 @@ p {
 .description {
   display: block;
   width: 80vw;
-  max-width: 485px;
+  max-width: 515px;
   text-align: center;
   font-size: 16px;
   line-height: 1.5;

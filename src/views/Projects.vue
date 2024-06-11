@@ -8,7 +8,7 @@
 
     <div class="content">
       <div class="projects">
-        <div class="project margin-bottom-xxlarge">
+        <div class="project margin-bottom-xxxlarge">
           <a href="https://www.bistum-passau.de" class="clickable colored" target="_blank">
             <p class="margin-top-none margin-bottom-none">
               <b>Bistum Passau</b>
@@ -26,7 +26,7 @@
           </a>
         </div>
 
-        <div class="project margin-bottom-xxlarge">
+        <div class="project margin-bottom-xxxlarge">
           <a href="https://mach-was-mit-sinn.at" class="clickable colored" target="_blank">
             <p class="margin-top-none margin-bottom-none">
               <b>Bundesministerium für Klimaschutz</b>
@@ -44,7 +44,7 @@
           </a>
         </div>
 
-        <div class="project margin-bottom-xxlarge">
+        <div class="project margin-bottom-xxxlarge">
           <a href="https://www.pohl.co.at" class="clickable colored" target="_blank">
             <p class="margin-top-none margin-bottom-none">
               <b>Pohl</b>
@@ -62,7 +62,7 @@
           </a>
         </div>
 
-        <div class="project margin-bottom-xxlarge">
+        <div class="project margin-bottom-xxxlarge">
           <a href="https://rotax-racing.com" class="clickable colored" target="_blank">
             <p class="margin-top-none margin-bottom-none">
               <b>Rotax Racing</b>
@@ -80,7 +80,7 @@
           </a>
         </div>
 
-        <div class="project margin-bottom-xxlarge">
+        <div class="project margin-bottom-xxxlarge">
           <a href="https://sazun.net" class="clickable colored" target="_blank">
             <p class="margin-top-none margin-bottom-none">
               <b>Sazun</b>
@@ -98,7 +98,7 @@
           </a>
         </div>
 
-        <div class="project margin-bottom-xxlarge">
+        <div class="project margin-bottom-xxxlarge">
           <a href="https://sksturm.at" class="clickable colored" target="_blank">
             <p class="margin-top-none margin-bottom-none">
               <b>Sturm Graz</b>

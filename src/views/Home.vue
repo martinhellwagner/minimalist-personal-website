@@ -32,7 +32,7 @@
         </p>
         <p class="margin-top-large margin-bottom-xsmall">
           <!-- eslint-disable-next-line max-len -->
-          I'm an experienced Full Stack Web Developer as well as DevOps Engineer by day and a passionate Liquid Drum & Bass DJ by night.
+          I'm an experienced Full Stack Web Developer by day and a passionate Liquid Drum & Bass DJ by night.
           <!-- eslint-disable-next-line max-len -->
           I'm currently based in <a class="clickable" href="https://www.google.com/maps/place/Linz,+Austria/@48.2950437,14.2573657,12z" target="_blank">Linz, Austria</a>.
         </p>

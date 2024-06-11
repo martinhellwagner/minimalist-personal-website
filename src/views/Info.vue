@@ -15,7 +15,7 @@
         <p class="margin-top-large margin-bottom-large">
           <!-- eslint-disable-next-line max-len -->
           You're welcome to check out <a href="/documents/Martin_Hellwagner_CV.pdf" class="clickable" target="_blank">my CV</a>
-          and explore my skillset below.
+          and explore my skillset below:
         </p>
 
         <p class="margin-top-none margin-bottom-xsmall">
