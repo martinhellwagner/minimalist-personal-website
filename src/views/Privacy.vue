@@ -1,10 +1,9 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container">
-    <!-- eslint-disable-next-line max-len -->
-    <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable" aria-label="Go to menu">
+    <RouterLink :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable" aria-label="Go to menu">
       <div class="navigation-icon navigation-icon--menu clickable"></div>
-    </router-link>
+    </RouterLink>
 
     <div class="content">
       <img class="beach-ball" src="/images/beach-ball.png" alt="Beach Ball">
@@ -37,5 +36,5 @@ export default {
 
 <!-- STYLE-->
 <style lang="scss">
-  @import "../styles/contact.scss";
+  @use "../styles/contact.scss";
 </style>

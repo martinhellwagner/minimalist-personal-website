@@ -1,4 +1,4 @@
-@import "./base.scss";
+@use "base" as *;
 
 .projects {
   @include fluidSizes(margin-top, 48, 84);
@@ -9,11 +9,11 @@
   text-align: center;
 
   @media screen and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
-    @include fluidSizes(font-size, 16, 20);
+    @include fluidSizes(font-size, 14, 20);
   }
 
   @media screen and (min-height: #{$breakpoint-small + "px"}) {
-    @include fluidSizes(font-size, 16, 24);
+    @include fluidSizes(font-size, 16, 22);
   }
 
   &:hover .screenshot {

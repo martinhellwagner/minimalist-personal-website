@@ -1,52 +1,27 @@
 {
   "name": "minimalist-personal-website",
-  "version": "3.0.0",
+  "version": "6.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --fix"
   },
   "dependencies": {
-    "babel-eslint": "^10.1.0",
-    "bowser": "^2.9.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-vue": "^6.2.2",
-    "lazysizes": "^5.2.2",
-    "vue": "^2.6.11",
-    "vue-router": "^3.1.6"
+    "bowser": "2.11.0",
+    "lazysizes": "5.3.2",
+    "vue": "3.5.13",
+    "vue-router": "4.5.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.2.3",
-    "@vue/cli-plugin-eslint": "^4.2.3",
-    "@vue/cli-service": "^4.2.3",
-    "@vue/eslint-config-airbnb": "^5.0.2",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/airbnb"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+    "@eslint/js": "9.22.0",
+    "@vitejs/plugin-vue": "5.2.3",
+    "eslint": "9.22.0",
+    "eslint-plugin-vue": "10.0.0",
+    "globals": "16.0.0",
+    "sass": "1.89.2",
+    "vite": "^6.3.5",
+    "vite-plugin-vue-devtools": "7.7.2"
+  }
 }

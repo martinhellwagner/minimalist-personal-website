@@ -9,41 +9,39 @@
       <img class="beach-ball" src="/images/beach-ball.png" alt="Beach Ball">
 
       <p class="margin-top-none margin-bottom-none">
-        <router-link :to="{ name: 'home' }" class="navigation navigation--mobile clickable">
+        <RouterLink :to="{ name: 'home' }" class="navigation navigation--mobile colored clickable">
             Home
-        </router-link>
+        </RouterLink>
       </p>
 
       <p class="margin-top-medium margin-bottom-none">
-        <router-link :to="{ name: 'projects' }" class="navigation navigation--mobile clickable">
+        <RouterLink :to="{ name: 'projects' }" class="navigation navigation--mobile colored clickable">
             Projects
-        </router-link>
+        </RouterLink>
       </p>
 
       <p class="margin-top-medium margin-bottom-none">
-        <router-link :to="{ name: 'info' }" class="navigation navigation--mobile clickable">
+        <RouterLink :to="{ name: 'info' }" class="navigation navigation--mobile colored clickable">
           Info
-        </router-link>
+        </RouterLink>
       </p>
 
       <p class="margin-top-medium margin-bottom-medium">
-        <router-link :to="{ name: 'contact' }" class="navigation navigation--mobile clickable">
+        <RouterLink :to="{ name: 'contact' }" class="navigation navigation--mobile colored clickable">
             Contact
-        </router-link>
+        </RouterLink>
       </p>
 
       <p class="margin-top-xlarge margin-bottom-none">
-        <!-- eslint-disable-next-line max-len -->
-        <router-link :to="{ name: 'imprint' }" class="navigation navigation--small navigation--mobile clickable">
+        <RouterLink :to="{ name: 'imprint' }" class="navigation navigation--small navigation--mobile colored clickable">
             Imprint
-        </router-link>
+        </RouterLink>
       </p>
 
       <p class="margin-top-medium margin-bottom-none">
-        <!-- eslint-disable-next-line max-len -->
-        <router-link :to="{ name: 'privacy' }" class="navigation navigation--small navigation--mobile clickable">
+        <RouterLink :to="{ name: 'privacy' }" class="navigation navigation--small navigation--mobile colored clickable">
             Privacy
-        </router-link>
+        </RouterLink>
       </p>
     </div>
   </div>
@@ -52,7 +50,7 @@
 <!-- SCRIPT -->
 <script>
 export default {
-  name: 'Menu',
+  name: 'HamburgerMenu',
 
   mounted() {
     this.init();
@@ -62,5 +60,5 @@ export default {
 
 <!-- STYLE-->
 <style lang="scss">
-  @import "../styles/base.scss";
+  @use "../styles/base.scss";
 </style>

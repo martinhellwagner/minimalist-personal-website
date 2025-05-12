@@ -11,7 +11,9 @@ $breakpoint-max: 1200;
 
 // MIXINS
 @mixin fluidSizes($property, $min, $max) {
-  #{$property}: #{$min + "px"};
+  & {
+    #{$property}: #{$min + "px"};
+  }
 
   @media screen and (min-width: #{$breakpoint-min + "px"}) {
     #{$property}: calc(#{$min + "px"} + (#{$max} - #{$min}) * (100vw - #{$breakpoint-min + "px"}) / (#{$breakpoint-max} - #{$breakpoint-min}));
@@ -41,26 +43,63 @@ body {
   }
 }
 
+a {
+  position: relative;
+  text-decoration: none;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+    transition: bottom 300ms ease-in-out;
+  }
+}
+
 a,
 a:hover,
 a:visited {
   color: $black;
 }
 
+a:hover {
+  &:after {
+    bottom: 1px;
+  }
+}
+
 a.colored,
 a.colored:hover,
 a.colored:visited {
-  text-decoration: none;
+  &:after {
+    width: 0;
+  }
 }
 
 @media screen and (min-width: #{$breakpoint-medium + "px"}) {
-  a.colored,
-  a.colored:visited {
-    transition: color 300ms ease-in-out;
+  a {
+    &:after {
+      bottom: 0;
+      height: 2px;
+    }
+  }
+
+  a:hover {
+    &:after {
+      bottom: 1px;
+    }
   }
 
   a.colored:hover {
     color: $blue;
+  }
+
+  a.colored,
+  a.colored:visited {
+    transition: color 300ms ease-in-out;
   }
 }
 
@@ -162,11 +201,6 @@ p {
   height: 32px;
   z-index: 21;
 
-  @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
-    @include fluidSizes(width, 32, 44);
-    @include fluidSizes(height, 32, 44);
-  }
-
   animation-name: rotation;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -190,22 +224,27 @@ p {
   &--hidden {
     display: none;
   }
+
+  @media screen and (min-width: calc(#{$breakpoint-min + "px"} + 1px)) and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
+    @include fluidSizes(width, 32, 44);
+    @include fluidSizes(height, 32, 44);
+  }
 }
 
 .description {
   display: block;
   width: 80vw;
-  max-width: 515px;
+  max-width: 470px;
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
 
   @media screen and (min-height: calc(#{$breakpoint-min + "px"} + 1px)) {
-    @include fluidSizes(font-size, 16, 20);
+    @include fluidSizes(font-size, 14, 20);
   }
 
   @media screen and (min-height: #{$breakpoint-small + "px"}) {
-    @include fluidSizes(font-size, 16, 24);
+    @include fluidSizes(font-size, 16, 22);
   }
 
   &--hidden {
@@ -249,9 +288,12 @@ p {
 }
 
 .navigation {
-  @include fluidSizes(font-size, 20, 32);
   line-height: 1;
   text-decoration: none;
+  
+  &:after {
+    width: 0;
+  }
 
   &--hidden {
     display: none !important;
@@ -272,10 +314,6 @@ p {
     @media screen and (min-width: #{$breakpoint-medium + "px"}) {
       display: none;
     }
-  }
-
-  &--small {
-    @include fluidSizes(font-size, 16, 24);
   }
 
   &:not(.navigation--small) {
@@ -305,6 +343,12 @@ p {
   &:not(.navigation--first).router-link-exact-active {
     color: $blue;
   }
+
+  @include fluidSizes(font-size, 20, 32);
+
+  &--small {
+    @include fluidSizes(font-size, 16, 22);
+  }
 }
 
 .navigation-icon-wrapper {
@@ -313,6 +357,11 @@ p {
   top: 0;
   right: 0;
   z-index: 2142;
+  text-decoration: none;
+
+  &:after {
+    width: 0;
+  }
 
   @media screen and (min-width: #{$breakpoint-medium + "px"}) {
     display: none;

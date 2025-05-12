@@ -6,20 +6,20 @@ This personal website project – conceived with stark minimalism in mind – wa
 
 ## How to get stared
 
-To get started, you first need to make sure that you have the [Vue CLI](https://cli.vuejs.org) and [Yarn](https://yarnpkg.com/en) installed. If you haven't, please do so before continuing. With these tools set up, you can go ahead and install the necessary packages by calling this command from the root directory:
+To get started, you first need to make sure that you have [Node](https://nodejs.org) and [NPM](https://www.npmjs.com) installed. If you haven't, please do so before continuing. With these tools set up, you can go ahead and install the necessary packages by calling this command from the root directory:
 
-    yarn install
+    npm install
 
 After all the packages are installed, you are ready to start the application. Simply call this command from the root directory in order to compile your code for development (why yes, hot reload is included):
 
-    yarn serve
+    npm run dev
 
 If you want to get the project ready for production (i.e. compile and minify it), call this command from the root directory:
 
-    yarn build
+    npm run build
 
-Last but not least, make sure the [Linter](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint) is happy with you by calling the following command from the root directory (if applicable, fixing is included for free):
+Last but not least, make sure the [Linter](https://www.npmjs.com/package/@eslint/js) is happy with you by calling the following command from the root directory (if applicable, fixing is included for free):
 
-    yarn lint
+    npm run lint
 
 That's about it. Happy hacking!

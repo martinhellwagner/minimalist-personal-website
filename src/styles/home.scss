@@ -1,4 +1,4 @@
-@import "./base.scss";
+@use "base" as *;
 
 .martin {
   width: 120px;
@@ -31,16 +31,16 @@
   display: none;
   position: absolute;
   left: 50%;
-  @include fluidSizes(height, 24, 32);
 
   @media screen and (min-height: #{$breakpoint-medium + "px"}) {
     display: flex;
     align-items: center;
   }
+
+  @include fluidSizes(height, 24, 32);
 }
 
 .header {
-  @include fluidSizes(top, 30, 32);
   transform: translateX(calc(-50% + 4px));
 
   span {
@@ -52,28 +52,35 @@
   .heart,
   .vue {
     display: inherit;
-    @include fluidSizes(width, 12 / 28 * 32, 16 / 28 * 32);
-    @include fluidSizes(height, 12, 16);
     margin-left: 5px;
     margin-right: 5px;
 
     .image {
       height: 100%;
     }
+
+    @include fluidSizes(width, calc(12 / 28 * 32), calc(16 / 28 * 32));
+    @include fluidSizes(height, 12, 16);
   }
 
   .vue {
     margin-top: 1px;
   }
+
+  @include fluidSizes(top, 30, 32);
 }
 
 .footer {
-  @include fluidSizes(bottom, 30, 32);
   transform: translateX(-50%);
 
   a {
-    @include fluidSizes(font-size, 12, 16);
     text-decoration: none;
+    
+    &:after {
+      width: 0;
+    }
+
+    @include fluidSizes(font-size, 12, 16);
   }
 
   .imprint {
@@ -83,4 +90,6 @@
   .privacy {
     margin-left: 12px;
   }
+
+  @include fluidSizes(bottom, 30, 32);
 }

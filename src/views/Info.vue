@@ -1,10 +1,9 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container container--scrollable">
-    <!-- eslint-disable-next-line max-len -->
-    <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable" aria-label="Go to menu">
+    <RouterLink :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable" aria-label="Go to menu">
       <div class="navigation-icon navigation-icon--menu clickable"></div>
-    </router-link>
+    </RouterLink>
 
     <div class="content">
       <div class="description">
@@ -13,7 +12,6 @@
         </p>
 
         <p class="margin-top-large margin-bottom-large">
-          <!-- eslint-disable-next-line max-len -->
           You're welcome to check out <a href="/documents/Martin_Hellwagner_CV.pdf" class="clickable" target="_blank">my CV</a>
           and explore my skillset below:
         </p>
@@ -29,7 +27,6 @@
           <i>Backend</i>
         </p>
         <p class="margin-top-none margin-bottom-large">
-          <!-- eslint-disable-next-line max-len -->
           PHP (Laravel, Zend), CMS (Craft, Wordpress), Node.js, Databases (MySQL, MongoDB)
         </p>
 
@@ -37,7 +34,6 @@
           <i>DevOps</i>
         </p>
         <p class="margin-top-none margin-bottom-xlarge">
-          <!-- eslint-disable-next-line max-len -->
           Hosting (Hetzner, Google Cloud, AWS), Domains (AutoDNS, Variomedia), Deployment (Buddy, Jenkins)
         </p>
       </div>
@@ -58,5 +54,5 @@ export default {
 
 <!-- STYLE-->
 <style lang="scss">
-  @import "../styles/base.scss";
+  @use "../styles/base.scss";
 </style>

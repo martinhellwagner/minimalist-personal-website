@@ -1,10 +1,9 @@
 <!-- TEMPLATE -->
 <template>
   <div class="container">
-    <!-- eslint-disable-next-line max-len -->
-    <router-link :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable" aria-label="Go to menu">
+    <RouterLink :to="{ name: 'menu' }" class="navigation-icon-wrapper clickable" aria-label="Go to menu">
       <div class="navigation-icon navigation-icon--menu clickable"></div>
-    </router-link>
+    </RouterLink>
 
     <div class="content">
       <img class="beach-ball" src="/images/beach-ball.png" alt="Beach Ball">
@@ -15,7 +14,6 @@
         </p>
         <p class="margin-top-large margin-bottom-none">
           Unfortunately, this seems to be a dead end.<br>
-          <!-- eslint-disable-next-line max-len -->
           Why not choose another site?
         </p>
       </div>
@@ -36,5 +34,5 @@ export default {
 
 <!-- STYLE-->
 <style lang="scss">
-  @import "../styles/base.scss";
+  @use "../styles/base.scss";
 </style>
