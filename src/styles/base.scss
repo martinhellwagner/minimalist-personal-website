@@ -41,26 +41,63 @@ body {
   }
 }
 
+a {
+  position: relative;
+  text-decoration: none;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+    transition: bottom 300ms ease-in-out;
+  }
+}
+
 a,
 a:hover,
 a:visited {
   color: $black;
 }
 
+a:hover {
+  &:after {
+    bottom: 1px;
+  }
+}
+
 a.colored,
 a.colored:hover,
 a.colored:visited {
-  text-decoration: none;
+  &:after {
+    width: 0;
+  }
 }
 
 @media screen and (min-width: #{$breakpoint-medium + "px"}) {
-  a.colored,
-  a.colored:visited {
-    transition: color 300ms ease-in-out;
+  a {
+    &:after {
+      bottom: 0;
+      height: 2px;
+    }
+  }
+
+  a:hover {
+    &:after {
+      bottom: 1px;
+    }
   }
 
   a.colored:hover {
     color: $blue;
+  }
+
+  a.colored,
+  a.colored:visited {
+    transition: color 300ms ease-in-out;
   }
 }
 
@@ -252,6 +289,10 @@ p {
   @include fluidSizes(font-size, 20, 32);
   line-height: 1;
   text-decoration: none;
+  
+  &:after {
+    width: 0;
+  }
 
   &--hidden {
     display: none !important;
@@ -313,6 +354,11 @@ p {
   top: 0;
   right: 0;
   z-index: 2142;
+  text-decoration: none;
+
+  &:after {
+    width: 0;
+  }
 
   @media screen and (min-width: #{$breakpoint-medium + "px"}) {
     display: none;

@@ -9,39 +9,42 @@
       <img class="beach-ball" src="/images/beach-ball.png" alt="Beach Ball">
 
       <p class="margin-top-none margin-bottom-none">
-        <router-link :to="{ name: 'home' }" class="navigation navigation--mobile clickable">
+        <router-link :to="{ name: 'home' }" class="navigation navigation--mobile colored clickable">
             Home
         </router-link>
       </p>
 
       <p class="margin-top-medium margin-bottom-none">
-        <router-link :to="{ name: 'projects' }" class="navigation navigation--mobile clickable">
+        <!-- eslint-disable-next-line max-len -->
+        <router-link :to="{ name: 'projects' }" class="navigation navigation--mobile colored clickable">
             Projects
         </router-link>
       </p>
 
       <p class="margin-top-medium margin-bottom-none">
-        <router-link :to="{ name: 'info' }" class="navigation navigation--mobile clickable">
+        <!-- eslint-disable-next-line max-len -->
+        <router-link :to="{ name: 'info' }" class="navigation navigation--mobile colored clickable">
           Info
         </router-link>
       </p>
 
       <p class="margin-top-medium margin-bottom-medium">
-        <router-link :to="{ name: 'contact' }" class="navigation navigation--mobile clickable">
+        <!-- eslint-disable-next-line max-len -->
+        <router-link :to="{ name: 'contact' }" class="navigation navigation--mobile colored clickable">
             Contact
         </router-link>
       </p>
 
       <p class="margin-top-xlarge margin-bottom-none">
         <!-- eslint-disable-next-line max-len -->
-        <router-link :to="{ name: 'imprint' }" class="navigation navigation--small navigation--mobile clickable">
+        <router-link :to="{ name: 'imprint' }" class="navigation navigation--small navigation--mobile colored clickable">
             Imprint
         </router-link>
       </p>
 
       <p class="margin-top-medium margin-bottom-none">
         <!-- eslint-disable-next-line max-len -->
-        <router-link :to="{ name: 'privacy' }" class="navigation navigation--small navigation--mobile clickable">
+        <router-link :to="{ name: 'privacy' }" class="navigation navigation--small navigation--mobile colored clickable">
             Privacy
         </router-link>
       </p>

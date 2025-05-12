@@ -11,12 +11,12 @@
 
       <div class="header">
         <span>Made with</span>
-        <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart" aria-label="Open Spotify link">
+        <a href="https://open.spotify.com/album/7oD9oCCtFhg5RoLtMR5TKl" target="_blank" class="heart colored" aria-label="Open Spotify link">
           <img class="image clickable" src="/images/home/footer-heart.svg" alt="Heart">
         </a>
 
         <span>and</span>
-        <a href="https://vuejs.org" target="_blank" class="vue" aria-label="Browse Vue docs">
+        <a href="https://vuejs.org" target="_blank" class="vue colored" aria-label="Browse Vue docs">
           <img class="image clickable" src="/images/home/footer-vue.svg" alt="Vue">
         </a>
       </div>

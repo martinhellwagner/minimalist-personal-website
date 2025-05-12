@@ -29,19 +29,19 @@
 
       <div class="icons">
         <!-- eslint-disable max-len -->
-        <a href="https://www.instagram.com/martin.hellwagner" target="_blank" class="icon icon--first clickable lazyload-wrapper">
+        <a href="https://www.instagram.com/martin.hellwagner" target="_blank" class="icon icon--first clickable colored lazyload-wrapper">
           <img class="image lazyload" data-src="/images/contact/icon-3.png" style="pointer-events: none;" title="Instagram">
           <div class="placeholder" style="background-color: #e1306c; pointer-events: none;" />
         </a>
-        <a href="https://www.linkedin.com/in/martinhellwagner" target="_blank" class="icon clickable lazyload-wrapper">
+        <a href="https://www.linkedin.com/in/martinhellwagner" target="_blank" class="icon clickable colored lazyload-wrapper">
           <img class="image lazyload" data-src="/images/contact/icon-1.png" style="pointer-events: none;" title="LinkedIn">
           <div class="placeholder" style="background-color: #007ab9; pointer-events: none;" />
         </a>
-        <a href="https://github.com/martinhellwagner" target="_blank" class="icon clickable lazyload-wrapper">
+        <a href="https://github.com/martinhellwagner" target="_blank" class="icon clickable colored lazyload-wrapper">
           <img class="image lazyload" data-src="/images/contact/icon-2.png" style="pointer-events: none;" title="GitHub">
           <div class="placeholder" style="background-color: #181616; pointer-events: none;" />
         </a>
-        <a href="https://soundcloud.com/infrasonicsound" target="_blank" class="icon clickable lazyload-wrapper">
+        <a href="https://soundcloud.com/infrasonicsound" target="_blank" class="icon clickable colored lazyload-wrapper">
           <img class="image lazyload" data-src="/images/contact/icon-4.png" style="pointer-events: none;" title="SoundCloud">
           <div class="placeholder" style="background-color: #ff3a00; pointer-events: none;" />
         </a>

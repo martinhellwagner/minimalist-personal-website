@@ -74,6 +74,10 @@
   a {
     @include fluidSizes(font-size, 12, 16);
     text-decoration: none;
+    
+    &:after {
+      width: 0;
+    }
   }
 
   .imprint {
