@@ -22,7 +22,7 @@
 
       <div class="martin lazyload-wrapper">
         <img class="image lazyload" data-src="/images/home/martin.jpg" title="Martin Hellwagner">
-        <div class="placeholder" style="background-color: #ffcb9e" />
+        <div class="placeholder" style="background-color: #d6d6d6" />
       </div>
 
       <div class="description">
